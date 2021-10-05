@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>安怡的博客</title><link>https://anyicomplex.github.io/</link><description>Recent content on 安怡的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 05 Oct 2021 17:33:30 +0800</lastBuildDate><atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://anyicomplex.github.io/post/hello-world/</link><pubDate>Tue, 05 Oct 2021 17:33:30 +0800</pubDate><guid>https://anyicomplex.github.io/post/hello-world/</guid><description>我的第一篇Hugo博客</description></item><item><title/><link>https://anyicomplex.github.io/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://anyicomplex.github.io/readme/</guid><description>#include &amp;quot;anyicomplex.h&amp;quot; int main() { anyi::say(&amp;quot;Favorite programming languages: Java, C/C++, Python.&amp;quot;); anyi::say(&amp;quot;Date of Birth: 2000-12-08.&amp;quot;); return anyi::check_err(); }</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>anyicomplex (安怡) 的博客</title>
+    <link>https://anyicomplex.github.io/</link>
+    <description>Recent content on anyicomplex (安怡) 的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 05 Oct 2021 17:33:30 +0800</lastBuildDate><atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://anyicomplex.github.io/post/hello-world/</link>
+      <pubDate>Tue, 05 Oct 2021 17:33:30 +0800</pubDate>
+      
+      <guid>https://anyicomplex.github.io/post/hello-world/</guid>
+      <description>我的第一篇Hugo博客</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://anyicomplex.github.io/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://anyicomplex.github.io/readme/</guid>
+      <description>#include &amp;quot;anyicomplex.h&amp;quot; int main() { anyi::say(&amp;quot;Favorite programming languages: Java, C/C++, Python.&amp;quot;); anyi::say(&amp;quot;Date of Birth: 2000-12-08.&amp;quot;); return anyi::check_err(); } </description>
+    </item>
+    
+  </channel>
+</rss>
