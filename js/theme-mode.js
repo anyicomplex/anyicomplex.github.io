@@ -15,6 +15,12 @@ function setTheme(style) {
   });
   document.documentElement.setAttribute('data-color-mode', style);
   localStorage.setItem('data-color-mode', style);
+  const message = {
+  type: 'set-theme',
+  theme: style == 'light' ? 'github-light' : 'dark-blue'
+  };
+  var utterances = document.querySelector('iframe');
+  utterances.contentWindow.postMessage(message, 'https://utteranc.es');
 }
 
 function currentTheme() {
