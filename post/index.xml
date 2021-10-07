@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on anyicomplex (安怡) 的博客</title><link>https://anyicomplex.github.io/post/</link><description>Recent content in Posts on anyicomplex (安怡) 的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>2021 © anyicomplex. Powered by &lt;a href='https://gohugo.io/'>Hugo&lt;/a>, with theme &lt;a href='https://github.com/MeiK2333/github-style'>github-style&lt;/a>.</copyright><lastBuildDate>Thu, 07 Oct 2021 15:23:11 +0800</lastBuildDate><atom:link href="https://anyicomplex.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>写给想用Java开发游戏的人的话</title><link>https://anyicomplex.github.io/post/words-for-those-want-to-develop-game-in-java/</link><pubDate>Thu, 07 Oct 2021 15:23:11 +0800</pubDate><guid>https://anyicomplex.github.io/post/words-for-those-want-to-develop-game-in-java/</guid><description>&lt;p>本文仅代表个人观点，欢迎留言讨论。&lt;/p></description></item><item><title>Hello World</title><link>https://anyicomplex.github.io/post/hello-world/</link><pubDate>Tue, 05 Oct 2021 17:33:30 +0800</pubDate><guid>https://anyicomplex.github.io/post/hello-world/</guid><description>我的第一篇Hugo博客</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on anyicomplex (安怡) 的博客</title>
+    <link>https://anyicomplex.github.io/post/</link>
+    <description>Recent content in Posts on anyicomplex (安怡) 的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex. Powered by &lt;a href=&#39;https://gohugo.io/&#39;&gt;Hugo&lt;/a&gt;, with theme &lt;a href=&#39;https://github.com/MeiK2333/github-style&#39;&gt;github-style&lt;/a&gt;.</copyright>
+    <lastBuildDate>Thu, 07 Oct 2021 15:23:11 +0800</lastBuildDate><atom:link href="https://anyicomplex.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>写给想用Java开发游戏的人的话</title>
+      <link>https://anyicomplex.github.io/post/words-for-those-want-to-develop-game-in-java/</link>
+      <pubDate>Thu, 07 Oct 2021 15:23:11 +0800</pubDate>
+      
+      <guid>https://anyicomplex.github.io/post/words-for-those-want-to-develop-game-in-java/</guid>
+      <description>&lt;p&gt;本文仅代表个人观点，欢迎留言讨论。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://anyicomplex.github.io/post/hello-world/</link>
+      <pubDate>Tue, 05 Oct 2021 17:33:30 +0800</pubDate>
+      
+      <guid>https://anyicomplex.github.io/post/hello-world/</guid>
+      <description>我的第一篇Hugo博客</description>
+    </item>
+    
+  </channel>
+</rss>
