@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/tags/</link>
+    <description>Recent content in Tags on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Thu, 07 Oct 2021 02:23:11 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://anyicomplex.github.io/tags/java/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>游戏开发</title>
+      <link>https://anyicomplex.github.io/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
