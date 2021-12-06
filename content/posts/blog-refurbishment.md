@@ -11,4 +11,4 @@ categories: 杂记
 
 新的主题：[Diary](https://themes.gohugo.io/themes/hugo-theme-diary/)
 
-......接下来一段时间会有巨量更 (水) 新 (文) ......大概就这样吧！敬请期待！
+接下来一段时间会有巨量更 (水) 新 (文) ......大概就这样吧！敬请期待！
