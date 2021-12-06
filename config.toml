@@ -19,7 +19,7 @@ theme = "diary"
     tabWidth = 4
 
 [params]
-enableDarkMode = false
+disableDarkMode=true
 enableReadingTime = true
 
 favicon = "https://github.com/fluidicon.png"
