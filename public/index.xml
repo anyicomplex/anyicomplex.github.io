@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>安怡的博客</title>
+    <link>https://anyicomplex.github.io/</link>
+    <description>Recent content on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Mon, 06 Dec 2021 06:56:16 -0500</lastBuildDate>
+    
+        <atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>博客翻新</title>
+        <link>https://anyicomplex.github.io/posts/blog-refurbishment/</link>
+        <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/blog-refurbishment/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/blog-refurbishment/ -&lt;p&gt;两个月过去了，我又想起这个博客了XD&lt;/p&gt;
+&lt;p&gt;于是就&amp;hellip;&amp;hellip;修改了主题，翻新 (并没有) 了一下，评论系统也从 Utterances 换成了 Gitalk (当然，原来的评论也没有了&amp;gt;_&amp;lt;)&lt;/p&gt;
+&lt;p&gt;新的主题：&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-diary/&#34;&gt;Diary&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;&amp;hellip;接下来一段时间会有巨量更 (水) 新 (文) &amp;hellip;&amp;hellip;大概就这样吧！敬请期待！&lt;/p&gt;
+- https://anyicomplex.github.io/posts/blog-refurbishment/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>写给想用Java开发游戏的人的话</title>
+        <link>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</link>
+        <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/ -&lt;p&gt;&lt;em&gt;&lt;strong&gt;本文仅代表个人观点，欢迎留言讨论。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;java适合开发游戏吗&#34;&gt;Java适合开发游戏吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;我的答案是：不适合。&lt;/strong&gt;&lt;br&gt;
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。&lt;br&gt;
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C++编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）&lt;br&gt;
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。(Unity虽然用C#做开发，但底层还是C/C++，并且针对C#代码进行了AOT编译，以提升性能)&lt;br&gt;
+&lt;strong&gt;如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如果我非用java不可呢&#34;&gt;如果我非用Java不可呢？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Java的生态很庞大，事实上，相对成熟的解决方案还是有的。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt;：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jmonkeyengine.org/&#34;&gt;jMonkeyEngine&lt;/a&gt;：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;java能开发像王者荣耀那样的大型游戏吗&#34;&gt;Java能开发像王者荣耀那样的大型游戏吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;能。&lt;/strong&gt;&lt;br&gt;
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。&lt;br&gt;
+&lt;strong&gt;大名鼎鼎的&lt;a href=&#34;https://pokemmo.eu/&#34;&gt;PokeMMO&lt;/a&gt;就是用libGDX开发的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用java开发游戏需要注意些什么&#34;&gt;用Java开发游戏需要注意些什么？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。&lt;/strong&gt;&lt;br&gt;
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。&lt;br&gt;
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。&lt;br&gt;
+&lt;strong&gt;至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;graalvm的native-image技术可以用于java游戏开发吗&#34;&gt;GraalVM的native-image技术可以用于Java游戏开发吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;理论上可行，但我不推荐。&lt;/strong&gt;&lt;br&gt;
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。&lt;br&gt;
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。&lt;br&gt;
+&lt;strong&gt;如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Hello World | 我的第一篇Hugo博客</title>
+        <link>https://anyicomplex.github.io/posts/hello-world/</link>
+        <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/hello-world/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/hello-world/ -&lt;p&gt;主题：&lt;a href=&#34;https://themes.gohugo.io/themes/github-style/&#34;&gt;Github Style&lt;/a&gt;  (注：这是博客开张时使用的主题，现已更改)&lt;/p&gt;
+&lt;p&gt;大概会是日记性质的博客 :D&lt;/p&gt;
+- https://anyicomplex.github.io/posts/hello-world/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

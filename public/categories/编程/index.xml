@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Thu, 07 Oct 2021 02:23:11 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>写给想用Java开发游戏的人的话</title>
+      <link>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</guid>
+      <description>本文仅代表个人观点，欢迎留言讨论。
+Java适合开发游戏吗？ 我的答案是：不适合。
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C++编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。(Unity虽然用C#做开发，但底层还是C/C++，并且针对C#代码进行了AOT编译，以提升性能)
+如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。
+如果我非用Java不可呢？ Java的生态很庞大，事实上，相对成熟的解决方案还是有的。
+ libGDX：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5 jMonkeyEngine：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5  我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。
+尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。
+Java能开发像王者荣耀那样的大型游戏吗？ 能。
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。
+大名鼎鼎的PokeMMO就是用libGDX开发的。
+用Java开发游戏需要注意些什么？ 在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。
+至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。
+GraalVM的native-image技术可以用于Java游戏开发吗？ 理论上可行，但我不推荐。
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。
+如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。</description>
+    </item>
+    
+  </channel>
+</rss>

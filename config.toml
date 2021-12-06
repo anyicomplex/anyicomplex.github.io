@@ -1,0 +1,63 @@
+baseURL = "https://anyicomplex.github.io/"
+DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
+languageCode = "zh-cn"
+title = "安怡的博客"
+copyright = "2021 © anyicomplex"
+theme = "diary"
+# googleAnalytics = "UA-123-45"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "perldoc"
+    tabWidth = 4
+
+[params]
+enableAutoDarkMode = true
+enableReadingTime = true
+
+favicon = "https://github.com/fluidicon.png"
+
+subtitle = "代码与生活 | 随笔杂记"
+enableGitalk = true
+
+globalLicense = "CC-BY-NC-SA 4.0"
+globalLicenseLink = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
+title = "安怡的博客" # will set 'og:site_name'
+description = "代码与生活 | 随笔杂记"  # will set 'og:description'
+
+[params.gitalk]
+  owner = "anyicomplex"
+  repo = "anyicomplex.github.io"
+  client_id = "ecaa9e60860d0402573e"
+  client_secret = "e2a72d4628c46b1d35bdeef27db30f692f731c01"
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[[menu.main]]
+url = "/categories"
+name = "分类"
+weight = 2
+[[menu.main]]
+url = "/tags"
+name = "标签"
+weight = 3
+[[menu.main]]
+url = "/posts"
+name = "归档"
+weight = 1
+[[menu.main]]
+url = "/index.xml"
+name = "RSS 订阅"
+weight = 4
