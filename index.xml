@@ -6,9 +6,169 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Mon, 06 Dec 2021 06:56:16 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Dec 2021 15:35:59 -0500</lastBuildDate>
     
         <atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>操作系统学习路线</title>
+        <link>https://anyicomplex.github.io/posts/operating-system-learning-route/</link>
+        <pubDate>Tue, 07 Dec 2021 15:35:59 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/operating-system-learning-route/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/operating-system-learning-route/ -&lt;p&gt;&lt;em&gt;&lt;strong&gt;本文仅代表个人观点，欢迎留言讨论。&lt;/strong&gt;&lt;/em&gt;
+&lt;em&gt;&lt;strong&gt;本文面向新手，侧重科普，只是提供思路，要深入学习请自行寻找相关资料。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;目前世界主流的操作系统&#34;&gt;目前世界主流的操作系统&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows&lt;/li&gt;
+&lt;li&gt;Linux&lt;/li&gt;
+&lt;li&gt;Unix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三大桌面操作系统&#34;&gt;三大桌面操作系统&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Microsoft Windows&lt;/li&gt;
+&lt;li&gt;GNU/Linux&lt;/li&gt;
+&lt;li&gt;Apple Mac OS X&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;两大移动操作系统&#34;&gt;两大移动操作系统&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;li&gt;Apple iOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三大服务器操作系统&#34;&gt;三大服务器操作系统&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GNU/Linux&lt;/li&gt;
+&lt;li&gt;Microsoft Windows&lt;/li&gt;
+&lt;li&gt;BSD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Android是一种Linux发行版，但几乎没有使用GNU套件（因此一般不认为是GNU/Linux），Mac OS X和iOS都是BSD的一种，BSD是Unix。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;复杂程度对比&#34;&gt;复杂程度对比&lt;/h2&gt;
+&lt;p&gt;BSD &amp;lt; GNU/Linux &amp;lt; Android &amp;lt; iOS &amp;lt; Mac OS X &amp;lt; Windows&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;就个人经验而言，Windows是我使用过最复杂最臃肿的操作系统，这也是我讨厌Windows的原因之一。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;学习难度对比&#34;&gt;学习难度对比&lt;/h2&gt;
+&lt;p&gt;GNU/Linux &amp;lt; BSD &amp;lt; Android &amp;lt; iOS &amp;lt; Windows &amp;lt; Mac OS X&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;因为源码开放，资料丰富，所以一般认为难学的Linux的学习难度反而是最低的。&lt;/li&gt;
+&lt;li&gt;BSD资料较少，但官方文档普遍质量高于Linux，因此我认为学习难度比Linux略高。&lt;/li&gt;
+&lt;li&gt;Android虽然是Linux发行版，但代码量大（超过100M行）且充满了谷歌的各种Hack，因此学习难度明显高于GNU/Linux。&lt;/li&gt;
+&lt;li&gt;iOS比Mac OS X简单很多，但仍然复杂，并且苹果的封闭极大的提升了学习难度。&lt;/li&gt;
+&lt;li&gt;做Windows的普通用户很简单，但成为合格的开发者非常难，一方面是因为微软的封闭（不过实际上比苹果好很多），另一方面是因为Windows本身的复杂。&lt;/li&gt;
+&lt;li&gt;如果你有尝试写过Mac OS X的驱动程序，你会明白我为什么把它排在最后的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;设计理念先进程度对比&#34;&gt;设计理念先进程度对比&lt;/h2&gt;
+&lt;p&gt;Unix = Linux &amp;lt; Windows&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;实际上Windows的很多设计理念都是超前的，本来大有可为，但无奈微软没有好好发展。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用户和开发者&#34;&gt;用户和开发者&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;使用操作系统的人都是该操作系统的用户。&lt;/li&gt;
+&lt;li&gt;开发能够在操作系统上运行的程序的人是广义上的该操作系统的开发者。&lt;/li&gt;
+&lt;li&gt;参与到操作系统的开发的人是狭义上的该操作系统的开发者。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;大多数Linux发行版默认所有用户都是广义上的开发者，所以Linux一般被认为对普通用户不友好。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;操作系统学习路线&#34;&gt;操作系统学习路线&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;“一口吃成胖子”是不可能的，几乎所有开发者最开始都是普通用户。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;0windows普通用户&#34;&gt;0.Windows普通用户&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;绝大多数人接触的第一个操作系统都是DOS或Windows，对操作系统的探索自然是从Windows开始。&lt;/li&gt;
+&lt;li&gt;但如果从Windows开始学习操作系统，由于Windows的复杂和闭源，学习曲线必然是十分陡峭的。因此建议想学操作系统的同学从Linux开始入手。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;1广义上的linux开发者&#34;&gt;1.广义上的Linux开发者&lt;/h2&gt;
+&lt;h3 id=&#34;0shell脚本&#34;&gt;0.Shell脚本&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用Linux一般是离不开命令行的（当然也有少数发行版例外，例如Android），用久了几乎不可避免的会有“自动化”的需求。类似Windows的批处理脚本，Linux下有Shell脚本，可以用来自动化很多操作。&lt;/li&gt;
+&lt;li&gt;当你第一次编写Shell脚本，恭喜你已经成为了一名广义上的Linux开发者！（Shell脚本也是一种编程语言～）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1pythonperl脚本&#34;&gt;1.Python/Perl脚本&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux下另外两种较为流行的脚本是Python和Perl，绝大多数Linux发行版都会内置这两种脚本的支持。&lt;/li&gt;
+&lt;li&gt;Shell脚本的能力毕竟有限，当你遇到用Shell脚本难以解决或解决不了的问题时，使用Python/Perl脚本是很自然的选择。&lt;/li&gt;
+&lt;li&gt;编写自动化脚本的过程中，不可避免的要去积累Linux下的一些基础知识（例如：环境变量、目录树等），但那会是很自然的学习，因为学以致用，相辅相成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2pyqt&#34;&gt;2.PyQt&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图形界面是大势所趋，也许你想把自动化脚本改成有图形界面的小工具？Python语言时下流行的PyQt会是不错的选择。&lt;/li&gt;
+&lt;li&gt;也许你开始不满足于只是写写脚本，想把程序打包安装，然后用包管理器来管理？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3构建系统make&#34;&gt;3.构建系统——make&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;要把你制作的小工具打包成Linux下的程序包，那么不可避免的要学习Linux下的基础构建工具——make。&lt;/li&gt;
+&lt;li&gt;这时候之前积累的基础知识就能派上用场了，把程序安装到哪，在哪存放配置文件，在哪存放资源文件等等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4cc&#34;&gt;4.C/C++&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;也许你遇到了性能问题，不得不使用C/C++这样的高性能语言？&lt;/li&gt;
+&lt;li&gt;也许你想使用Linux下的native开发框架GTK/Qt？&lt;/li&gt;
+&lt;li&gt;也许你并不想学，但这是不可避免的——对C/C++的学习是操作系统学习的必经之路。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2狭义上的linux开发者&#34;&gt;2.狭义上的Linux开发者&lt;/h2&gt;
+&lt;h3 id=&#34;0去提交一次代码&#34;&gt;0.去提交一次代码&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux内核主要由C语言和汇编语言编写，这需要有一定的C语言基础和汇编基础。&lt;/li&gt;
+&lt;li&gt;尝试修复Linux内核的漏洞？改进了某处的算法？想增加什么新功能？&lt;/li&gt;
+&lt;li&gt;去提交代码吧！无论你是谁，水平如何，你都可以向Linux内核提交代码！&lt;/li&gt;
+&lt;li&gt;只要审核通过，你的代码就会被并入到内核主线，这时你就正式成为一名狭义上的Linux开发者了！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1编写驱动程序&#34;&gt;1.编写驱动程序&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;驱动程序是操作系统学习中的一大难点，也是非常关键的一点。&lt;/li&gt;
+&lt;li&gt;个人认为，操作系统学习是否入门的分界线就在于此。&lt;/li&gt;
+&lt;li&gt;没有彻底理解操作系统的人是很难写出合格的驱动程序的，为此，你必须积累大量的Linux知识。&lt;/li&gt;
+&lt;li&gt;绝大多数Linux驱动程序都是开源的，可以参考，显著降低了学习难度，用来入门再好不过。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2构建自己的linux发行版&#34;&gt;2.构建自己的Linux发行版&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux From Scratch（LFS）及其衍生教程会是很好的辅助，实际上，如果让新手来使用，依葫芦画瓢也能做出来，就是质量难以保证。但对于已经编写过驱动程序的你而言，一定是知其然而知其所以然，能够弄懂每一步，也就可以做出合格的Linux发行版。&lt;/li&gt;
+&lt;li&gt;以其他发行版为基础进行修改也是不错的学习方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3windows开发者&#34;&gt;3.Windows开发者&lt;/h2&gt;
+&lt;h3 id=&#34;0逆向工程技术&#34;&gt;0.逆向工程技术&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux是开源的世界，一点逆向都不会也不影响学习，但Windows不一样。&lt;/li&gt;
+&lt;li&gt;Windows是专有软件的天下，其本身也是闭源的，要想知其所以然，必须学习各种逆向技术（反汇编、脱壳等）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1前人的经验&#34;&gt;1.前人的经验&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;对Windows及其平台下专有软件的逆向工程由来已久，前人已经积累了很多经验。&lt;/li&gt;
+&lt;li&gt;先充分积累前人的经验（通过社区、博客等），再尝试自己摸索，否则事倍功半不说，还会做很多无用功。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2编写驱动程序&#34;&gt;2.编写驱动程序&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows的驱动程序几乎没有开源的，要想编写只有自己摸索。&lt;/li&gt;
+&lt;li&gt;Linux学习中积累的经验作用有限，因为Windows的设计思路和POSIX有很大出入。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3编写病毒&#34;&gt;3.编写病毒&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;很多号称“Windows开发者”的人其实对Windows都只是一知半解，但病毒作者几乎没有水平低的。&lt;/li&gt;
+&lt;li&gt;没有对Windows系统极高的理解，是编写不出合格的病毒的。相比编写驱动程序，这是更进一步的实践。&lt;/li&gt;
+&lt;li&gt;杀毒软件是很好的“教练”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4mac-os-x开发者&#34;&gt;4.Mac OS X开发者&lt;/h2&gt;
+&lt;h3 id=&#34;0安装黑苹果&#34;&gt;0.安装“黑苹果”&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;记得先保证硬件兼容性，或者干脆用虚拟机。&lt;/li&gt;
+&lt;li&gt;如果使用苹果电脑来学习Mac OS X，这辈子也别想学会。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1学习darwin内核&#34;&gt;1.学习Darwin内核&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Darwin是Mac OS X和iOS的内核，是开源的。&lt;/li&gt;
+&lt;li&gt;Darwin是类BSD协议，所以Mac OS X才能完全闭源。&lt;/li&gt;
+&lt;li&gt;Mac OS X中的内核和开源的Darwin可能有出入，但大部分肯定是相同的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2改造黑苹果&#34;&gt;2.改造“黑苹果”&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;尝试解决“黑苹果”遇到的种种问题，让它更像“白苹果”，是学习Mac OS X系统很好的途径。&lt;/li&gt;
+&lt;li&gt;别忘了积累前人的经验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3制作黑苹果&#34;&gt;3.制作“黑苹果”&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;资料很少，难度远超制作Linux发行版和定制Windows。&lt;/li&gt;
+&lt;li&gt;很多时候需要自己编写/改写驱动程序。&lt;/li&gt;
+&lt;li&gt;能走到这一步，你就已经超过了至少90%的桌面系统用户。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/posts/operating-system-learning-route/ - 2021 © anyicomplex</description>
+        </item>
     
     
     
