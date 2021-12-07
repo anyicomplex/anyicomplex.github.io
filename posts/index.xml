@@ -14,7 +14,8 @@
       <pubDate>Tue, 07 Dec 2021 15:35:59 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/operating-system-learning-route/</guid>
-      <description>本文仅代表个人观点，欢迎留言讨论。 本文面向新手，侧重科普，只是提供思路，要深入学习请自行寻找相关资料。
+      <description>本文仅代表个人观点，欢迎留言讨论。
+本文面向新手，侧重科普，只是提供思路，要深入学习请自行寻找相关资料。
 目前世界主流的操作系统  Windows Linux Unix  三大桌面操作系统  Microsoft Windows GNU/Linux Apple Mac OS X  两大移动操作系统  Android Apple iOS  三大服务器操作系统  GNU/Linux Microsoft Windows BSD  Android是一种Linux发行版，但几乎没有使用GNU套件（因此一般不认为是GNU/Linux），Mac OS X和iOS都是BSD的一种，BSD是Unix。
 复杂程度对比 BSD &amp;lt; GNU/Linux &amp;lt; Android &amp;lt; iOS &amp;lt; Mac OS X &amp;lt; Windows
 就个人经验而言，Windows是我使用过最复杂最臃肿的操作系统，这也是我讨厌Windows的原因之一。
