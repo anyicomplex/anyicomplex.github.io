@@ -13,6 +13,151 @@
     
     
         <item>
+        <title>使用Linux的理由</title>
+        <link>https://anyicomplex.github.io/posts/reasons-to-use-linux/</link>
+        <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/reasons-to-use-linux/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/reasons-to-use-linux/ -&lt;p&gt;&lt;em&gt;&lt;strong&gt;本文仅代表个人观点，欢迎留言讨论。&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1轻量级&#34;&gt;1.轻量级&lt;/h1&gt;
+&lt;p&gt;（以x86_64操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内） &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作系统&lt;/th&gt;
+&lt;th&gt;最低CPU需求&lt;/th&gt;
+&lt;th&gt;最低内存需求&lt;/th&gt;
+&lt;th&gt;最低储存需求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 11&lt;/td&gt;
+&lt;td&gt;1 GHz * 2&lt;/td&gt;
+&lt;td&gt;4 GB&lt;/td&gt;
+&lt;td&gt;64 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 10&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 7&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fedora 35 (GNOME)&lt;/td&gt;
+&lt;td&gt;2 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;15 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Debian 11 (GNOME)&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;1 GB&lt;/td&gt;
+&lt;td&gt;10 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;数据均来自官网&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 11: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&#34;&gt;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&lt;/a&gt;&lt;br&gt;
+Windows 10: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&#34;&gt;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&lt;/a&gt;&lt;br&gt;
+Windows 7: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&#34;&gt;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&lt;/a&gt;&lt;br&gt;
+Fedora 35: &lt;a href=&#34;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&#34;&gt;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&lt;/a&gt;&lt;br&gt;
+Debian 11: &lt;a href=&#34;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&#34;&gt;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&lt;/a&gt;&lt;br&gt;
+antiX 21: &lt;a href=&#34;https://antixlinuxfan.miraheze.org/wiki/How_to_install#System_requirements&#34;&gt;https://antixlinuxfan.miraheze.org/wiki/How_to_install#System_requirements&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 10的数据为早期版本（最新版的官方数据我没找到），最新版的最低硬件需求应和当前的Windows 11相当。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GNOME是公认的占用资源最多的Linux桌面环境，而Fedora也是最为臃肿的Linux发行版之一。&lt;br&gt;
+然而二者的组合除了CPU需求高于Windows 7外，其他都不逊色。&lt;br&gt;
+而较为轻量的Debian 11和GNOME组合的硬件需求远低于Windows 7。&lt;br&gt;
+如果换用轻量级桌面Xfce或LXDE，想必这一需求会低得多。&lt;br&gt;
+然而Windows可换不了桌面&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;2安全&#34;&gt;2.安全&lt;/h1&gt;
+&lt;h2 id=&#34;1文件系统&#34;&gt;1.文件系统&lt;/h2&gt;
+&lt;p&gt;所有POSIX操作系统的文件系统（Linux的ext系列、Solaris的ZFS等）都有严格的文件权限限制，只有被标记为“可执行”的文件才能运行。&lt;br&gt;
+而Windows不同，其对“可执行”文件的界定仅仅按扩展名来划分。
+这也是有历史原因的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows的前身DOS和早期Windows使用FAT32文件系统，这个文件系统很简陋，不但不支持日志，而且完全不支持文件权限。&lt;/li&gt;
+&lt;li&gt;随着Windows NT 3.1内核的推出，NTFS取代FAT32成为了Windows的默认文件系统，这次总算支持文件权限了，然而其默认文件可执行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;通过Access Control List（ACL）倒是可以修改默认文件权限，但这个功能又有多少Windows用户会去用呢？甚至大多数人都不知道Windows还有这个功能吧&amp;hellip;&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2操作系统&#34;&gt;2.操作系统&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux开源，在大量开发者的参与下，系统漏洞能够迅速被发现和得到修复，也不必担心被植入后门（当然，某些发行版会这么做，例如Ubuntu，所以各位选择发行版的时候要擦亮眼睛啊～）。&lt;/li&gt;
+&lt;li&gt;Windows完全闭源，开发环境十分封闭，不仅不利于系统漏洞的发现和修复，而且微软本身就在通过Windows窃取用户的隐私（早就是公开的秘密了～）。&lt;/li&gt;
+&lt;li&gt;Mac OS X只有内核开源，完整的操作系统是闭源的，结论同Windows。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3软件&#34;&gt;3.软件&lt;/h2&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;没有统一的软件源，需要自行寻找，但找到的软件源不一定可靠——例如很多下载站都会篡改安装包，注入病毒。&lt;/li&gt;
+&lt;li&gt;如果采取明文传输协议（HTTP、FTP等），很可能遭遇中间人攻击——软件在下载途中被篡改，注入病毒，然而不是所有软件源都会提供校验码的&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;不是所有软件都有“自动更新”功能，手动更新又要重复一遍之前下载的操作，重新面对一次相同的危险。&lt;/li&gt;
+&lt;li&gt;Windows是专有软件的天下，因此很多软件本身就是植入了后门的～&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在Linux发行版安装软件，多数时候都是通过GUI/CLI从发行版官方仓库安装，少数时候自己下载源码编译或安装第三方软件包。&lt;/li&gt;
+&lt;li&gt;绝大多数发行版维护的软件仓库都能够保证软件来源可靠，且绝大多数包管理器都自带校验机制。&lt;/li&gt;
+&lt;li&gt;无论软件是否支持“自动更新”，包管理器都能“自动更新”。&lt;/li&gt;
+&lt;li&gt;Linux下绝大多数软件都是开源的，如果你对安全性有较高的要求，在Linux下完全可以不使用任何闭源软件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mac-os-x&#34;&gt;Mac OS X&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux的前三条和Windows的最后一条。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3可定制性高&#34;&gt;3.可定制性高&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Linux的可定制性绝不是Windows和Mac OS X能比拟的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;图形界面&#34;&gt;图形界面&lt;/h2&gt;
+&lt;h3 id=&#34;windows-1&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图形界面是内核的一部分，无法修改。&lt;/li&gt;
+&lt;li&gt;微软对API开放程度不够，美化插件作用有限。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mac-os-x-1&#34;&gt;Mac OS X&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图形界面是其软件生态的一部分，换成其他的会导致大量软件无法运行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;桌面环境（Desktop Environment）、窗口管理器（Window Manager）、显示服务器（Display Server）都是可以更换的。&lt;br&gt;
+例如：可以用X Server作为显示服务器，也可以用Wayland；窗口管理器可以用IceWM、JWM，也可以用i3WM、Awesome；桌面环境可以用简洁的GNOME、华丽的KDE，也可以用轻量级的Xfce、LXDE&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;更何况还有大量的主题插件、美化插件，可以把Linux装点的像Mac OS X，也可以改成Windows的样子，当然，更多的是自成一派的风格～&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统修改&#34;&gt;系统修改&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;有时会有删去系统中某些用不上功能的需求。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;windows-2&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;内核不开源，几乎无法修改。&lt;/li&gt;
+&lt;li&gt;是一个环环相扣的整体结构，难以精简，且精简一般难以保证安全性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mac-os-x-2&#34;&gt;Mac OS X&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;虽然内核开源，但上层架构不开源，因此修改难度极高。&lt;/li&gt;
+&lt;li&gt;精简难度同上。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-2&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;绝大多数Linux发行版对自行修改和编译内核都是友好的。&lt;/li&gt;
+&lt;li&gt;完全开源且充分模块化，因此精简起来十分容易，Tiny Core Linux甚至完成了构建只有12MB的带有图形界面的操作系统的壮举。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4生态完善&#34;&gt;4.生态完善&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;此条主要针对Mac OS X以外的BSD。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作为三大桌面操作系统之一，越来越多的软件适配了Linux版本，而且Linux平台下本身多年积累的软件生态也越发成熟（例如GIMP之于PhotoShop，Linux生态的很多开源软件能够完美替代同类的商业软件）。&lt;/li&gt;
+&lt;li&gt;Mac OS X以外的BSD因为极度缺乏软件，日常使用一般会有问题（有Linux兼容层的除外）。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/posts/reasons-to-use-linux/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>博客翻新2</title>
         <link>https://anyicomplex.github.io/posts/blog-refurbishment2/</link>
         <pubDate>Wed, 08 Dec 2021 04:41:08 -0500</pubDate>
@@ -117,7 +262,7 @@
 &lt;h2 id=&#34;2狭义上的linux开发者&#34;&gt;2.狭义上的Linux开发者&lt;/h2&gt;
 &lt;h3 id=&#34;0去提交一次代码&#34;&gt;0.去提交一次代码&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Linux内核主要由C语言和汇编语言编写，这需要有一定的C语言基础和汇编基础。&lt;/li&gt;
+&lt;li&gt;Linux内核主要由C语言和汇编语言编写，这需要有一定的C语言基础和汇编语言基础。&lt;/li&gt;
 &lt;li&gt;尝试修复Linux内核的漏洞？改进了某处的算法？想增加什么新功能？&lt;/li&gt;
 &lt;li&gt;去提交代码吧！无论你是谁，水平如何，你都可以向Linux内核提交代码！&lt;/li&gt;
 &lt;li&gt;只要审核通过，你的代码就会被并入到内核主线，这时你就正式成为一名狭义上的Linux开发者了！&lt;/li&gt;
