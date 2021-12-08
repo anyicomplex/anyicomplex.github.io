@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>测试页面 on 安怡的博客</title>
+    <title>安怡的博客</title>
     <link>https://anyicomplex.github.io/</link>
-    <description>Recent content in 测试页面 on 安怡的博客</description>
+    <description>Recent content on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Wed, 08 Dec 2021 01:46:42 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 07 Dec 2021 15:35:59 -0500</lastBuildDate>
     
         <atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
     
