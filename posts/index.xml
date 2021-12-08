@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Tue, 07 Dec 2021 15:35:59 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 04:41:08 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客翻新2</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment2/</link>
+      <pubDate>Wed, 08 Dec 2021 04:41:08 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment2/</guid>
+      <description>最近终于被调到有电脑的岗位上了 先摸鱼为敬 闲着也是闲着，不如翻新博客:D 这次，这个主题我认为细节不尽如人意的地方几乎都做了修改，也修改了主页
+话说今天好像是我生日来着，自己都差点忘了XD</description>
+    </item>
+    
     <item>
       <title>操作系统学习路线</title>
       <link>https://anyicomplex.github.io/posts/operating-system-learning-route/</link>
@@ -64,7 +74,7 @@ GraalVM的native-image技术可以用于Java游戏开发吗？ 理论上可行�
     </item>
     
     <item>
-      <title>Hello World | 我的第一篇Hugo博客</title>
+      <title>Hello World</title>
       <link>https://anyicomplex.github.io/posts/hello-world/</link>
       <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
       
