@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杂记 on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</link>
+    <description>Recent content in 杂记 on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Mon, 06 Dec 2021 06:56:16 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客翻新</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment/</link>
+      <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment/</guid>
+      <description>两个月过去了，我又想起这个博客了XD
+于是就&amp;hellip;&amp;hellip;修改了主题，翻新（并没有）了一下，评论系统也从 Utterances 换成了 Gitalk（当然，原来的评论也没有了&amp;gt;_&amp;lt;）
+新的主题：Diary
+接下来一段时间会有巨量更（水）新（文）&amp;hellip;&amp;hellip;大概就这样吧！敬请期待！</description>
+    </item>
+    
+    <item>
+      <title>Hello World | 我的第一篇Hugo博客</title>
+      <link>https://anyicomplex.github.io/posts/hello-world/</link>
+      <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/hello-world/</guid>
+      <description>主题：Github Style （注：这是博客开张时使用的主题，现已更改）
+大概会是日记性质的博客 :D</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html><head>
+<title>写给想用Java开发游戏的人的话</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="写给想用Java开发游戏的人的话" />
+<meta property="og:description" content="本文仅代表个人观点，欢迎留言讨论。
+Java适合开发游戏吗？ 我的答案是：不适合。
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C&#43;&#43;编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用C#做开发，但底层还是C/C&#43;&#43;，并且针对C#代码进行了AOT编译，以提升性能）
+如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。
+如果我非用Java不可呢？ Java的生态很庞大，事实上，相对成熟的解决方案还是有的。
+ libGDX：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5 jMonkeyEngine：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5  我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。
+尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。
+Java能开发像王者荣耀那样的大型游戏吗？ 能。
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。
+大名鼎鼎的PokeMMO就是用libGDX开发的。
+用Java开发游戏需要注意些什么？ 在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。
+至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。
+GraalVM的native-image技术可以用于Java游戏开发吗？ 理论上可行，但我不推荐。
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。
+如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/" />
+<meta property="article:published_time" content="2021-10-07T02:23:11-05:00" />
+<meta property="article:modified_time" content="2021-12-06T04:37:58-05:00" /><meta property="og:site_name" content="安怡的博客" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="写给想用Java开发游戏的人的话"/>
+<meta name="twitter:description" content="本文仅代表个人观点，欢迎留言讨论。
+Java适合开发游戏吗？ 我的答案是：不适合。
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C&#43;&#43;编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用C#做开发，但底层还是C/C&#43;&#43;，并且针对C#代码进行了AOT编译，以提升性能）
+如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。
+如果我非用Java不可呢？ Java的生态很庞大，事实上，相对成熟的解决方案还是有的。
+ libGDX：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5 jMonkeyEngine：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5  我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。
+尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。
+Java能开发像王者荣耀那样的大型游戏吗？ 能。
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。
+大名鼎鼎的PokeMMO就是用libGDX开发的。
+用Java开发游戏需要注意些什么？ 在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。
+至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。
+GraalVM的native-image技术可以用于Java游戏开发吗？ 理论上可行，但我不推荐。
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。
+如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+<link rel="icon" href="https://github.com/fluidicon.png">
+
+
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/scss/journal.min.3f72a5fc8f5b5dd732a4b476aced0eece2156958d9d414316494ddb10593ddf7.css" integrity="sha256-P3Kl/I9bXdcypLR2rO0O7OIVaVjZ1BQxZJTdsQWT3fc=" media="screen">
+
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'ecaa9e60860d0402573e',
+  clientSecret: 'e2a72d4628c46b1d35bdeef27db30f692f731c01',
+  repo: 'anyicomplex.github.io',
+  owner: 'anyicomplex',
+  admin: ['anyicomplex'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://anyicomplex.github.io/">
+    
+        <div class="nav-title">
+            安怡的博客
+        </div>
+        
+        <div class="nav-subtitle">
+            代码与生活 | 随笔杂记
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                归档
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分类
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                标签
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS 订阅
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 © anyicomplex
+	
+        <br>
+        
+        
+                        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC-BY-NC-SA 4.0</a> 协议
+	
+	
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e9%80%82%e5%90%88%e5%bc%80%e5%8f%91%e6%b8%b8%e6%88%8f%e5%90%97" onclick="onNavClick(`#java适合开发游戏吗-nav`)" id="java适合开发游戏吗-nav">
+									Java适合开发游戏吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%a6%82%e6%9e%9c%e6%88%91%e9%9d%9e%e7%94%a8java%e4%b8%8d%e5%8f%af%e5%91%a2" onclick="onNavClick(`#如果我非用java不可呢-nav`)" id="如果我非用java不可呢-nav">
+									如果我非用Java不可呢？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e8%83%bd%e5%bc%80%e5%8f%91%e5%83%8f%e7%8e%8b%e8%80%85%e8%8d%a3%e8%80%80%e9%82%a3%e6%a0%b7%e7%9a%84%e5%a4%a7%e5%9e%8b%e6%b8%b8%e6%88%8f%e5%90%97" onclick="onNavClick(`#java能开发像王者荣耀那样的大型游戏吗-nav`)" id="java能开发像王者荣耀那样的大型游戏吗-nav">
+									Java能开发像王者荣耀那样的大型游戏吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%94%a8java%e5%bc%80%e5%8f%91%e6%b8%b8%e6%88%8f%e9%9c%80%e8%a6%81%e6%b3%a8%e6%84%8f%e4%ba%9b%e4%bb%80%e4%b9%88" onclick="onNavClick(`#用java开发游戏需要注意些什么-nav`)" id="用java开发游戏需要注意些什么-nav">
+									用Java开发游戏需要注意些什么？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#graalvm%e7%9a%84native-image%e6%8a%80%e6%9c%af%e5%8f%af%e4%bb%a5%e7%94%a8%e4%ba%8ejava%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91%e5%90%97" onclick="onNavClick(`#graalvm的native-image技术可以用于java游戏开发吗-nav`)" id="graalvm的native-image技术可以用于java游戏开发吗-nav">
+									GraalVM的native-image技术可以用于Java游戏开发吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    归档
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分类
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    标签
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS 订阅
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e9%80%82%e5%90%88%e5%bc%80%e5%8f%91%e6%b8%b8%e6%88%8f%e5%90%97" onclick="onNavClick(`#java适合开发游戏吗-nav`)" id="java适合开发游戏吗-nav">
+									Java适合开发游戏吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%a6%82%e6%9e%9c%e6%88%91%e9%9d%9e%e7%94%a8java%e4%b8%8d%e5%8f%af%e5%91%a2" onclick="onNavClick(`#如果我非用java不可呢-nav`)" id="如果我非用java不可呢-nav">
+									如果我非用Java不可呢？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#java%e8%83%bd%e5%bc%80%e5%8f%91%e5%83%8f%e7%8e%8b%e8%80%85%e8%8d%a3%e8%80%80%e9%82%a3%e6%a0%b7%e7%9a%84%e5%a4%a7%e5%9e%8b%e6%b8%b8%e6%88%8f%e5%90%97" onclick="onNavClick(`#java能开发像王者荣耀那样的大型游戏吗-nav`)" id="java能开发像王者荣耀那样的大型游戏吗-nav">
+									Java能开发像王者荣耀那样的大型游戏吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%94%a8java%e5%bc%80%e5%8f%91%e6%b8%b8%e6%88%8f%e9%9c%80%e8%a6%81%e6%b3%a8%e6%84%8f%e4%ba%9b%e4%bb%80%e4%b9%88" onclick="onNavClick(`#用java开发游戏需要注意些什么-nav`)" id="用java开发游戏需要注意些什么-nav">
+									用Java开发游戏需要注意些什么？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#graalvm%e7%9a%84native-image%e6%8a%80%e6%9c%af%e5%8f%af%e4%bb%a5%e7%94%a8%e4%ba%8ejava%e6%b8%b8%e6%88%8f%e5%bc%80%e5%8f%91%e5%90%97" onclick="onNavClick(`#graalvm的native-image技术可以用于java游戏开发吗-nav`)" id="graalvm的native-image技术可以用于java游戏开发吗-nav">
+									GraalVM的native-image技术可以用于Java游戏开发吗？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://anyicomplex.github.io/">
+            安怡的博客
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://anyicomplex.github.io/">
+        <div class="single-column-header-title">安怡的博客</div>
+        
+        <div class="single-column-header-subtitle">代码与生活 | 随笔杂记</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    写给想用Java开发游戏的人的话
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2021-10-07 02:23
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/it">IT</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/java">Java</a>
+                                &nbsp;
+                            
+                                <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91">游戏开发</a>
+                                &nbsp;
+                            
+                        
+                        
+                            <i class="material-icons" style="">schedule</i>
+                            
+
+                            
+                            
+
+                            
+                            4 min
+                            
+                            49 s.
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><em><strong>本文仅代表个人观点，欢迎留言讨论。</strong></em></p>
+<h1 id="java适合开发游戏吗">Java适合开发游戏吗？</h1>
+<p><strong>我的答案是：不适合。</strong><br>
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。<br>
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C++编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）<br>
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用C#做开发，但底层还是C/C++，并且针对C#代码进行了AOT编译，以提升性能）<br>
+<strong>如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。</strong></p>
+<h1 id="如果我非用java不可呢">如果我非用Java不可呢？</h1>
+<p><strong>Java的生态很庞大，事实上，相对成熟的解决方案还是有的。</strong></p>
+<ul>
+<li><a href="https://libgdx.com/">libGDX</a>：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5</li>
+<li><a href="https://jmonkeyengine.org/">jMonkeyEngine</a>：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5</li>
+</ul>
+<p><strong>我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。</strong><br>
+<strong>尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。</strong></p>
+<h1 id="java能开发像王者荣耀那样的大型游戏吗">Java能开发像王者荣耀那样的大型游戏吗？</h1>
+<p><strong>能。</strong><br>
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。<br>
+<strong>大名鼎鼎的<a href="https://pokemmo.eu/">PokeMMO</a>就是用libGDX开发的。</strong></p>
+<h1 id="用java开发游戏需要注意些什么">用Java开发游戏需要注意些什么？</h1>
+<p><strong>在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。</strong><br>
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。<br>
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。<br>
+<strong>至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。</strong></p>
+<h1 id="graalvm的native-image技术可以用于java游戏开发吗">GraalVM的native-image技术可以用于Java游戏开发吗？</h1>
+<p><strong>理论上可行，但我不推荐。</strong><br>
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。<br>
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。<br>
+<strong>如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。</strong></p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2021-12-06</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://anyicomplex.github.io/posts/blog-refurbishment/">
+			下回<br>博客翻新
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://anyicomplex.github.io/posts/hello-world/">
+			上回<br>Hello World | 我的第一篇Hugo博客
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 © anyicomplex
+	
+        <br>
+        
+        
+                        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC-BY-NC-SA 4.0</a> 协议
+	
+	</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>

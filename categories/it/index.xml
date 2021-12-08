@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/categories/it/</link>
+    <description>Recent content in IT on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Tue, 07 Dec 2021 15:35:59 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>操作系统学习路线</title>
+      <link>https://anyicomplex.github.io/posts/operating-system-learning-route/</link>
+      <pubDate>Tue, 07 Dec 2021 15:35:59 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/operating-system-learning-route/</guid>
+      <description>本文仅代表个人观点，欢迎留言讨论。
+本文面向新手，侧重科普，仅提供思路，要深入学习请自行寻找相关资料。
+目前世界主流的操作系统  Windows Linux Unix  三大桌面操作系统  Microsoft Windows GNU/Linux Apple Mac OS X  两大移动操作系统  Android Apple iOS  三大服务器操作系统  GNU/Linux Microsoft Windows BSD  Android是一种Linux发行版，但几乎没有使用GNU套件（因此一般不认为是GNU/Linux），Mac OS X和iOS都是BSD的一种，BSD是Unix。
+复杂程度对比 BSD &amp;lt; GNU/Linux &amp;lt; Android &amp;lt; iOS &amp;lt; Mac OS X &amp;lt; Windows
+就个人经验而言，Windows是我使用过最复杂最臃肿的操作系统，这也是我讨厌Windows的原因之一。
+学习难度对比 GNU/Linux &amp;lt; BSD &amp;lt; Android &amp;lt; iOS &amp;lt; Windows &amp;lt; Mac OS X
+ 因为源码开放，资料丰富，所以一般认为难学的Linux的学习难度反而是最低的。 BSD资料较少，但官方文档普遍质量高于Linux，因此我认为学习难度比Linux略高。 Android虽然是Linux发行版，但代码量大（超过100M行）且充满了谷歌的各种Hack，因此学习难度明显高于GNU/Linux。 iOS比Mac OS X简单很多，但仍然复杂，并且苹果的封闭极大的提升了学习难度。 做Windows的普通用户很简单，但成为合格的开发者非常难，一方面是因为微软的封闭（不过实际上比苹果好很多），另一方面是因为Windows本身的复杂。 如果你有尝试写过Mac OS X的驱动程序，你会明白我为什么把它排在最后的。  设计理念先进程度对比 Unix = Linux &amp;lt; Windows</description>
+    </item>
+    
+    <item>
+      <title>写给想用Java开发游戏的人的话</title>
+      <link>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</guid>
+      <description>本文仅代表个人观点，欢迎留言讨论。
+Java适合开发游戏吗？ 我的答案是：不适合。
+如果你不追求开源，Unity和GameMaker这类成熟的商业解决方案显然是最好的选择。
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用C/C++编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用Java，准确地说，不推荐使用任何一门委托型语言，甚至带GC的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用C#做开发，但底层还是C/C++，并且针对C#代码进行了AOT编译，以提升性能）
+如果你没有非用Java不可的理由，就请打消用Java开发游戏的念头。
+如果我非用Java不可呢？ Java的生态很庞大，事实上，相对成熟的解决方案还是有的。
+ libGDX：侧重于2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5 jMonkeyEngine：纯3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5  我认为相对完善的Java游戏引擎只有这两个，其他都不够成熟。
+尝试使用libGDX开发3D游戏不是个明智的选择，而用jMonkeyEngine开发2D游戏是一件相当不理智的事。
+Java能开发像王者荣耀那样的大型游戏吗？ 能。
+Java的缺陷从来就不在大型化上，不然也不会有那么多服务器跑SpringBoot一类用Java编写的Web后端框架了。
+大名鼎鼎的PokeMMO就是用libGDX开发的。
+用Java开发游戏需要注意些什么？ 在桌面平台，几乎不可能让玩家们专门为你的游戏去安装JRE。
+因此，必须在打包和精简JRE上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。
+JRE的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。
+至于其他问题，那不属于Java的范畴，而是所有游戏开发者都需要面对的问题。
+GraalVM的native-image技术可以用于Java游戏开发吗？ 理论上可行，但我不推荐。
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多Java特性和第三方库的同时面临很多不必要的麻烦。
+把Java字节码完全AOT成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。
+如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用Java开发游戏的念头。</description>
+    </item>
+    
+  </channel>
+</rss>

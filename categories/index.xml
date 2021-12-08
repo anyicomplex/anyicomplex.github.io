@@ -6,6 +6,25 @@
     <description>Recent content in Categories on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>2021 © anyicomplex</copyright><atom:link href="https://anyicomplex.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Tue, 07 Dec 2021 15:35:59 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IT</title>
+      <link>https://anyicomplex.github.io/categories/it/</link>
+      <pubDate>Tue, 07 Dec 2021 15:35:59 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/categories/it/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>杂记</title>
+      <link>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</link>
+      <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
