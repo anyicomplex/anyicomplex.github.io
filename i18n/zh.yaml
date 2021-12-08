@@ -26,3 +26,10 @@
   translation: 草稿
 - id: toc_title
   translation: 目录
+
+- id: tags
+  translation: 标签
+- id: categories
+  translation: 分类
+- id: archives
+  translation: 归档

@@ -1,5 +1,6 @@
 ---
 title: "博客翻新"
+description: "终于又想起这个博客了"
 date: 2021-12-06T06:56:16-05:00
 draft: false
 categories: 杂记

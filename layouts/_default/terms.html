@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+    <div class="post-list-container post-list-container-shadow">
+        <a class="a-block">
+            <div class="post-item-wrapper post-item-wrapper-no-hover">
+                <div class="post-item post-item-no-gaps">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title post-item-title year">
+                            {{if eq .Title "Tags"}}
+                                {{ i18n "tags" }}
+                            {{else if eq .Title "Categories"}}
+                                {{ i18n "categories" }}
+                            {{else}} {{.Title}}
+                            {{end}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        {{ range .Paginator.Pages }}
+                <a href="{{.Permalink}}" class="a-block">
+                    <div class="post-item-wrapper">
+                        <div class="post-item post-item-no-gaps">
+                            <div class="post-item-info-wrapper"> 
+                                <div class="post-item-title">
+                                    {{.Title}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        {{ end }}
+    </div>
+
+
+{{ end }}
