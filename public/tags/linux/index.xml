@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/tags/linux/</link>
+    <description>Recent content in Linux on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 08:17:44 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Linux的理由</title>
+      <link>https://anyicomplex.github.io/posts/reasons-to-use-linux/</link>
+      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/reasons-to-use-linux/</guid>
+      <description>本文仅代表个人观点，欢迎留言讨论。
+1.轻量级 （以x86_64操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内）    操作系统 最低CPU需求 最低内存需求 最低储存需求     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    数据均来自官网</description>
+    </item>
+    
+  </channel>
+</rss>
