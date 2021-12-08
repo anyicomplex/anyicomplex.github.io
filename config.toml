@@ -27,8 +27,8 @@ favicon = "https://github.com/fluidicon.png"
 subtitle = "代码与生活 | 随笔杂记"
 enableGitalk = true
 
-globalLicense = "CC-BY-NC-SA 4.0"
-globalLicenseLink = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+globalLicense = "CC-BY-NC 4.0"
+globalLicenseLink = "https://creativecommons.org/licenses/by-nc/4.0/"
 
 # Twitter Card and Open Graph settings
 enableOpenGraph = true
