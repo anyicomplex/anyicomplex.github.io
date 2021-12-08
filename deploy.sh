@@ -4,7 +4,7 @@ git add .
 
 git commit -m "update"
 
-git pull
+git pull origin master --no-rebase
 
 if [ "`git status -s`" ]
 then
