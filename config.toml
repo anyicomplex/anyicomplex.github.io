@@ -24,7 +24,7 @@ enableReadingTime = true
 
 favicon = "https://github.com/fluidicon.png"
 
-subtitle = "代码与生活 | 随笔杂记"
+subtitle = "编程与生活 | 随笔杂记"
 enableGitalk = true
 
 globalLicense = "CC-BY-NC 4.0"
@@ -34,7 +34,7 @@ globalLicenseLink = "https://creativecommons.org/licenses/by-nc/4.0/"
 enableOpenGraph = true
 enableTwitterCards = true
 title = "安怡的博客" # will set 'og:site_name'
-description = "代码与生活 | 随笔杂记"  # will set 'og:description'
+description = "编程与生活 | 随笔杂记"  # will set 'og:description'
 
 [params.gitalk]
   owner = "anyicomplex"
