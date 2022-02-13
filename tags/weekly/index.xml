@@ -14,7 +14,7 @@
       <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/week-summary-20220213/</guid>
-      <description>维护的项目 | Maintained Projects  gdx-bmfont v1.0.0&amp;hellip;v1.0.5 gdx-svmhelper v1.10.0-beta4 gdx-dwt xdg-utils-java v1.1.3-beta2  参与的项目 | Contributed Projects  NONE  下一步规划 | Next Planning   下周把 xdg-utils-java 推进到稳定版本。 Advancing xdg-utils-java to a stable version next week.
+      <description>维护的项目 | Maintained Projects  gdx-bmfont v1.0.0&amp;hellip;v1.0.5 gdx-svmhelper v1.10.0-beta4 gdx-dwt xdg-utils-java v1.1.3-beta1&amp;hellip;v1.1.3-beta2  参与的项目 | Contributed Projects  NONE  下一步规划 | Next Planning   下周把 xdg-utils-java 推进到稳定版本。 Advancing xdg-utils-java to a stable version next week.
   下周结束前完善 gdx-dwt 的 Linux 后端部分。 Refine the Linux backend of gdx-dwt by the end of next week.
   </description>
     </item>
