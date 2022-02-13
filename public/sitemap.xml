@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://anyicomplex.github.io/categories/</loc>
-    <lastmod>2022-02-09T06:52:39-05:00</lastmod>
+    <loc>https://anyicomplex.github.io/posts/</loc>
+    <lastmod>2022-02-13T08:52:46-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anyicomplex.github.io/posts/</loc>
+    <loc>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</loc>
+    <lastmod>2022-02-13T08:52:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anyicomplex.github.io/categories/</loc>
     <lastmod>2022-02-09T06:52:39-05:00</lastmod>
   </url>
   
