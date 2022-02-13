@@ -32,16 +32,12 @@
 &lt;h2 id=&#34;下一步规划--next-planning&#34;&gt;下一步规划 | Next Planning&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;下周把 xdg-utils-java 推进到稳定版本。&lt;/p&gt;
+&lt;p&gt;下周把 xdg-utils-java 推进到稳定版本。
+Advancing xdg-utils-java to a stable version next week.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Advancing xdg-utils-java to a stable version next week.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Refine the Linux backend of gdx-dwt by the end of next week.&lt;/p&gt;
+&lt;p&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。
+Refine the Linux backend of gdx-dwt by the end of next week.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 - https://anyicomplex.github.io/posts/week-summary-20220213/ - 2021 © anyicomplex</description>
