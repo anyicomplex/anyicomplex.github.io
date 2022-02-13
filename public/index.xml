@@ -19,12 +19,16 @@
         
         <guid>https://anyicomplex.github.io/posts/week-summary-20220213/</guid>
         <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220213/ -&lt;h2 id=&#34;维护的项目--maintained-projects&#34;&gt;维护的项目 | Maintained Projects&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;br&gt;
-&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;br&gt;
-&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta2&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;参与的项目--contributed-projects&#34;&gt;参与的项目 | Contributed Projects&lt;/h2&gt;
-&lt;p&gt;NONE&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;下一步规划--next-planning&#34;&gt;下一步规划 | Next Planning&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;

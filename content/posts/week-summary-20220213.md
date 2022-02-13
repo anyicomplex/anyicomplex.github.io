@@ -17,7 +17,7 @@ categories: SUMMARY
 
 ## 下一步规划 | Next Planning
 - 下周把 xdg-utils-java 推进到稳定版本。
-- Advancing xdg-utils-java to a stable version next week.
+Advancing xdg-utils-java to a stable version next week.
 
 - 下周结束前完善 gdx-dwt 的 Linux 后端部分。
-- Refine the Linux backend of gdx-dwt by the end of next week.
+Refine the Linux backend of gdx-dwt by the end of next week.
