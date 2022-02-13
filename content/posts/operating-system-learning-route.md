@@ -3,7 +3,7 @@ title: "操作系统学习路线"
 description: "本文仅代表个人观点，欢迎留言讨论"
 date: 2021-12-07T15:35:59-05:00
 lastmod: 2021-12-08T00:50:47-05:00
-draft: false
+draft: true
 tags: [操作系统]
 categories: IT
 ---
