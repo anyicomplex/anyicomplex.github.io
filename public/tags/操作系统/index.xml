@@ -18,20 +18,5 @@
 1.轻量级 （以x86_64操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内）    操作系统 最低CPU需求 最低内存需求 最低储存需求     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    数据均来自官网</description>
     </item>
     
-    <item>
-      <title>操作系统学习路线</title>
-      <link>https://anyicomplex.github.io/posts/operating-system-learning-route/</link>
-      <pubDate>Tue, 07 Dec 2021 15:35:59 -0500</pubDate>
-      
-      <guid>https://anyicomplex.github.io/posts/operating-system-learning-route/</guid>
-      <description>本文仅代表个人观点，欢迎留言讨论。
-本文面向新手，侧重科普，仅提供思路，要深入学习请自行寻找相关资料。
-目前世界主流的操作系统  Windows Linux Unix  三大桌面操作系统  Microsoft Windows GNU/Linux Apple Mac OS X  两大移动操作系统  Android Apple iOS  三大服务器操作系统  GNU/Linux Microsoft Windows BSD  Android是一种Linux发行版，但几乎没有使用GNU套件（因此一般不认为是GNU/Linux），Mac OS X和iOS都是BSD的一种，BSD是Unix。
-复杂程度对比 BSD &amp;lt; GNU/Linux &amp;lt; Android &amp;lt; iOS &amp;lt; Mac OS X &amp;lt; Windows
-就个人经验而言，Windows是我使用过最复杂最臃肿的操作系统，这也是我讨厌Windows的原因之一。
-学习难度对比 GNU/Linux &amp;lt; BSD &amp;lt; Android &amp;lt; iOS &amp;lt; Windows &amp;lt; Mac OS X
- 因为源码开放，资料丰富，所以一般认为难学的Linux的学习难度反而是最低的。 BSD资料较少，但官方文档普遍质量高于Linux，因此我认为学习难度比Linux略高。 Android虽然是Linux发行版，但代码量大（超过100M行）且充满了谷歌的各种Hack，因此学习难度明显高于GNU/Linux。 iOS比Mac OS X简单很多，但仍然复杂，并且苹果的封闭极大的提升了学习难度。 做Windows的普通用户很简单，但成为合格的开发者非常难，一方面是因为微软的封闭（不过实际上比苹果好很多），另一方面是因为Windows本身的复杂。 如果你有尝试写过Mac OS X的驱动程序，你会明白我为什么把它排在最后的。  设计理念先进程度对比 Unix = Linux &amp;lt; Windows</description>
-    </item>
-    
   </channel>
 </rss>
