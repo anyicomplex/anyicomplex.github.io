@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Thu, 07 Oct 2021 02:23:11 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 08:52:46 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用C语言的风格写Java程序</title>
+      <link>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</link>
+      <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</guid>
+      <description>可行性 都说Java是纯面向对象的编程语言，那么能不能在Java中写面向过程风格的代码呢？
+Java中虽然没有指针，但有引用，所以答案显然是可以的。
+风格的区别 先来看两段伪代码：
+C语言风格 struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java风格 Foo foo = new Foo(); foo.changeValue(0); 这同样也能体现面向对象和面向过程两种设计模式的区别。
+两种风格都不错，是吧？
+实际应用中的问题 如果某个方法需要返回两种值，该怎么写程序？
+设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。
+C语言风格 int exec_script(char *script_path, char *output) { int exit_code; // Business logic 	... return exit_code; } Java风格 class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.exitCode = exitCode; this.output = output; } } Result execScript(String scriptPath) { int exitCode; StringBuilder outputBuffer = new StringBuilder(); // Business logic 	.</description>
+    </item>
+    
     <item>
       <title>写给想用Java开发游戏的人的话</title>
       <link>https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/</link>
