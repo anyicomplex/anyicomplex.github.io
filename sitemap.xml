@@ -4,12 +4,22 @@
   
   <url>
     <loc>https://anyicomplex.github.io/categories/</loc>
-    <lastmod>2022-02-13T11:07:57-05:00</lastmod>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anyicomplex.github.io/categories/it/</loc>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://anyicomplex.github.io/posts/</loc>
-    <lastmod>2022-02-13T11:07:57-05:00</lastmod>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/</loc>
+    <lastmod>2022-02-19T09:33:19-05:00</lastmod>
   </url>
   
   <url>
@@ -19,7 +29,7 @@
   
   <url>
     <loc>https://anyicomplex.github.io/tags/</loc>
-    <lastmod>2022-02-13T11:07:57-05:00</lastmod>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
   </url>
   
   <url>
@@ -33,18 +43,13 @@
   </url>
   
   <url>
-    <loc>https://anyicomplex.github.io/categories/it/</loc>
-    <lastmod>2022-02-13T09:37:59-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://anyicomplex.github.io/tags/java/</loc>
-    <lastmod>2022-02-13T09:37:59-05:00</lastmod>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</loc>
-    <lastmod>2022-02-13T09:37:59-05:00</lastmod>
+    <lastmod>2022-02-19T09:36:18-05:00</lastmod>
   </url>
   
   <url>
