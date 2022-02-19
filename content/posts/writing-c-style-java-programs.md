@@ -1,7 +1,8 @@
 ---
 title: "用C语言的风格写Java程序"
+description: "本文仅代表个人观点，欢迎留言讨论"
 date: 2022-02-13T08:52:46-05:00
-lastmod: 2022-02-13T09:37:59-05:00
+lastmod: 2022-02-19T09:36:18-05:00
 draft: false
 tags: [Java, C/C++]
 categories: IT
