@@ -30,7 +30,7 @@ foo.changeValue(0);
 **设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。**
 ### C语言风格
 ```c
-int exec_script(char *script_path, char *output) {
+int exec_script(char *script_path, char **output) {
 	int exit_code;
 	// Business logic
 	...
