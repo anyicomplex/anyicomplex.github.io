@@ -1,7 +1,7 @@
 ---
 title: "个人简介"
 date: 2021-12-08T04:03:38-05:00
-lastmod: 2022-02-09T06:35:08-05:00
+lastmod: 2022-02-20T10:58:10-05:00
 draft: false
 featured_image: "images/avatar.png"
 ---
@@ -9,7 +9,7 @@ featured_image: "images/avatar.png"
 # 基本信息
 * 姓名：安怡
 * 性别：女
-* 生日：2000-12-08+08:00
+* 生日：2000-12-08（GMT+08:00）
 
 # 个人履历
 * 略懂Java、C/C++、Python
