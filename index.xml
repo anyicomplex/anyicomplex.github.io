@@ -139,9 +139,9 @@
 &lt;h2 id=&#34;风格的区别&#34;&gt;风格的区别&lt;/h2&gt;
 &lt;p&gt;先来看两段伪代码：&lt;/p&gt;
 &lt;h3 id=&#34;c语言风格&#34;&gt;C语言风格&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;struct Foo foo;
-change_foo_value(&amp;amp;foo, 0);
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;java风格&#34;&gt;Java风格&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;struct&lt;/span&gt; Foo foo;
+change_foo_value(&amp;amp;foo, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;java风格&#34;&gt;Java风格&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;Foo foo = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Foo();
 foo.&lt;span style=&#34;color:#658b00&#34;&gt;changeValue&lt;/span&gt;(0);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这同样也能体现面向对象和面向过程两种设计模式的区别。&lt;br&gt;
