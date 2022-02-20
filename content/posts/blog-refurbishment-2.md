@@ -1,7 +1,8 @@
 ---
-title: "博客翻新2"
+title: "博客翻新 2"
 description: "这次是大更新"
 date: 2021-12-08T04:41:08-05:00
+lastmod: 2022-02-20T11:28:42-05:00
 draft: false
 categories: 杂记
 ---

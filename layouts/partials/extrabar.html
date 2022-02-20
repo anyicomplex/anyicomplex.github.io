@@ -23,7 +23,7 @@
             </span>
         </a>
         {{ end }}
-        {{ if .Paginator }}
+        {{ if and (not (.IsHome) ) (.Paginator) }}
         {{ if gt .Paginator.TotalPages 1 }}
             <div class="pagination-indicator">
                 <span style="text-align: center">

@@ -1,7 +1,8 @@
 ---
-title: "博客翻新"
+title: "博客翻新 1"
 description: "终于又想起这个博客了"
 date: 2021-12-06T06:56:16-05:00
+lastmod: 2022-02-20T12:06:09-05:00
 draft: false
 categories: 杂记
 ---

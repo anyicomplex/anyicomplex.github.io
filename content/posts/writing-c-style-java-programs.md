@@ -14,7 +14,7 @@ categories: IT
 ## 风格的区别
 先来看两段伪代码：    
 ### C语言风格
-```c
+```
 struct Foo foo;
 change_foo_value(&foo, 0);
 ```

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Wed, 08 Dec 2021 08:17:44 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 11:02:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xlib编程注意事项 1</title>
+      <link>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</link>
+      <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</guid>
+      <description> 谨慎使用XGrabPointer，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）  </description>
+    </item>
+    
     <item>
       <title>使用Linux的理由</title>
       <link>https://anyicomplex.github.io/posts/reasons-to-use-linux/</link>
