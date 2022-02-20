@@ -30,7 +30,7 @@ C语言风格 struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java风格 Foo 
 两种风格都不错，是吧？
 实际应用中的问题 如果某个方法需要返回两种值，该怎么写程序？
 设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。
-C语言风格 int exec_script(char *script_path, char *output) { int exit_code; // Business logic 	... return exit_code; } Java风格 class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.exitCode = exitCode; this.output = output; } } Result execScript(String scriptPath) { int exitCode; StringBuilder outputBuffer = new StringBuilder(); // Business logic 	.</description>
+C语言风格 int exec_script(char *script_path, char **output) { int exit_code; // Business logic 	... return exit_code; } Java风格 class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.exitCode = exitCode; this.output = output; } } Result execScript(String scriptPath) { int exitCode; StringBuilder outputBuffer = new StringBuilder(); // Business logic 	.</description>
     </item>
     
   </channel>

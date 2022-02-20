@@ -733,7 +733,7 @@ foo.<span style="color:#658b00">changeValue</span>(0);
 <p>如果某个方法需要返回两种值，该怎么写程序？<br>
 <strong>设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。</strong></p>
 <h3 id="c语言风格-1">C语言风格</h3>
-<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00688b;font-weight:bold">int</span> <span style="color:#008b45">exec_script</span>(<span style="color:#00688b;font-weight:bold">char</span> *script_path, <span style="color:#00688b;font-weight:bold">char</span> *output) {
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#00688b;font-weight:bold">int</span> <span style="color:#008b45">exec_script</span>(<span style="color:#00688b;font-weight:bold">char</span> *script_path, <span style="color:#00688b;font-weight:bold">char</span> **output) {
 	<span style="color:#00688b;font-weight:bold">int</span> exit_code;
 	<span style="color:#228b22">// Business logic
 </span><span style="color:#228b22"></span>	...
@@ -786,7 +786,7 @@ Result <span style="color:#008b45">execScript</span>(String scriptPath) {
 
                 
                 <a class="newer-posts" href="https://anyicomplex.github.io/posts/week-summary-20220213/">
-			下篇<br>一周总结 | Week Summary 20220213
+			下篇<br>一周总结 20220213
                 </a>
                 
                 
