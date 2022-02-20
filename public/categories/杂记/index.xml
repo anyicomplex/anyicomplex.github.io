@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Wed, 09 Feb 2022 06:18:18 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 11:30:53 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客翻新 3</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment-3/</link>
+      <pubDate>Sun, 20 Feb 2022 11:30:53 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment-3/</guid>
+      <description>上次写博客的时候发现高亮代码的背景是米黄色，我不喜欢这个颜色，所以改了。
+然后是更新了一下主题的版本。</description>
+    </item>
+    
     <item>
       <title>我回来了</title>
       <link>https://anyicomplex.github.io/posts/i-am-back/</link>
@@ -26,11 +36,11 @@
     </item>
     
     <item>
-      <title>博客翻新2</title>
-      <link>https://anyicomplex.github.io/posts/blog-refurbishment2/</link>
+      <title>博客翻新 2</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment-2/</link>
       <pubDate>Wed, 08 Dec 2021 04:41:08 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/posts/blog-refurbishment2/</guid>
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment-2/</guid>
       <description>最近终于被调到有电脑的岗位上了
 先摸鱼为敬
 闲着也是闲着，不如翻新博客:D
@@ -39,11 +49,11 @@
     </item>
     
     <item>
-      <title>博客翻新</title>
-      <link>https://anyicomplex.github.io/posts/blog-refurbishment/</link>
+      <title>博客翻新 1</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment-1/</link>
       <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/posts/blog-refurbishment/</guid>
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment-1/</guid>
       <description>两个月过去了，我又想起这个博客了XD
 于是就&amp;hellip;&amp;hellip;修改了主题，翻新（并没有）了一下，评论系统也从 Utterances 换成了 Gitalk（当然，原来的评论也没有了&amp;gt;_&amp;lt;）
 新的主题：Diary
