@@ -725,9 +725,9 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 <h2 id="风格的区别">风格的区别</h2>
 <p>先来看两段伪代码：</p>
 <h3 id="c语言风格">C语言风格</h3>
-<pre><code>struct Foo foo;
-change_foo_value(&amp;foo, 0);
-</code></pre><h3 id="java风格">Java风格</h3>
+<div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8b008b;font-weight:bold">struct</span> Foo foo;
+change_foo_value(&amp;foo, <span style="color:#b452cd">0</span>);
+</code></pre></div><h3 id="java风格">Java风格</h3>
 <div class="highlight"><pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Foo foo = <span style="color:#8b008b;font-weight:bold">new</span> Foo();
 foo.<span style="color:#658b00">changeValue</span>(0);
 </code></pre></div><p>这同样也能体现面向对象和面向过程两种设计模式的区别。<br>
