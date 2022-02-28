@@ -13,6 +13,35 @@
     
     
         <item>
+        <title>一周总结 20220227</title>
+        <link>https://anyicomplex.github.io/posts/week-summary-20220228/</link>
+        <pubDate>Mon, 28 Feb 2022 17:24:10 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/week-summary-20220228/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220228/ -&lt;h2 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
+&lt;li&gt;下周结束前至少完成游戏 [空间轨迹] demo 的 1/3。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;额外留言&#34;&gt;额外留言&lt;/h2&gt;
+&lt;p&gt;我没料到不使用MFC的win32开发会如此艰难，这直接导致了没能完成规划的任务。&lt;br&gt;
+最近比较忙也是原因之一，甚至两篇博客和周总结都到了第二周的周二才补上。&lt;br&gt;
+我更没料到的是，普京居然真动手打乌克兰了&amp;hellip;&amp;hellip;我也没法为此做什么，自己也没什么钱，人民币又捐不出去，只好给朋友买了一份《这是我的战争》（几天前说什么七天之内的收益都捐给乌克兰来着，给朋友买是因为我很久以前就不玩Steam了）。希望世界还能和平吧。&lt;/p&gt;
+- https://anyicomplex.github.io/posts/week-summary-20220228/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>对C/C&#43;&#43;程序体积的极致裁剪</title>
         <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</link>
         <pubDate>Mon, 28 Feb 2022 15:45:19 -0500</pubDate>
@@ -270,26 +299,6 @@ Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 &lt;p&gt;这让我想到了GNOME社区出品的&lt;a href=&#34;https://wiki.gnome.org/Projects/Vala&#34;&gt;Vala&lt;/a&gt;语言:D&lt;/p&gt;
 - https://anyicomplex.github.io/posts/writing-c-style-java-programs/ - 2021 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>我回来了</title>
-        <link>https://anyicomplex.github.io/posts/i-am-back/</link>
-        <pubDate>Wed, 09 Feb 2022 06:18:18 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/i-am-back/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/i-am-back/ -&lt;p&gt;抱歉，很抱歉，非常抱歉，我食言了&amp;hellip;&amp;hellip;&lt;br&gt;
-上次说会有巨量更新，结果就写了一篇&amp;hellip;&amp;hellip;&lt;br&gt;
-就连过年，我都没发博&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;p&gt;这段时间发生了很多事&amp;hellip;&amp;hellip;&lt;br&gt;
-首先，我玩 &lt;a href=&#34;https://www.miragerealms.co.uk&#34;&gt;Mirage Realms&lt;/a&gt; 玩上瘾了（因为真的很好玩:D）&lt;br&gt;
-然后，我决定用 Java 和 libGDX 开发游戏了（自己打自己的脸，&lt;a href=&#34;https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/&#34;&gt;详情&lt;/a&gt;）还做了一些相关工作（&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt;）&lt;br&gt;
-然后，结交了外国友人 &lt;a href=&#34;https://github.com/Berstanio&#34;&gt;Berstanio&lt;/a&gt;（没猜错的话这位应该是德国人吧）&lt;br&gt;
-最后，在这段赛博时光中，我意识到，我需要有计划，需要有短期目标，需要做很多功课，需要学习很多很多。&lt;/p&gt;
-&lt;p&gt;新的一年，加油！&lt;/p&gt;
-- https://anyicomplex.github.io/posts/i-am-back/ - 2021 © anyicomplex</description>
         </item>
     
     
