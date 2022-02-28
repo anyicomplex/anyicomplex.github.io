@@ -7,22 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Fri, 25 Feb 2022 06:26:14 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 14:24:36 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>杂记</title>
-      <link>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</link>
-      <pubDate>Fri, 25 Feb 2022 06:26:14 -0500</pubDate>
+      <title>IT</title>
+      <link>https://anyicomplex.github.io/categories/it/</link>
+      <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</guid>
+      <guid>https://anyicomplex.github.io/categories/it/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>IT</title>
-      <link>https://anyicomplex.github.io/categories/it/</link>
-      <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
+      <title>政治</title>
+      <link>https://anyicomplex.github.io/categories/%E6%94%BF%E6%B2%BB/</link>
+      <pubDate>Fri, 25 Feb 2022 06:26:14 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/categories/it/</guid>
+      <guid>https://anyicomplex.github.io/categories/%E6%94%BF%E6%B2%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>杂记</title>
+      <link>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</link>
+      <pubDate>Sun, 20 Feb 2022 11:30:53 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/</guid>
       <description></description>
     </item>
     

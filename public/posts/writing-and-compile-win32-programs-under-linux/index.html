@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
 
 
-  <title>无题</title>
+  <title>在Linux下编写和编译win32程序</title>
 
 
 
@@ -15,30 +15,26 @@
 <meta name="google-site-verification" content="">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="">
+<meta name="description" content="我的一次踩坑记录">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:title" content="无题" />
-<meta property="og:description" content="希望乌克兰人民能平安度过这次劫难。
-希望战争能早点结束，不要扩大成世界大战。
-为死难者默哀。" />
+<meta property="og:title" content="在Linux下编写和编译win32程序" />
+<meta property="og:description" content="我的一次踩坑记录" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://anyicomplex.github.io/posts/untitled-1/" />
-<meta property="article:published_time" content="2022-02-25T06:26:14-05:00" />
-<meta property="article:modified_time" content="2022-02-28T15:11:59-05:00" /><meta property="og:site_name" content="安怡的博客" />
+<meta property="og:url" content="https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/" />
+<meta property="article:published_time" content="2022-02-28T14:24:36-05:00" />
+<meta property="article:modified_time" content="2022-02-28T14:24:36-05:00" /><meta property="og:site_name" content="安怡的博客" />
 
 
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="无题"/>
-<meta name="twitter:description" content="希望乌克兰人民能平安度过这次劫难。
-希望战争能早点结束，不要扩大成世界大战。
-为死难者默哀。"/>
+<meta name="twitter:title" content="在Linux下编写和编译win32程序"/>
+<meta name="twitter:description" content="我的一次踩坑记录"/>
 
 
 
@@ -196,6 +192,97 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
     <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
 
 
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e5%8f%af%e8%a1%8c%e6%80%a7" onclick="onNavClick(`#可行性-nav`)" id="可行性-nav">
+									可行性
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85" onclick="onNavClick(`#安装-nav`)" id="安装-nav">
+									安装
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8" onclick="onNavClick(`#使用-nav`)" id="使用-nav">
+									使用
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%80%bb%e7%bb%93" onclick="onNavClick(`#总结-nav`)" id="总结-nav">
+									总结
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
 </div>
     
     
@@ -262,6 +349,97 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
             <div class="toc">
 
 
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e5%8f%af%e8%a1%8c%e6%80%a7" onclick="onNavClick(`#可行性-nav`)" id="可行性-nav">
+									可行性
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85" onclick="onNavClick(`#安装-nav`)" id="安装-nav">
+									安装
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8" onclick="onNavClick(`#使用-nav`)" id="使用-nav">
+									使用
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%80%bb%e7%bb%93" onclick="onNavClick(`#总结-nav`)" id="总结-nav">
+									总结
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
 </div>
             
         </div>
@@ -308,21 +486,40 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                 
             >
                 <div class="post-title">
-                    无题
+                    在Linux下编写和编译win32程序
+                    
+                    <div class="post-subtitle">
+                        我的一次踩坑记录
+                    </div>
                     
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2022-02-25 06:26
+                            2022-02-28 14:24
                         </time>
                         
 
                         
                             <i class="material-icons" style="">folder</i>
-                                <a href="/categories/%E6%94%BF%E6%B2%BB">政治</a>
+                                <a href="/categories/it">IT</a>
                                 &nbsp;
                         
 
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/c/c&#43;&#43;">C/C&#43;&#43;</a>
+                                &nbsp;
+                            
+                                <a href="/tags/windows">Windows</a>
+                                &nbsp;
+                            
+                                <a href="/tags/win32">win32</a>
+                                &nbsp;
+                            
+                                <a href="/tags/linux">Linux</a>
+                                &nbsp;
+                            
                         
                         
                             <i class="material-icons" style="">schedule</i>
@@ -332,7 +529,9 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                             
 
                             
-                            12 s.
+                            3 min
+                            
+                            37 s.
                         
                     </div>
                 </div>
@@ -342,9 +541,22 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                 
                 <div class="post-body" v-pre>
                 
-                    <p>希望乌克兰人民能平安度过这次劫难。<br>
-希望战争能早点结束，不要扩大成世界大战。<br>
-为死难者默哀。</p>
+                    <p><strong>本文所说的“win32”是中国大陆程序员圈子对“winapi”的俗称，不是特指32位“winapi”（别说64位了，自从32位winapi出现，对早期16位的winapi我们也这么叫）。</strong></p>
+<h2 id="可行性">可行性</h2>
+<p>得益于MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用MFC和WPF，但我不建议那么做，如果真要那么做，在Wine下使用MSVC也许会更好一点）</p>
+<p><strong>当然，因为原MinGW项目不支持64位，我这里说的MinGW都是指<a href="https://www.mingw-w64.org">MinGW-w64</a>（和原MinGW不是同一个项目）。</strong></p>
+<h2 id="安装">安装</h2>
+<p>一般而言，主流Linux发行版的软件源都会包含MinGW相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～<strong>详情请参阅 <a href="https://www.mingw-w64.org/downloads/">https://www.mingw-w64.org/downloads/</a></strong></p>
+<p>我现在使用的操作系统是Fedora 35，是参考这篇<a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/">官方文档</a>装的。<br>
+<strong>除非官方文档太烂，否则还是建议跟着官方文档来。</strong></p>
+<h2 id="使用">使用</h2>
+<p><strong>“MinGW不生产工具链，只是GNU工具链的搬运工。”</strong></p>
+<p>除了命令的名称不同以外，其他都和GNU工具链一样，举个例子，编译64位C语言程序，把“gcc”换成“x86_64-w64-mingw32-gcc”即可。<br>
+除编译器以外，MinGW里还有不少其他的工具，用于和编译器配套使用（Linux原装的GNU构建工具无法和MinGW编译器配套使用，或者需要额外配置）。<strong>配置IDE或文本编辑器的时候，一定要把全套工具都换成MinGW的！</strong><br>
+至于具体有哪些工具，我这里就不一一列举了，<strong>安装好后可以在“/usr/bin”目录下搜索“mingw”</strong>。</p>
+<p><strong>头文件和库文件等可以在“/usr/x86_64-w64-mingw32”和“/usr/i686-w64-mingw32”目录下找到。</strong></p>
+<h2 id="总结">总结</h2>
+<p>不使用MFC的win32开发太痛苦了&hellip;&hellip;</p>
 
                     
                     <HR width="100%" id="EOF">
@@ -357,14 +569,14 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
             <nav class="post-pagination">
 
                 
-                <a class="newer-posts" href="https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/">
-			下篇<br>在Linux下编写和编译win32程序
+                <a class="newer-posts">
+			下篇<br>已经到头啦
                 </a>
                 
                 
                 
-                <a class="older-posts" href="https://anyicomplex.github.io/posts/blog-refurbishment-3/">
-			上篇<br>博客翻新 3
+                <a class="older-posts" href="https://anyicomplex.github.io/posts/untitled-1/">
+			上篇<br>无题
                 </a>
                 
             </nav>
