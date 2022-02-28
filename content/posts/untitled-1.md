@@ -1,8 +1,9 @@
 ---
 title: "无题"
 date: 2022-02-25T06:26:14-05:00
+lastmod: 2022-02-28T15:11:59-05:00
 draft: false
-categories: 杂记
+categories: 政治
 ---
 
 希望乌克兰人民能平安度过这次劫难。  
