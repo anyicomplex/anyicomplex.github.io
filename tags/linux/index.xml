@@ -10,10 +10,10 @@
     <lastBuildDate>Mon, 28 Feb 2022 14:24:36 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在Linux下编写和编译win32程序</title>
-      <link>https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/</link>
+      <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
       <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/</guid>
+      <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
       <description>本文所说的“win32”是中国大陆程序员圈子对“winapi”的俗称，不是特指32位“winapi”（别说64位了，自从32位winapi出现，对早期16位的winapi我们也这么叫）。
 可行性 得益于MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用MFC和WPF，但我不建议那么做，如果真要那么做，在Wine下使用MSVC也许会更好一点）
 当然，因为原MinGW项目不支持64位，我这里说的MinGW都是指MinGW-w64（和原MinGW不是同一个项目）。

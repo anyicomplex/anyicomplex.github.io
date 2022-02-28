@@ -7,13 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 14:24:36 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 15:45:19 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对C/C&#43;&#43;程序体积的极致裁剪</title>
+      <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</link>
+      <pubDate>Mon, 28 Feb 2022 15:45:19 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</guid>
+      <description>起因 程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。
+如果你只是写了个功能很有限的小程序，却要拖家带口几十M的运行时，我相信，用户一定会觉得不值得的。
+如果你以“现在硬盘白菜价了”或者“都5G时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。
+方法 1.动态调用运行时 只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。
+*nix 这在*nix平台下不是问题，因为必定包含可用的C/C++运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。
+如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。
+Windows Windows并没有做到程序库方面的模块化，除了一些基本的C/C++运行时库，所以只有减少依赖一种方法。
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的C/C++运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。
+ 使用Visual C++ 6.0
+用VC6.0编译出的C/C++程序，运行时就只有msvcrt.dll这一个库，而这个库从Windows2000起就必定包含在系统中了。 使用MinGW并且不使用C++
+如果不想用VC6.0这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用MinGW并且不使用C++也是一种不错的方案。
+msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msvcrt.dll一个库（C++程序则需要带libstdc++或libc++这种对Windows而言是第三方的C++运行时）。  2.调整编译器参数 我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。
+3.使用压缩壳 UPX、ASPack等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。
+对于这种方法，我的建议是：按自己的需求来。
+总结 写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头5M以下的小工具基本都在用户的可接受范围内吧，而未经压缩的20M～30M的可执行文件压缩一下也基本能到5M以下吧。</description>
+    </item>
+    
     <item>
       <title>在Linux下编写和编译win32程序</title>
-      <link>https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/</link>
+      <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
       <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/posts/writing-and-compile-win32-programs-under-linux/</guid>
+      <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
       <description>本文所说的“win32”是中国大陆程序员圈子对“winapi”的俗称，不是特指32位“winapi”（别说64位了，自从32位winapi出现，对早期16位的winapi我们也这么叫）。
 可行性 得益于MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用MFC和WPF，但我不建议那么做，如果真要那么做，在Wine下使用MSVC也许会更好一点）
 当然，因为原MinGW项目不支持64位，我这里说的MinGW都是指MinGW-w64（和原MinGW不是同一个项目）。
