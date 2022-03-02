@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright>
-    <lastBuildDate>Sun, 20 Feb 2022 11:30:53 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Mar 2022 19:15:44 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客翻新 4</title>
+      <link>https://anyicomplex.github.io/posts/blog-refurbishment-4/</link>
+      <pubDate>Tue, 01 Mar 2022 19:15:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/blog-refurbishment-4/</guid>
+      <description>简单的整理了一下博文，修整了排版和部分有错误的语句。</description>
+    </item>
+    
     <item>
       <title>博客翻新 3</title>
       <link>https://anyicomplex.github.io/posts/blog-refurbishment-3/</link>
@@ -67,7 +76,7 @@
       
       <guid>https://anyicomplex.github.io/posts/hello-world/</guid>
       <description>主题：Github Style （注：这是博客开张时使用的主题，现已更改）
-大概会是日记性质的博客 :D</description>
+大概会是日记性质的博客:D</description>
     </item>
     
   </channel>

@@ -13,93 +13,104 @@
     
     
         <item>
+        <title>博客翻新 4</title>
+        <link>https://anyicomplex.github.io/posts/blog-refurbishment-4/</link>
+        <pubDate>Tue, 01 Mar 2022 19:15:44 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/blog-refurbishment-4/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/blog-refurbishment-4/ -&lt;p&gt;简单的整理了一下博文，修整了排版和部分有错误的语句。&lt;/p&gt;
+- https://anyicomplex.github.io/posts/blog-refurbishment-4/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>一周总结 20220227</title>
         <link>https://anyicomplex.github.io/posts/week-summary-20220227/</link>
         <pubDate>Mon, 28 Feb 2022 17:24:10 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/week-summary-20220227/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220227/ -&lt;h2 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h2&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220227/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h2&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;NONE&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h2&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
 &lt;li&gt;下周结束前至少完成游戏 [空间轨迹] demo 的 1/3。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;额外留言&#34;&gt;额外留言&lt;/h2&gt;
-&lt;p&gt;我没料到不使用MFC的win32开发会如此艰难，这直接导致了没能完成规划的任务。（最近比较忙也是原因之一，甚至两篇博客和周总结都到了第二周的周二才补上。）&lt;br&gt;
-我更没料到的是，普京居然真动手打乌克兰了&amp;hellip;&amp;hellip;我也没法为此做什么，自己也没什么钱，人民币又捐不出去，只好给朋友买了一份《这是我的战争》（几天前说什么七天之内的收益都捐给乌克兰来着，给朋友买是因为我很久以前就不玩Steam了）。希望世界还能和平吧。&lt;/p&gt;
+&lt;h1 id=&#34;额外留言&#34;&gt;额外留言&lt;/h1&gt;
+&lt;p&gt;我没料到不使用 MFC 的 win32 开发会如此艰难，这直接导致了没能完成规划的任务。（最近比较忙也是原因之一，甚至两篇博客和周总结都到了第二周的周二才补上。）&lt;br&gt;
+我更没料到的是，普京居然真动手打乌克兰了&amp;hellip;&amp;hellip;我也没法为此做什么，自己也没什么钱，人民币又捐不出去，只好给朋友买了一份《这是我的战争》（几天前说什么七天之内的收益都捐给乌克兰来着，给朋友买是因为我很久以前就不玩 Steam 了）。希望世界还能和平吧。&lt;/p&gt;
 - https://anyicomplex.github.io/posts/week-summary-20220227/ - 2021 © anyicomplex</description>
         </item>
     
     
     
         <item>
-        <title>对C/C&#43;&#43;程序体积的极致裁剪</title>
-        <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</link>
+        <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
+        <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</link>
         <pubDate>Mon, 28 Feb 2022 15:45:19 -0500</pubDate>
         
-        <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/ -&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+        <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ -&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
 &lt;p&gt;程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。&lt;br&gt;
-如果你只是写了个功能很有限的小程序，却要拖家带口几十M的运行时，我相信，用户一定会觉得不值得的。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;如果你以“现在硬盘白菜价了”或者“都5G时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;方法&#34;&gt;方法&lt;/h2&gt;
-&lt;h3 id=&#34;1动态调用运行时&#34;&gt;1.动态调用运行时&lt;/h3&gt;
+如果你只是写了个功能很有限的小程序，却要拖家带口 几十M 的运行时，我相信，用户一定会觉得不值得的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你以“现在硬盘白菜价了”或者“都 5G 时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;方法&#34;&gt;方法&lt;/h1&gt;
+&lt;h2 id=&#34;1动态调用运行时&#34;&gt;1.动态调用运行时&lt;/h2&gt;
 &lt;p&gt;只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。&lt;/p&gt;
-&lt;h4 id=&#34;nix&#34;&gt;*nix&lt;/h4&gt;
-&lt;p&gt;这在*nix平台下不是问题，因为必定包含可用的C/C++运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。&lt;br&gt;
+&lt;h3 id=&#34;nix&#34;&gt;*nix&lt;/h3&gt;
+&lt;p&gt;这在 *nix 平台下不是问题，因为必定包含可用的 C/C++ 运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。&lt;br&gt;
 如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。&lt;/p&gt;
-&lt;h4 id=&#34;windows&#34;&gt;Windows&lt;/h4&gt;
-&lt;p&gt;Windows并没有做到程序库方面的模块化，除了一些基本的C/C++运行时库，所以只有减少依赖一种方法。&lt;br&gt;
-但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的C/C++运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;使用Visual C++ 6.0&lt;br&gt;
-用VC6.0编译出的C/C++程序，运行时就只有msvcrt.dll这一个库，而这个库从Windows2000起就必定包含在系统中了。&lt;/li&gt;
-&lt;li&gt;使用MinGW并且不使用C++&lt;br&gt;
-如果不想用VC6.0这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用MinGW并且不使用C++也是一种不错的方案。&lt;br&gt;
-msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msvcrt.dll一个库（C++程序则需要带libstdc++或libc++这种对Windows而言是第三方的C++运行时）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2调整编译器参数&#34;&gt;2.调整编译器参数&lt;/h3&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;p&gt;Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。&lt;br&gt;
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。&lt;/p&gt;
+&lt;h4 id=&#34;使用-visual-c-60&#34;&gt;使用 Visual C++ 6.0&lt;/h4&gt;
+&lt;p&gt;用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。&lt;/p&gt;
+&lt;h4 id=&#34;使用-msvcrt-版本的-mingw-并且不使用-c-标准库&#34;&gt;使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库&lt;/h4&gt;
+&lt;p&gt;如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库也是一种不错的方案。&lt;br&gt;
+不使用 C++ 标准库的前提下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。&lt;br&gt;
+C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p&gt;
+&lt;h2 id=&#34;2调整编译器参数&#34;&gt;2.调整编译器参数&lt;/h2&gt;
 &lt;p&gt;我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。&lt;/p&gt;
-&lt;h3 id=&#34;3使用压缩壳&#34;&gt;3.使用压缩壳&lt;/h3&gt;
-&lt;p&gt;UPX、ASPack等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。&lt;br&gt;
+&lt;h2 id=&#34;3使用压缩壳&#34;&gt;3.使用压缩壳&lt;/h2&gt;
+&lt;p&gt;UPX、ASPack 等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。&lt;br&gt;
 对于这种方法，我的建议是：按自己的需求来。&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头5M以下的小工具基本都在用户的可接受范围内吧，而未经压缩的20M～30M的可执行文件压缩一下也基本能到5M以下吧。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/ - 2021 © anyicomplex</description>
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&amp;hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。&lt;/p&gt;
+- https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ - 2021 © anyicomplex</description>
         </item>
     
     
     
         <item>
-        <title>在Linux下编写和编译win32程序</title>
+        <title>在 Linux 下编写和编译 win32 程序</title>
         <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
         <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ -&lt;p&gt;&lt;strong&gt;本文所说的“win32”是中国大陆程序员圈子对“winapi”的俗称，不是特指32位“winapi”（别说64位了，自从32位winapi出现，对早期16位的winapi我们也这么叫）。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;可行性&#34;&gt;可行性&lt;/h2&gt;
-&lt;p&gt;得益于MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用MFC和WPF，但我不建议那么做，如果真要那么做，在Wine下使用MSVC也许会更好一点）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当然，因为原MinGW项目不支持64位，我这里说的MinGW都是指&lt;a href=&#34;https://www.mingw-w64.org&#34;&gt;MinGW-w64&lt;/a&gt;（和原MinGW不是同一个项目）。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
-&lt;p&gt;一般而言，主流Linux发行版的软件源都会包含MinGW相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～&lt;strong&gt;详情请参阅 &lt;a href=&#34;https://www.mingw-w64.org/downloads/&#34;&gt;https://www.mingw-w64.org/downloads/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我现在使用的操作系统是Fedora 35，是参考这篇&lt;a href=&#34;https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/&#34;&gt;官方文档&lt;/a&gt;装的。&lt;br&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ -&lt;p&gt;&lt;strong&gt;本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指32位 winapi（别说64位了，自从32位 winapi 出现，对早期16位的 winapi 我们也这么叫）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;可行性&#34;&gt;可行性&lt;/h1&gt;
+&lt;p&gt;得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当然，因为原 MinGW 项目不支持64位，我这里说的 MinGW 都是指 &lt;a href=&#34;https://www.mingw-w64.org&#34;&gt;MinGW-w64&lt;/a&gt;（和原 MinGW 不是同一个项目）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
+&lt;p&gt;一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～&lt;strong&gt;详情请参阅  &lt;a href=&#34;https://www.mingw-w64.org/downloads/&#34;&gt;https://www.mingw-w64.org/downloads/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我现在使用的操作系统是 Fedora 35，是参考这篇&lt;a href=&#34;https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/&#34;&gt;官方文档&lt;/a&gt;装的。&lt;br&gt;
 &lt;strong&gt;除非官方文档太烂，否则还是建议跟着官方文档来。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;“MinGW不生产工具链，只是GNU工具链的搬运工。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;除了命令的名称不同以外，其他都和GNU工具链一样，举个例子，编译64位C语言程序，把“gcc”换成“x86_64-w64-mingw32-gcc”即可。&lt;br&gt;
-除编译器以外，MinGW里还有不少其他的工具，用于和编译器配套使用（Linux原装的GNU构建工具无法和MinGW编译器配套使用，或者需要额外配置）。&lt;strong&gt;配置IDE或文本编辑器的时候，一定要把全套工具都换成MinGW的！&lt;/strong&gt;&lt;br&gt;
-至于具体有哪些工具，我这里就不一一列举了，&lt;strong&gt;安装好后可以在“/usr/bin”目录下搜索“mingw”&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;头文件和库文件等可以在“/usr/x86_64-w64-mingw32”和“/usr/i686-w64-mingw32”目录下找到。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;不使用MFC的win32开发太痛苦了&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;“MinGW 不生产工具链，只是 GNU 工具链的搬运工。”&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译64位 C 语言程序，把 &lt;code&gt;gcc&lt;/code&gt; 换成 &lt;code&gt;x86_64-w64-mingw32-gcc&lt;/code&gt; 即可。&lt;br&gt;
+除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。&lt;strong&gt;配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！&lt;/strong&gt;&lt;br&gt;
+至于具体有哪些工具，我这里就不一一列举了，&lt;strong&gt;安装好后可以在 &lt;code&gt;/usr/bin&lt;/code&gt; 目录下搜索 &lt;code&gt;mingw&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;头文件和库文件等可以在 &lt;code&gt;/usr/x86_64-w64-mingw32&lt;/code&gt; 和 &lt;code&gt;/usr/i686-w64-mingw32&lt;/code&gt; 目录下找到。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;不使用 MFC 的 win32 开发太痛苦了&amp;hellip;&amp;hellip;&lt;/p&gt;
 - https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021 © anyicomplex</description>
         </item>
     
@@ -133,13 +144,13 @@ msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msv
     
     
         <item>
-        <title>Xlib编程注意事项 1</title>
+        <title>Xlib 编程注意事项 1</title>
         <link>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</link>
         <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</guid>
         <description>安怡的博客 https://anyicomplex.github.io/posts/xlib-programming-notes-1/ -&lt;ul&gt;
-&lt;li&gt;谨慎使用&lt;code&gt;XGrabPointer&lt;/code&gt;，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）&lt;/li&gt;
+&lt;li&gt;谨慎使用 &lt;code&gt;XGrabPointer&lt;/code&gt;，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）&lt;/li&gt;
 &lt;/ul&gt;
 - https://anyicomplex.github.io/posts/xlib-programming-notes-1/ - 2021 © anyicomplex</description>
         </item>
@@ -152,16 +163,16 @@ msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msv
         <pubDate>Sun, 20 Feb 2022 10:56:05 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/week-summary-20220220/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220220/ -&lt;h2 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h2&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220220/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-rc1&amp;hellip;v1.1.3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h2&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;NONE&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h2&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
 &lt;/ul&gt;
@@ -171,36 +182,36 @@ msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msv
     
     
         <item>
-        <title>给C&#43;&#43;初学者的一些建议</title>
+        <title>给 C&#43;&#43; 初学者的一些建议</title>
         <link>https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/</link>
         <pubDate>Sat, 19 Feb 2022 09:33:19 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ -&lt;h3 id=&#34;基础&#34;&gt;基础&lt;/h3&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ -&lt;h1 id=&#34;基础&#34;&gt;基础&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;在学C++之前先学C语言，掌握堆栈等基本概念，并能够熟练使用指针和宏。&lt;/li&gt;
+&lt;li&gt;在学 C++ 之前先学 C 语言，掌握堆栈等基本概念，并能够熟练使用指针和宏。&lt;/li&gt;
 &lt;li&gt;新版本的特性先不要学，哪怕只是用于学习而非生产，也建议只使用长期支持的稳定版本。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;应用&#34;&gt;应用&lt;/h3&gt;
+&lt;h1 id=&#34;应用&#34;&gt;应用&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;先别急着深入学习模板等C++高级特性，对新手而言，把C++当作“带类的C”是最稳妥的使用方法。&lt;/li&gt;
-&lt;li&gt;STL里有的东西就不要去找第三方库了（除非这个库真的比STL的那部分好并且长期有人维护）。&lt;/li&gt;
-&lt;li&gt;Boost可以用，但也仅仅只是可以用，因为坑太多。对新手而言，很多时候难以分辨是自己写的程序的问题还是编译器或Boost的问题（STL就好得多，毕竟Boost是STL的上游）。&lt;/li&gt;
+&lt;li&gt;先别急着深入学习模板等 C++ 高级特性，对新手而言，把 C++ 当作“带类的 C”是最稳妥的使用方法。&lt;/li&gt;
+&lt;li&gt;STL 里有的东西就不要去找第三方库了（除非这个库真的比 STL 的那部分好并且长期有人维护）。&lt;/li&gt;
+&lt;li&gt;Boost 可以用，但也仅仅只是可以用，因为坑太多。对新手而言，很多时候难以分辨是自己写的程序的问题还是编译器或 Boost 的问题（STL 就好得多，毕竟 Boost 是 STL 的上游）。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;编译器&#34;&gt;编译器&lt;/h3&gt;
+&lt;h1 id=&#34;编译器&#34;&gt;编译器&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Windows下不建议使用MSVC以外的编译器，否则坑很多。&lt;/li&gt;
-&lt;li&gt;Linux下Clang和GCC均可，但我一般建议使用GCC。&lt;/li&gt;
-&lt;li&gt;macOS下建议Clang。&lt;/li&gt;
+&lt;li&gt;Windows 下不建议使用 MSVC 以外的编译器，否则坑很多。&lt;/li&gt;
+&lt;li&gt;Linux 下 Clang 和 GCC 均可，但我一般建议使用 GCC。&lt;/li&gt;
+&lt;li&gt;macOS 下建议 Clang。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;ide&#34;&gt;IDE&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;VSCode不是IDE，是文本编辑器，所以不在这个推荐列表内（当然，我推荐它，因为我没钱买IDEA Ultimate却需要写JNI，它帮了大忙:D）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ide&#34;&gt;IDE&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;VSCode 不是 IDE，是文本编辑器，所以不在这个推荐列表内（当然，我推荐它，因为我没钱买 IDEA Ultimate 却需要写 JNI，它帮了大忙:D）。&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Qt开发者可以直接用Qt的工具链。&lt;/li&gt;
-&lt;li&gt;Eclipse和Code::Blocks老用户可以继续用，这两个IDE不是不好，是难以上手，当然对老用户而言没什么问题。&lt;/li&gt;
-&lt;li&gt;Windows下建议Visual Studio和MSVC配合使用，如果用惯了JetBrains系的IDE也可以用CLion，其他不推荐。&lt;/li&gt;
-&lt;li&gt;Linux下，建议CLion，KDE桌面也可以使用KDevelop，但其他桌面不建议（因为KDevelop的依赖会带一大堆KDE的软件包，这也是KDE应用的通病，耦合度太高），GNOME桌面也可以使用GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。&lt;/li&gt;
-&lt;li&gt;macOS下建议XCode，觉得不好用就换AppCode/CLion，其他没有更好的了。&lt;/li&gt;
+&lt;li&gt;Qt 开发者可以直接用 Qt 的工具链。&lt;/li&gt;
+&lt;li&gt;Eclipse 和 Code::Blocks 老用户可以继续用，这两个 IDE 不是不好，是难以上手，当然对老用户而言没什么问题。&lt;/li&gt;
+&lt;li&gt;Windows 下建议 Visual Studio 和 MSVC 配合使用，如果用惯了 JetBrains 系的 IDE 也可以用 CLion，其他不推荐。&lt;/li&gt;
+&lt;li&gt;Linux 下，建议 CLion，KDE 桌面也可以使用 KDevelop，但其他桌面不建议（因为 KDevelop 的依赖会带一大堆 KDE 的软件包，这也是 KDE 应用的通病，耦合度太高），GNOME 桌面也可以使用 GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。&lt;/li&gt;
+&lt;li&gt;macOS 下建议 XCode，如果觉得不好用，就换 AppCode/CLion，其他没有更好的了。&lt;/li&gt;
 &lt;/ul&gt;
 - https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ - 2021 © anyicomplex</description>
         </item>
@@ -213,91 +224,23 @@ msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msv
         <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/week-summary-20220213/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220213/ -&lt;h2 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h2&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220213/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta1&amp;hellip;v1.1.3-beta2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h2&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;NONE&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h2&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;下周把 xdg-utils-java 推进到稳定版本。&lt;/li&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。&lt;/li&gt;
 &lt;/ul&gt;
 - https://anyicomplex.github.io/posts/week-summary-20220213/ - 2021 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>用C语言的风格写Java程序</title>
-        <link>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</link>
-        <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-c-style-java-programs/ -&lt;h2 id=&#34;可行性&#34;&gt;可行性&lt;/h2&gt;
-&lt;p&gt;都说Java是纯面向对象的编程语言，那么能不能在Java中写面向过程风格的代码呢？&lt;br&gt;
-&lt;strong&gt;Java中虽然没有指针，但有引用，所以答案显然是可以的。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;风格的区别&#34;&gt;风格的区别&lt;/h2&gt;
-&lt;p&gt;先来看两段伪代码：&lt;/p&gt;
-&lt;h3 id=&#34;c语言风格&#34;&gt;C语言风格&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;struct&lt;/span&gt; Foo foo;
-change_foo_value(&amp;amp;foo, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;java风格&#34;&gt;Java风格&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;Foo foo = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Foo();
-foo.&lt;span style=&#34;color:#658b00&#34;&gt;changeValue&lt;/span&gt;(0);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这同样也能体现面向对象和面向过程两种设计模式的区别。&lt;br&gt;
-两种风格都不错，是吧？&lt;/p&gt;
-&lt;h2 id=&#34;实际应用中的问题&#34;&gt;实际应用中的问题&lt;/h2&gt;
-&lt;p&gt;如果某个方法需要返回两种值，该怎么写程序？&lt;br&gt;
-&lt;strong&gt;设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;c语言风格-1&#34;&gt;C语言风格&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;exec_script&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; *script_path, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; **output) {
-	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exit_code;
-	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exit_code;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;java风格-1&#34;&gt;Java风格&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;Result&lt;/span&gt; {
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; String output;
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;Result&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode, String output) {
-		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;exitCode&lt;/span&gt; = exitCode;
-		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;output&lt;/span&gt; = output;
-	}
-}
-
-Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath) {
-	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
-	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
-	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Result(exitCode, outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;());
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果不想在Java中为这个方法新定义一个类，这时候该怎么办呢？&lt;br&gt;
-也许我们可以借鉴一下C语言的风格：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, StringBuilder output) {
-	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
-	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exitCode;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或者这样：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;String &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt;[] exitCode) {
-	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
-	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
-&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
-	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;();
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-&lt;p&gt;这让我想到了GNOME社区出品的&lt;a href=&#34;https://wiki.gnome.org/Projects/Vala&#34;&gt;Vala&lt;/a&gt;语言:D&lt;/p&gt;
-- https://anyicomplex.github.io/posts/writing-c-style-java-programs/ - 2021 © anyicomplex</description>
         </item>
     
     
