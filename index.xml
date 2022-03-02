@@ -71,9 +71,9 @@
 &lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
 &lt;p&gt;Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。&lt;br&gt;
 但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。&lt;/p&gt;
-&lt;h4 id=&#34;使用-visual-c-60&#34;&gt;使用 Visual C++ 6.0&lt;/h4&gt;
+&lt;h4 id=&#34;1使用-visual-c-60&#34;&gt;1.使用 Visual C++ 6.0&lt;/h4&gt;
 &lt;p&gt;用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。&lt;/p&gt;
-&lt;h4 id=&#34;使用-msvcrt-版本的-mingw-并且不使用-c-标准库&#34;&gt;使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库&lt;/h4&gt;
+&lt;h4 id=&#34;2使用-msvcrt-版本的-mingw-并且不使用-c-标准库&#34;&gt;2.使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库&lt;/h4&gt;
 &lt;p&gt;如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库也是一种不错的方案。&lt;br&gt;
 不使用 C++ 标准库的前提下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。&lt;br&gt;
 C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p&gt;
