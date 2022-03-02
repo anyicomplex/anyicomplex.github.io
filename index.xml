@@ -5,7 +5,7 @@
     <description>Recent content in 个人简介 on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>2021 © anyicomplex</copyright>
+    <copyright>2021-2022 © anyicomplex</copyright>
     <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
     
         <atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +21,7 @@
         <description>安怡的博客 https://anyicomplex.github.io/posts/miscellaneous-note-1/ -&lt;p&gt;昨晚睡得早，今早起床就早，想着既然起得早不如做点什么，就用 GIMP 画新头像。&lt;br&gt;
 没有边画边保存。忽然，GIMP 崩了，连着桌面一起崩了，然后&amp;hellip;&amp;hellip;两小时的成果，就没了QwQ。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这件事情告诉我们，工作时要及时保存项目，否则遇到突发情况只能欲哭无泪&amp;hellip;&amp;hellip;数据无价！&lt;/strong&gt;&lt;/p&gt;
-- https://anyicomplex.github.io/posts/miscellaneous-note-1/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/miscellaneous-note-1/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -33,7 +33,7 @@
         
         <guid>https://anyicomplex.github.io/posts/blog-refurbishment-4/</guid>
         <description>安怡的博客 https://anyicomplex.github.io/posts/blog-refurbishment-4/ -&lt;p&gt;简单的整理了一下博文，修整了排版和部分有错误的语句。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/blog-refurbishment-4/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/blog-refurbishment-4/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -61,7 +61,7 @@
 &lt;h1 id=&#34;额外留言&#34;&gt;额外留言&lt;/h1&gt;
 &lt;p&gt;我没料到不使用 MFC 的 win32 开发会如此艰难，这直接导致了没能完成规划的任务。（最近比较忙也是原因之一，甚至两篇博客和周总结都到了第二周的周二才补上。）&lt;br&gt;
 我更没料到的是，普京居然真动手打乌克兰了&amp;hellip;&amp;hellip;我也没法为此做什么，自己也没什么钱，人民币又捐不出去，只好给朋友买了一份《这是我的战争》（几天前说什么七天之内的收益都捐给乌克兰来着，给朋友买是因为我很久以前就不玩 Steam 了）。希望世界还能和平吧。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/week-summary-20220227/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/week-summary-20220227/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -98,7 +98,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
 对于这种方法，我的建议是：按自己的需求来。&lt;/p&gt;
 &lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&amp;hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -109,23 +109,23 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
         <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
         
         <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ -&lt;p&gt;&lt;strong&gt;本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指32位 winapi（别说64位了，自从32位 winapi 出现，对早期16位的 winapi 我们也这么叫）。&lt;/strong&gt;&lt;/p&gt;
+        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ -&lt;p&gt;&lt;strong&gt;本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指 32 位 winapi（别说 64 位了，自从 32 位 winapi 出现，对早期 16 位的 winapi 我们也这么叫）。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;可行性&#34;&gt;可行性&lt;/h1&gt;
 &lt;p&gt;得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当然，因为原 MinGW 项目不支持64位，我这里说的 MinGW 都是指 &lt;a href=&#34;https://www.mingw-w64.org&#34;&gt;MinGW-w64&lt;/a&gt;（和原 MinGW 不是同一个项目）。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;当然，因为原 MinGW 项目不支持 64 位，我这里说的 MinGW 都是指 &lt;a href=&#34;https://www.mingw-w64.org&#34;&gt;MinGW-w64&lt;/a&gt;（和原 MinGW 不是同一个项目）。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
 &lt;p&gt;一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～&lt;strong&gt;详情请参阅  &lt;a href=&#34;https://www.mingw-w64.org/downloads/&#34;&gt;https://www.mingw-w64.org/downloads/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;我现在使用的操作系统是 Fedora 35，是参考这篇&lt;a href=&#34;https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/&#34;&gt;官方文档&lt;/a&gt;装的。&lt;br&gt;
 &lt;strong&gt;除非官方文档太烂，否则还是建议跟着官方文档来。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;“MinGW 不生产工具链，只是 GNU 工具链的搬运工。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译64位 C 语言程序，把 &lt;code&gt;gcc&lt;/code&gt; 换成 &lt;code&gt;x86_64-w64-mingw32-gcc&lt;/code&gt; 即可。&lt;br&gt;
+&lt;p&gt;除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译 64 位 C 语言程序，把 &lt;code&gt;gcc&lt;/code&gt; 换成 &lt;code&gt;x86_64-w64-mingw32-gcc&lt;/code&gt; 即可。&lt;br&gt;
 除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。&lt;strong&gt;配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！&lt;/strong&gt;&lt;br&gt;
 至于具体有哪些工具，我这里就不一一列举了，&lt;strong&gt;安装好后可以在 &lt;code&gt;/usr/bin&lt;/code&gt; 目录下搜索 &lt;code&gt;mingw&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;头文件和库文件等可以在 &lt;code&gt;/usr/x86_64-w64-mingw32&lt;/code&gt; 和 &lt;code&gt;/usr/i686-w64-mingw32&lt;/code&gt; 目录下找到。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;不使用 MFC 的 win32 开发太痛苦了&amp;hellip;&amp;hellip;&lt;/p&gt;
-- https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -139,7 +139,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
         <description>安怡的博客 https://anyicomplex.github.io/posts/untitled-1/ -&lt;p&gt;希望乌克兰人民能平安度过这次劫难。&lt;br&gt;
 希望战争能早点结束，不要扩大成世界大战。&lt;br&gt;
 为死难者默哀。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/untitled-1/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/untitled-1/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -152,7 +152,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
         <guid>https://anyicomplex.github.io/posts/blog-refurbishment-3/</guid>
         <description>安怡的博客 https://anyicomplex.github.io/posts/blog-refurbishment-3/ -&lt;p&gt;上次写博客的时候发现高亮代码的背景是米黄色，我不喜欢这个颜色，所以改了。&lt;br&gt;
 然后是更新了一下主题的版本。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/blog-refurbishment-3/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/blog-refurbishment-3/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -166,7 +166,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
         <description>安怡的博客 https://anyicomplex.github.io/posts/xlib-programming-notes-1/ -&lt;ul&gt;
 &lt;li&gt;谨慎使用 &lt;code&gt;XGrabPointer&lt;/code&gt;，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/xlib-programming-notes-1/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/xlib-programming-notes-1/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -190,7 +190,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
 &lt;ul&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/week-summary-20220220/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/week-summary-20220220/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
@@ -227,7 +227,7 @@ C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。&lt;/p
 &lt;li&gt;Linux 下，建议 CLion，KDE 桌面也可以使用 KDevelop，但其他桌面不建议（因为 KDevelop 的依赖会带一大堆 KDE 的软件包，这也是 KDE 应用的通病，耦合度太高），GNOME 桌面也可以使用 GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。&lt;/li&gt;
 &lt;li&gt;macOS 下建议 XCode，如果觉得不好用，就换 AppCode/CLion，其他没有更好的了。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ - 2021 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
