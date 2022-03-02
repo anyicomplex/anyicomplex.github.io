@@ -13,6 +13,33 @@
     
     
         <item>
+        <title>一周总结 20220213</title>
+        <link>https://anyicomplex.github.io/posts/week-summary-20220213/</link>
+        <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/week-summary-20220213/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/week-summary-20220213/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta1&amp;hellip;v1.1.3-beta2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;下周把 xdg-utils-java 推进到稳定版本。&lt;/li&gt;
+&lt;li&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/posts/week-summary-20220213/ - 2021 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>用 C 语言的风格写 Java 程序</title>
         <link>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</link>
         <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
