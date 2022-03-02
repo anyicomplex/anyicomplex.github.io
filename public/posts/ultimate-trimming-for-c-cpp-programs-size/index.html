@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
 
 
-  <title>对C/C&#43;&#43;程序体积的极致裁剪</title>
+  <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
 
 
 
@@ -21,19 +21,19 @@
 
 
 
-<meta property="og:title" content="对C/C&#43;&#43;程序体积的极致裁剪" />
+<meta property="og:title" content="对 C/C&#43;&#43; 程序体积的极致裁剪" />
 <meta property="og:description" content="本文仅代表个人观点，欢迎留言讨论" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/" />
+<meta property="og:url" content="https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/" />
 <meta property="article:published_time" content="2022-02-28T15:45:19-05:00" />
-<meta property="article:modified_time" content="2022-02-28T15:45:19-05:00" /><meta property="og:site_name" content="安怡的博客" />
+<meta property="article:modified_time" content="2022-03-01T18:54:33-05:00" /><meta property="og:site_name" content="安怡的博客" />
 
 
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="对C/C&#43;&#43;程序体积的极致裁剪"/>
+<meta name="twitter:title" content="对 C/C&#43;&#43; 程序体积的极致裁剪"/>
 <meta name="twitter:description" content="本文仅代表个人观点，欢迎留言讨论"/>
 
 
@@ -209,12 +209,6 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 						
-							
-								
-									<ul>
-								
-							
-						
 						
 							<li>
 								<a href="#%e8%b5%b7%e5%9b%a0" onclick="onNavClick(`#起因-nav`)" id="起因-nav">
@@ -316,6 +310,50 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-visual-c-60" onclick="onNavClick(`#使用-visual-c-60-nav`)" id="使用-visual-c-60-nav">
+									使用 Visual C&#43;&#43; 6.0
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-msvcrt-%e7%89%88%e6%9c%ac%e7%9a%84-mingw-%e5%b9%b6%e4%b8%94%e4%b8%8d%e4%bd%bf%e7%94%a8-c-%e6%a0%87%e5%87%86%e5%ba%93" onclick="onNavClick(`#使用-msvcrt-版本的-mingw-并且不使用-c-标准库-nav`)" id="使用-msvcrt-版本的-mingw-并且不使用-c-标准库-nav">
+									使用 msvcrt 版本的 MinGW 并且不使用 C&#43;&#43; 标准库
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
 							
 								</ul>
 							
@@ -363,8 +401,8 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 							<li>
-								<a href="#%e6%80%bb%e7%bb%93" onclick="onNavClick(`#总结-nav`)" id="总结-nav">
-									总结
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
 								</a>
 							</li>
 						
@@ -458,12 +496,6 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 						
-							
-								
-									<ul>
-								
-							
-						
 						
 							<li>
 								<a href="#%e8%b5%b7%e5%9b%a0" onclick="onNavClick(`#起因-nav`)" id="起因-nav">
@@ -565,6 +597,50 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-visual-c-60" onclick="onNavClick(`#使用-visual-c-60-nav`)" id="使用-visual-c-60-nav">
+									使用 Visual C&#43;&#43; 6.0
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8-msvcrt-%e7%89%88%e6%9c%ac%e7%9a%84-mingw-%e5%b9%b6%e4%b8%94%e4%b8%8d%e4%bd%bf%e7%94%a8-c-%e6%a0%87%e5%87%86%e5%ba%93" onclick="onNavClick(`#使用-msvcrt-版本的-mingw-并且不使用-c-标准库-nav`)" id="使用-msvcrt-版本的-mingw-并且不使用-c-标准库-nav">
+									使用 msvcrt 版本的 MinGW 并且不使用 C&#43;&#43; 标准库
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
 							
 								</ul>
 							
@@ -612,8 +688,8 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
 						
 						
 							<li>
-								<a href="#%e6%80%bb%e7%bb%93" onclick="onNavClick(`#总结-nav`)" id="总结-nav">
-									总结
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
 								</a>
 							</li>
 						
@@ -670,7 +746,7 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                 
             >
                 <div class="post-title">
-                    对C/C&#43;&#43;程序体积的极致裁剪
+                    对 C/C&#43;&#43; 程序体积的极致裁剪
                     
                     <div class="post-subtitle">
                         本文仅代表个人观点，欢迎留言讨论
@@ -704,9 +780,9 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                             
 
                             
-                            4 min
+                            3 min
                             
-                            21 s.
+                            54 s.
                         
                     </div>
                 </div>
@@ -716,37 +792,36 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
                 
                 <div class="post-body" v-pre>
                 
-                    <h2 id="起因">起因</h2>
+                    <h1 id="起因">起因</h1>
 <p>程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。<br>
-如果你只是写了个功能很有限的小程序，却要拖家带口几十M的运行时，我相信，用户一定会觉得不值得的。</p>
-<p><strong>如果你以“现在硬盘白菜价了”或者“都5G时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。</strong></p>
-<h2 id="方法">方法</h2>
-<h3 id="1动态调用运行时">1.动态调用运行时</h3>
+如果你只是写了个功能很有限的小程序，却要拖家带口 几十M 的运行时，我相信，用户一定会觉得不值得的。</p>
+<p><strong>如果你以“现在硬盘白菜价了”或者“都 5G 时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。</strong></p>
+<h1 id="方法">方法</h1>
+<h2 id="1动态调用运行时">1.动态调用运行时</h2>
 <p>只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。</p>
-<h4 id="nix">*nix</h4>
-<p>这在*nix平台下不是问题，因为必定包含可用的C/C++运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。<br>
+<h3 id="nix">*nix</h3>
+<p>这在 *nix 平台下不是问题，因为必定包含可用的 C/C++ 运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。<br>
 如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。</p>
-<h4 id="windows">Windows</h4>
-<p>Windows并没有做到程序库方面的模块化，除了一些基本的C/C++运行时库，所以只有减少依赖一种方法。<br>
-但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的C/C++运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。</p>
-<ul>
-<li>使用Visual C++ 6.0<br>
-用VC6.0编译出的C/C++程序，运行时就只有msvcrt.dll这一个库，而这个库从Windows2000起就必定包含在系统中了。</li>
-<li>使用MinGW并且不使用C++<br>
-如果不想用VC6.0这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用MinGW并且不使用C++也是一种不错的方案。<br>
-msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msvcrt.dll一个库（C++程序则需要带libstdc++或libc++这种对Windows而言是第三方的C++运行时）。</li>
-</ul>
-<h3 id="2调整编译器参数">2.调整编译器参数</h3>
+<h3 id="windows">Windows</h3>
+<p>Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。<br>
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。</p>
+<h4 id="使用-visual-c-60">使用 Visual C++ 6.0</h4>
+<p>用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。</p>
+<h4 id="使用-msvcrt-版本的-mingw-并且不使用-c-标准库">使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库</h4>
+<p>如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库也是一种不错的方案。<br>
+不使用 C++ 标准库的前提下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。<br>
+C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。</p>
+<h2 id="2调整编译器参数">2.调整编译器参数</h2>
 <p>我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。</p>
-<h3 id="3使用压缩壳">3.使用压缩壳</h3>
-<p>UPX、ASPack等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。<br>
+<h2 id="3使用压缩壳">3.使用压缩壳</h2>
+<p>UPX、ASPack 等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。<br>
 对于这种方法，我的建议是：按自己的需求来。</p>
-<h2 id="总结">总结</h2>
-<p>写完之后再想想，实际上现在真没必要这么抠&hellip;&hellip;这年头5M以下的小工具基本都在用户的可接受范围内吧，而未经压缩的20M～30M的可执行文件压缩一下也基本能到5M以下吧。</p>
+<h1 id="感想">感想</h1>
+<p>写完之后再想想，实际上现在真没必要这么抠&hellip;&hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。</p>
 
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">最后修改于 2022-02-28</p>
+		    <p style="color:#777;">最后修改于 2022-03-01</p>
                     
                 </div>
             </div>
@@ -762,7 +837,7 @@ msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msv
                 
                 
                 <a class="older-posts" href="https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/">
-			上篇<br>在Linux下编写和编译win32程序
+			上篇<br>在 Linux 下编写和编译 win32 程序
                 </a>
                 
             </nav>

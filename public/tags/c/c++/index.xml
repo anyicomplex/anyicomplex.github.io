@@ -8,81 +8,76 @@
     <language>zh-cn</language>
     <copyright>2021 © anyicomplex</copyright><atom:link href="https://anyicomplex.github.io/tags/c/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>对C/C&#43;&#43;程序体积的极致裁剪</title>
-      <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</link>
+      <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
+      <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</link>
       <pubDate>Mon, 28 Feb 2022 15:45:19 -0500</pubDate>
       
-      <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-c&#43;&#43;-programs-size/</guid>
+      <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</guid>
       <description>起因 程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。
-如果你只是写了个功能很有限的小程序，却要拖家带口几十M的运行时，我相信，用户一定会觉得不值得的。
-如果你以“现在硬盘白菜价了”或者“都5G时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。
+如果你只是写了个功能很有限的小程序，却要拖家带口 几十M 的运行时，我相信，用户一定会觉得不值得的。
+如果你以“现在硬盘白菜价了”或者“都 5G 时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。
 方法 1.动态调用运行时 只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。
-*nix 这在*nix平台下不是问题，因为必定包含可用的C/C++运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。
+*nix 这在 *nix 平台下不是问题，因为必定包含可用的 C/C++ 运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。
 如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。
-Windows Windows并没有做到程序库方面的模块化，除了一些基本的C/C++运行时库，所以只有减少依赖一种方法。
-但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的C/C++运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。
- 使用Visual C++ 6.0
-用VC6.0编译出的C/C++程序，运行时就只有msvcrt.dll这一个库，而这个库从Windows2000起就必定包含在系统中了。 使用MinGW并且不使用C++
-如果不想用VC6.0这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用MinGW并且不使用C++也是一种不错的方案。
-msvcrt版本的MinGW编译出的C语言程序和VC6.0一样，运行时只有msvcrt.dll一个库（C++程序则需要带libstdc++或libc++这种对Windows而言是第三方的C++运行时）。  2.调整编译器参数 我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。
-3.使用压缩壳 UPX、ASPack等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。
-对于这种方法，我的建议是：按自己的需求来。
-总结 写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头5M以下的小工具基本都在用户的可接受范围内吧，而未经压缩的20M～30M的可执行文件压缩一下也基本能到5M以下吧。</description>
+Windows Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。
+使用 Visual C++ 6.0 用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。
+使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库 如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 C++ 标准库也是一种不错的方案。
+不使用 C++ 标准库的前提下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。
+C++ 标准库可以用 Boost 等库替代，或者干脆只用 C 语言。</description>
     </item>
     
     <item>
-      <title>在Linux下编写和编译win32程序</title>
+      <title>在 Linux 下编写和编译 win32 程序</title>
       <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
       <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
-      <description>本文所说的“win32”是中国大陆程序员圈子对“winapi”的俗称，不是特指32位“winapi”（别说64位了，自从32位winapi出现，对早期16位的winapi我们也这么叫）。
-可行性 得益于MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用MFC和WPF，但我不建议那么做，如果真要那么做，在Wine下使用MSVC也许会更好一点）
-当然，因为原MinGW项目不支持64位，我这里说的MinGW都是指MinGW-w64（和原MinGW不是同一个项目）。
-安装 一般而言，主流Linux发行版的软件源都会包含MinGW相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～详情请参阅 https://www.mingw-w64.org/downloads/
-我现在使用的操作系统是Fedora 35，是参考这篇官方文档装的。
+      <description>本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指32位 winapi（别说64位了，自从32位 winapi 出现，对早期16位的 winapi 我们也这么叫）。
+可行性 得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）
+当然，因为原 MinGW 项目不支持64位，我这里说的 MinGW 都是指 MinGW-w64（和原 MinGW 不是同一个项目）。
+安装 一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～详情请参阅 https://www.mingw-w64.org/downloads/
+我现在使用的操作系统是 Fedora 35，是参考这篇官方文档装的。
 除非官方文档太烂，否则还是建议跟着官方文档来。
-使用 “MinGW不生产工具链，只是GNU工具链的搬运工。”
-除了命令的名称不同以外，其他都和GNU工具链一样，举个例子，编译64位C语言程序，把“gcc”换成“x86_64-w64-mingw32-gcc”即可。
-除编译器以外，MinGW里还有不少其他的工具，用于和编译器配套使用（Linux原装的GNU构建工具无法和MinGW编译器配套使用，或者需要额外配置）。配置IDE或文本编辑器的时候，一定要把全套工具都换成MinGW的！
-至于具体有哪些工具，我这里就不一一列举了，安装好后可以在“/usr/bin”目录下搜索“mingw”。
-头文件和库文件等可以在“/usr/x86_64-w64-mingw32”和“/usr/i686-w64-mingw32”目录下找到。
-总结 不使用MFC的win32开发太痛苦了&amp;hellip;&amp;hellip;</description>
+使用 “MinGW 不生产工具链，只是 GNU 工具链的搬运工。”
+除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译64位 C 语言程序，把 gcc 换成 x86_64-w64-mingw32-gcc 即可。
+除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！
+至于具体有哪些工具，我这里就不一一列举了，安装好后可以在 /usr/bin 目录下搜索 mingw。</description>
     </item>
     
     <item>
-      <title>Xlib编程注意事项 1</title>
+      <title>Xlib 编程注意事项 1</title>
       <link>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</link>
       <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/xlib-programming-notes-1/</guid>
-      <description> 谨慎使用XGrabPointer，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）  </description>
+      <description> 谨慎使用 XGrabPointer，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）  </description>
     </item>
     
     <item>
-      <title>给C&#43;&#43;初学者的一些建议</title>
+      <title>给 C&#43;&#43; 初学者的一些建议</title>
       <link>https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/</link>
       <pubDate>Sat, 19 Feb 2022 09:33:19 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/</guid>
-      <description>基础  在学C++之前先学C语言，掌握堆栈等基本概念，并能够熟练使用指针和宏。 新版本的特性先不要学，哪怕只是用于学习而非生产，也建议只使用长期支持的稳定版本。  应用  先别急着深入学习模板等C++高级特性，对新手而言，把C++当作“带类的C”是最稳妥的使用方法。 STL里有的东西就不要去找第三方库了（除非这个库真的比STL的那部分好并且长期有人维护）。 Boost可以用，但也仅仅只是可以用，因为坑太多。对新手而言，很多时候难以分辨是自己写的程序的问题还是编译器或Boost的问题（STL就好得多，毕竟Boost是STL的上游）。  编译器  Windows下不建议使用MSVC以外的编译器，否则坑很多。 Linux下Clang和GCC均可，但我一般建议使用GCC。 macOS下建议Clang。  IDE VSCode不是IDE，是文本编辑器，所以不在这个推荐列表内（当然，我推荐它，因为我没钱买IDEA Ultimate却需要写JNI，它帮了大忙:D）。
- Qt开发者可以直接用Qt的工具链。 Eclipse和Code::Blocks老用户可以继续用，这两个IDE不是不好，是难以上手，当然对老用户而言没什么问题。 Windows下建议Visual Studio和MSVC配合使用，如果用惯了JetBrains系的IDE也可以用CLion，其他不推荐。 Linux下，建议CLion，KDE桌面也可以使用KDevelop，但其他桌面不建议（因为KDevelop的依赖会带一大堆KDE的软件包，这也是KDE应用的通病，耦合度太高），GNOME桌面也可以使用GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。 macOS下建议XCode，觉得不好用就换AppCode/CLion，其他没有更好的了。  </description>
+      <description>基础  在学 C++ 之前先学 C 语言，掌握堆栈等基本概念，并能够熟练使用指针和宏。 新版本的特性先不要学，哪怕只是用于学习而非生产，也建议只使用长期支持的稳定版本。  应用  先别急着深入学习模板等 C++ 高级特性，对新手而言，把 C++ 当作“带类的 C”是最稳妥的使用方法。 STL 里有的东西就不要去找第三方库了（除非这个库真的比 STL 的那部分好并且长期有人维护）。 Boost 可以用，但也仅仅只是可以用，因为坑太多。对新手而言，很多时候难以分辨是自己写的程序的问题还是编译器或 Boost 的问题（STL 就好得多，毕竟 Boost 是 STL 的上游）。  编译器  Windows 下不建议使用 MSVC 以外的编译器，否则坑很多。 Linux 下 Clang 和 GCC 均可，但我一般建议使用 GCC。 macOS 下建议 Clang。  IDE VSCode 不是 IDE，是文本编辑器，所以不在这个推荐列表内（当然，我推荐它，因为我没钱买 IDEA Ultimate 却需要写 JNI，它帮了大忙:D）。
+ Qt 开发者可以直接用 Qt 的工具链。 Eclipse 和 Code::Blocks 老用户可以继续用，这两个 IDE 不是不好，是难以上手，当然对老用户而言没什么问题。 Windows 下建议 Visual Studio 和 MSVC 配合使用，如果用惯了 JetBrains 系的 IDE 也可以用 CLion，其他不推荐。 Linux 下，建议 CLion，KDE 桌面也可以使用 KDevelop，但其他桌面不建议（因为 KDevelop 的依赖会带一大堆 KDE 的软件包，这也是 KDE 应用的通病，耦合度太高），GNOME 桌面也可以使用 GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。 macOS 下建议 XCode，如果觉得不好用，就换 AppCode/CLion，其他没有更好的了。  </description>
     </item>
     
     <item>
-      <title>用C语言的风格写Java程序</title>
+      <title>用 C 语言的风格写 Java 程序</title>
       <link>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</link>
       <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/posts/writing-c-style-java-programs/</guid>
-      <description>可行性 都说Java是纯面向对象的编程语言，那么能不能在Java中写面向过程风格的代码呢？
-Java中虽然没有指针，但有引用，所以答案显然是可以的。
+      <description>可行性 都说 Java 是纯面向对象的编程语言，那么能不能在 Java 中写面向过程风格的代码呢？
+Java 中虽然没有指针，但有引用，所以答案显然是可以的。
 风格的区别 先来看两段伪代码：
-C语言风格 struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java风格 Foo foo = new Foo(); foo.changeValue(0); 这同样也能体现面向对象和面向过程两种设计模式的区别。
+C 语言风格 struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java 风格 Foo foo = new Foo(); foo.changeValue(0); 这同样也能体现面向对象和面向过程两种设计模式的区别。
 两种风格都不错，是吧？
 实际应用中的问题 如果某个方法需要返回两种值，该怎么写程序？
-设需求为：用程序启动Shell脚本，获取脚本的返回值和输出。
-C语言风格 int exec_script(char *script_path, char **output) { int exit_code; // Business logic 	... return exit_code; } Java风格 class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.exitCode = exitCode; this.output = output; } } Result execScript(String scriptPath) { int exitCode; StringBuilder outputBuffer = new StringBuilder(); // Business logic 	.</description>
+设需求为：用程序启动 Shell 脚本，获取脚本的返回值和输出。
+C 语言风格 int exec_script(char *script_path, char **output) { int exit_code; // Business logic 	... return exit_code; } Java 风格 class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.exitCode = exitCode; this.</description>
     </item>
     
   </channel>
