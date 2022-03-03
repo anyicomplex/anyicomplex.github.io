@@ -1,6 +1,5 @@
 ---
 title: "真正意义上的杂记 1"
-description: "心塞"
 date: 2022-03-01T19:40:44-05:00
 draft: false
 categories: 杂记
