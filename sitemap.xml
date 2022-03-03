@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://anyicomplex.github.io/categories/</loc>
-    <lastmod>2022-03-01T19:40:44-05:00</lastmod>
+    <loc>https://anyicomplex.github.io/posts/</loc>
+    <lastmod>2022-03-02T23:07:01-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anyicomplex.github.io/posts/</loc>
+    <loc>https://anyicomplex.github.io/posts/miscellaneous-note-2/</loc>
+    <lastmod>2022-03-02T23:07:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anyicomplex.github.io/categories/</loc>
     <lastmod>2022-03-01T19:40:44-05:00</lastmod>
   </url>
   
