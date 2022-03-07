@@ -2,6 +2,7 @@
 title: "真正意义上的杂记 2"
 date: 2022-03-02T23:07:01-05:00
 draft: false
+categories: 杂记
 ---
 
 新头像（？）  
