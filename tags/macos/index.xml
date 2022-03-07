@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>操作系统 on 安怡的博客</title>
-    <link>https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
-    <description>Recent content in 操作系统 on 安怡的博客</description>
+    <title>macOS on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/tags/macos/</link>
+    <description>Recent content in macOS on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021-2022 © anyicomplex</copyright>
-    <lastBuildDate>Mon, 07 Mar 2022 00:00:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Mar 2022 00:00:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>操作系统推荐（服务器篇）</title>
       <link>https://anyicomplex.github.io/posts/operating-system-recommendations-for-servers/</link>
@@ -70,15 +70,6 @@ Objective-C/Swift 程序员 macOS Apple 的东西几乎只在它自己的生态�
 其他程序员 滚动更新版的 Linux/FreeBSD 在对程序员的友好程度上，Linux 远超 Windows 和 macOS，正如 Windows 对游戏玩家友好，macOS 对设计师友好一样。
 滚动更新是为了获取最新的程序库和开发工具，对开发者而言这是很重要的。
 有开源洁癖/注重隐私保护的人 完全开源的 Linux/BSD 部分 Linux 并非完全开源，例如 Ubuntu，内置部分闭源软件。擦亮眼睛，选好发行版！</description>
-    </item>
-    
-    <item>
-      <title>使用 Linux 的理由</title>
-      <link>https://anyicomplex.github.io/posts/reasons-to-use-linux/</link>
-      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
-      
-      <guid>https://anyicomplex.github.io/posts/reasons-to-use-linux/</guid>
-      <description>1.轻量级 （以 x86_64 操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内）    操作系统 最低 CPU 需求 最低内存需求 最低储存需求     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    数据均来自官网</description>
     </item>
     
   </channel>

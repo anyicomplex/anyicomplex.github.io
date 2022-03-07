@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021-2022 © anyicomplex</copyright>
-    <lastBuildDate>Tue, 01 Mar 2022 19:40:44 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Mar 2022 02:17:23 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>真正意义上的杂记 3</title>
+      <link>https://anyicomplex.github.io/posts/miscellaneous-note-3/</link>
+      <pubDate>Mon, 07 Mar 2022 02:17:23 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/miscellaneous-note-3/</guid>
+      <description>我宣布，从现在起，我，安怡，正式回坑 Object Pascal！
+而且现在有开源的编译器可以用了！
+虽然这个编译器应该不如 Embarcadero 出的官方编译器功能完备，但对一个 Delphi 7 时代的遗民（我）而言，这支持的几十个平台就足够诱人了&amp;hellip;&amp;hellip;（那会只支持 DOS 和 Windows）</description>
+    </item>
+    
+    <item>
+      <title>真正意义上的杂记 2</title>
+      <link>https://anyicomplex.github.io/posts/miscellaneous-note-2/</link>
+      <pubDate>Wed, 02 Mar 2022 23:07:01 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/miscellaneous-note-2/</guid>
+      <description>新头像（？）
+请原谅我的渣画技，连个帽子都画不好XD
+说起来就加了个帽子&amp;hellip;&amp;hellip;
+加这个帽子的原因：如果可以的话，我希望将来有一天能到 Red Hat 去上班:D
+然而，现在的我，除了编程啥也不会，编程水平也不咋地XP
+照这样下去，我估计再过个十年八年也达不到那些大公司招聘的标准
+只能认命，接受我自己是个废物的现实QAQ</description>
+    </item>
+    
     <item>
       <title>真正意义上的杂记 1</title>
       <link>https://anyicomplex.github.io/posts/miscellaneous-note-1/</link>
