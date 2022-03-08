@@ -7,7 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021-2022 © anyicomplex</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 17:24:10 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Mar 2022 00:00:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BSD</title>
+      <link>https://anyicomplex.github.io/tags/bsd/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/bsd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://anyicomplex.github.io/tags/linux/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>macOS</title>
+      <link>https://anyicomplex.github.io/tags/macos/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://anyicomplex.github.io/tags/windows/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>操作系统</title>
+      <link>https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>周总结</title>
       <link>https://anyicomplex.github.io/tags/%E5%91%A8%E6%80%BB%E7%BB%93/</link>
@@ -18,29 +63,11 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://anyicomplex.github.io/tags/linux/</link>
-      <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
-      
-      <guid>https://anyicomplex.github.io/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>win32</title>
       <link>https://anyicomplex.github.io/tags/win32/</link>
       <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/tags/win32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://anyicomplex.github.io/tags/windows/</link>
-      <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
-      
-      <guid>https://anyicomplex.github.io/tags/windows/</guid>
       <description></description>
     </item>
     
@@ -68,15 +95,6 @@
       <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
       
       <guid>https://anyicomplex.github.io/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>操作系统</title>
-      <link>https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
-      
-      <guid>https://anyicomplex.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
       <description></description>
     </item>
     
