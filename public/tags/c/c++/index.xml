@@ -6,7 +6,7 @@
     <description>Recent content in C/C&#43;&#43; on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>2021-2022 © anyicomplex</copyright><atom:link href="https://anyicomplex.github.io/tags/c/c++/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>2021 - 2022 © anyicomplex</copyright><atom:link href="https://anyicomplex.github.io/tags/c/c++/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
       <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</link>
