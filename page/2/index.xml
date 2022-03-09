@@ -5,7 +5,7 @@
     <description>Recent content in 个人简介 on 安怡的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>2021-2022 © anyicomplex</copyright>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
     <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
     
         <atom:link href="https://anyicomplex.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -34,7 +34,7 @@
 &lt;p&gt;&lt;strong&gt;头文件和库文件等可以在 &lt;code&gt;/usr/x86_64-w64-mingw32&lt;/code&gt; 和 &lt;code&gt;/usr/i686-w64-mingw32&lt;/code&gt; 目录下找到。&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;不使用 MFC 的 win32 开发太痛苦了&amp;hellip;&amp;hellip;&lt;/p&gt;
-- https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -48,7 +48,7 @@
         <description>安怡的博客 https://anyicomplex.github.io/posts/untitled-1/ -&lt;p&gt;希望乌克兰人民能平安度过这次劫难。&lt;br&gt;
 希望战争能早点结束，不要扩大成世界大战。&lt;br&gt;
 为死难者默哀。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/untitled-1/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/untitled-1/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -61,7 +61,7 @@
         <guid>https://anyicomplex.github.io/posts/blog-refurbishment-3/</guid>
         <description>安怡的博客 https://anyicomplex.github.io/posts/blog-refurbishment-3/ -&lt;p&gt;上次写博客的时候发现高亮代码的背景是米黄色，我不喜欢这个颜色，所以改了。&lt;br&gt;
 然后是更新了一下主题的版本。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/blog-refurbishment-3/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/blog-refurbishment-3/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -75,7 +75,7 @@
         <description>安怡的博客 https://anyicomplex.github.io/posts/xlib-programming-notes-1/ -&lt;ul&gt;
 &lt;li&gt;谨慎使用 &lt;code&gt;XGrabPointer&lt;/code&gt;，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/xlib-programming-notes-1/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/xlib-programming-notes-1/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -99,7 +99,7 @@
 &lt;ul&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/week-summary-20220220/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/week-summary-20220220/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -136,7 +136,7 @@
 &lt;li&gt;Linux 下，建议 CLion，KDE 桌面也可以使用 KDevelop，但其他桌面不建议（因为 KDevelop 的依赖会带一大堆 KDE 的软件包，这也是 KDE 应用的通病，耦合度太高），GNOME 桌面也可以使用 GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。&lt;/li&gt;
 &lt;li&gt;macOS 下建议 XCode，如果觉得不好用，就换 AppCode/CLion，其他没有更好的了。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/some-advice-for-cpp-beginners/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -163,7 +163,7 @@
 &lt;li&gt;下周把 xdg-utils-java 推进到稳定版本。&lt;/li&gt;
 &lt;li&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/week-summary-20220213/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/week-summary-20220213/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -231,7 +231,7 @@ Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String 
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;这让我想到了 GNOME 社区出品的 &lt;a href=&#34;https://wiki.gnome.org/Projects/Vala&#34;&gt;Vala&lt;/a&gt; 语言:D&lt;/p&gt;
-- https://anyicomplex.github.io/posts/writing-c-style-java-programs/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/writing-c-style-java-programs/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -251,7 +251,7 @@ Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String 
 然后，结交了外国友人 &lt;a href=&#34;https://github.com/Berstanio&#34;&gt;Berstanio&lt;/a&gt;（没猜错的话这位应该是德国人吧）&lt;br&gt;
 最后，在这段赛博时光中，我意识到，我需要有计划，需要有短期目标，需要做很多功课，需要学习很多很多。&lt;/p&gt;
 &lt;p&gt;新的一年，加油！&lt;/p&gt;
-- https://anyicomplex.github.io/posts/i-am-back/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/i-am-back/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
@@ -394,7 +394,7 @@ Debian 11: &lt;a href=&#34;https://www.debian.org/releases/stable/amd64/ch03s04.
 &lt;li&gt;作为三大桌面操作系统之一，越来越多的软件适配了 Linux 版本，而且 Linux 平台下本身多年积累的软件生态也越发成熟（例如 GIMP 之于 PhotoShop，Linux 生态的很多开源软件能够完美替代同类的商业软件）。&lt;/li&gt;
 &lt;li&gt;macOS 以外的 BSD 因为极度缺乏软件，日常使用一般会有问题（有 Linux 兼容层的除外）。&lt;/li&gt;
 &lt;/ul&gt;
-- https://anyicomplex.github.io/posts/reasons-to-use-linux/ - 2021-2022 © anyicomplex</description>
+- https://anyicomplex.github.io/posts/reasons-to-use-linux/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
