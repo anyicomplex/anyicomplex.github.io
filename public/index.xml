@@ -13,6 +13,32 @@
     
     
         <item>
+        <title>真正意义上的杂记 4</title>
+        <link>https://anyicomplex.github.io/posts/miscellaneous-note-4/</link>
+        <pubDate>Tue, 08 Mar 2022 01:08:57 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/miscellaneous-note-4/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/miscellaneous-note-4/ -&lt;p&gt;有感而发，大哭一场，吟诗一首：&lt;br&gt;
+《硕鼠》&lt;br&gt;
+先秦·佚名&lt;br&gt;
+硕鼠硕鼠，无食我黍！&lt;br&gt;
+三岁贯汝，莫我肯顾。&lt;br&gt;
+逝将去汝，适彼乐土。&lt;br&gt;
+乐土乐土，爰得我所。&lt;br&gt;
+硕鼠硕鼠，无食我麦！&lt;br&gt;
+三岁贯汝，莫我肯德。&lt;br&gt;
+逝将去汝，适彼乐国。&lt;br&gt;
+乐国乐国，爰得我直。&lt;br&gt;
+硕鼠硕鼠，无食我苗！&lt;br&gt;
+三岁贯汝，莫我肯劳。&lt;br&gt;
+逝将去汝，适彼乐郊。&lt;br&gt;
+乐郊乐郊，谁之永号？&lt;/p&gt;
+- https://anyicomplex.github.io/posts/miscellaneous-note-4/ - 2021-2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>“铁链节”快乐</title>
         <link>https://anyicomplex.github.io/posts/happy-chain-festival/</link>
         <pubDate>Mon, 07 Mar 2022 22:06:18 -0500</pubDate>
@@ -127,7 +153,7 @@
 （+2）对用户操作非常友好。&lt;br&gt;
 总分：-3&lt;br&gt;
 评价：除非有特殊需求（付费使用 Microsoft 的全套服务器相关软件、服务等）不要用。君不见 Microsoft Azure 上主要跑的都不是 Windows Server（Microsoft 自己都觉得烂XD）。&lt;/p&gt;
-&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;有一个系统上榜了两次，OpenBSD。&lt;br&gt;
 我觉得 BSD 系的系统几乎都是同类系统的佼佼者，开源的桌面系统有 FreeBSD，服务器系统有 OpenBSD，硬件兼容性高的有 NetBSD，成功的商业化桌面系统有 macOS，甚至游戏主机方面， PlayStation 也是基于 FreeBSD 的。&lt;br&gt;
 &lt;strong&gt;至于我为什么不用 FreeBSD，因为自己现在用的破电脑用 FreeBSD 无法联网（我试了很多系统，没问题的只有 Fedora 和 Ubuntu，明明原装系统是 Windows 7，装上了也无法联网。我可以肯定不是驱动问题。）。&lt;/strong&gt;&lt;/p&gt;
@@ -176,7 +202,7 @@ macOS 也属于 BSD 家族，但只有内核开源。&lt;/p&gt;
 &lt;p&gt;基于 Debian Testing，和 &lt;a href=&#34;https://www.kali.org/&#34;&gt;Kali Linux&lt;/a&gt; 正好相反，是一个注重防御的渗透测试发行版。最注重安全性的 Linux 发行版之一。&lt;/p&gt;
 &lt;h2 id=&#34;openbsdhttpswwwopenbsdorg&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;最注重安全性的 BSD 发行版。&lt;/p&gt;
-&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;我之后应该会再写一篇博客推荐 Linux 发行版的。&lt;/p&gt;
 - https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/ - 2021-2022 © anyicomplex</description>
         </item>
@@ -288,33 +314,6 @@ macOS 也属于 BSD 家族，但只有内核开源。&lt;/p&gt;
 &lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&amp;hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。&lt;/p&gt;
 - https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ - 2021-2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>在 Linux 下编写和编译 win32 程序</title>
-        <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
-        <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ -&lt;p&gt;&lt;strong&gt;本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指 32 位 winapi（别说 64 位了，自从 32 位 winapi 出现，对早期 16 位的 winapi 我们也这么叫）。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;可行性&#34;&gt;可行性&lt;/h1&gt;
-&lt;p&gt;得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;当然，因为原 MinGW 项目不支持 64 位，我这里说的 MinGW 都是指 &lt;a href=&#34;https://www.mingw-w64.org&#34;&gt;MinGW-w64&lt;/a&gt;（和原 MinGW 不是同一个项目）。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装&#34;&gt;安装&lt;/h1&gt;
-&lt;p&gt;一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～&lt;strong&gt;详情请参阅  &lt;a href=&#34;https://www.mingw-w64.org/downloads/&#34;&gt;https://www.mingw-w64.org/downloads/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;我现在使用的操作系统是 Fedora 35，是参考这篇&lt;a href=&#34;https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/&#34;&gt;官方文档&lt;/a&gt;装的。&lt;br&gt;
-&lt;strong&gt;除非官方文档太烂，否则还是建议跟着官方文档来。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;“MinGW 不生产工具链，只是 GNU 工具链的搬运工。”&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译 64 位 C 语言程序，把 &lt;code&gt;gcc&lt;/code&gt; 换成 &lt;code&gt;x86_64-w64-mingw32-gcc&lt;/code&gt; 即可。&lt;br&gt;
-除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。&lt;strong&gt;配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！&lt;/strong&gt;&lt;br&gt;
-至于具体有哪些工具，我这里就不一一列举了，&lt;strong&gt;安装好后可以在 &lt;code&gt;/usr/bin&lt;/code&gt; 目录下搜索 &lt;code&gt;mingw&lt;/code&gt;&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;头文件和库文件等可以在 &lt;code&gt;/usr/x86_64-w64-mingw32&lt;/code&gt; 和 &lt;code&gt;/usr/i686-w64-mingw32&lt;/code&gt; 目录下找到。&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
-&lt;p&gt;不使用 MFC 的 win32 开发太痛苦了&amp;hellip;&amp;hellip;&lt;/p&gt;
-- https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/ - 2021-2022 © anyicomplex</description>
         </item>
     
     
