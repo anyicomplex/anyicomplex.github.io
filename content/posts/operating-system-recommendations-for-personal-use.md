@@ -41,5 +41,5 @@ macOS 也属于 BSD 家族，但只有内核开源。
 基于 Debian Testing，和 [Kali Linux](https://www.kali.org/) 正好相反，是一个注重防御的渗透测试发行版。最注重安全性的 Linux 发行版之一。
 ## [OpenBSD](https://www.openbsd.org/)
 最注重安全性的 BSD 发行版。
-# 总结
+# 感想
 我之后应该会再写一篇博客推荐 Linux 发行版的。
