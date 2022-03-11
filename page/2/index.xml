@@ -13,6 +13,42 @@
     
     
         <item>
+        <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
+        <link>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</link>
+        <pubDate>Mon, 28 Feb 2022 15:45:19 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ -&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;
+&lt;p&gt;程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。&lt;br&gt;
+如果你只是写了个功能很有限的小程序，却要拖家带口 几十M 的运行时，我相信，用户一定会觉得不值得的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你以“现在硬盘白菜价了”或者“都 5G 时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;方法&#34;&gt;方法&lt;/h1&gt;
+&lt;h2 id=&#34;1动态调用运行时&#34;&gt;1.动态调用运行时&lt;/h2&gt;
+&lt;p&gt;只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。&lt;/p&gt;
+&lt;h3 id=&#34;nix&#34;&gt;*nix&lt;/h3&gt;
+&lt;p&gt;这在 *nix 平台下不是问题，因为必定包含可用的 C/C++ 运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。&lt;br&gt;
+如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。&lt;/p&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;p&gt;Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。&lt;br&gt;
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。&lt;/p&gt;
+&lt;h4 id=&#34;1使用-visual-c-60&#34;&gt;1.使用 Visual C++ 6.0&lt;/h4&gt;
+&lt;p&gt;用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。&lt;/p&gt;
+&lt;h4 id=&#34;2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能&#34;&gt;2.使用 msvcrt 版本的 MinGW 并且不使用和 msvcrt 不支持的 C++ 功能&lt;/h4&gt;
+&lt;p&gt;如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 msvcrt 不支持的 C++ 功能也是一种不错的方案。&lt;br&gt;
+这种方案下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。&lt;/p&gt;
+&lt;h2 id=&#34;2调整编译器参数&#34;&gt;2.调整编译器参数&lt;/h2&gt;
+&lt;p&gt;我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。&lt;/p&gt;
+&lt;h2 id=&#34;3使用压缩壳&#34;&gt;3.使用压缩壳&lt;/h2&gt;
+&lt;p&gt;UPX、ASPack 等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。&lt;br&gt;
+对于这种方法，我的建议是：按自己的需求来。&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;写完之后再想想，实际上现在真没必要这么抠&amp;hellip;&amp;hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&amp;hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。&lt;/p&gt;
+- https://anyicomplex.github.io/posts/ultimate-trimming-for-c-cpp-programs-size/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>在 Linux 下编写和编译 win32 程序</title>
         <link>https://anyicomplex.github.io/posts/writing-and-compiling-win32-programs-under-linux/</link>
         <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
@@ -252,149 +288,6 @@ Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String 
 最后，在这段赛博时光中，我意识到，我需要有计划，需要有短期目标，需要做很多功课，需要学习很多很多。&lt;/p&gt;
 &lt;p&gt;新的一年，加油！&lt;/p&gt;
 - https://anyicomplex.github.io/posts/i-am-back/ - 2021 - 2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>使用 Linux 的理由</title>
-        <link>https://anyicomplex.github.io/posts/reasons-to-use-linux/</link>
-        <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/reasons-to-use-linux/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/reasons-to-use-linux/ -&lt;h1 id=&#34;1轻量级&#34;&gt;1.轻量级&lt;/h1&gt;
-&lt;p&gt;（以 x86_64 操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内） &lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;操作系统&lt;/th&gt;
-&lt;th&gt;最低 CPU 需求&lt;/th&gt;
-&lt;th&gt;最低内存需求&lt;/th&gt;
-&lt;th&gt;最低储存需求&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows 11&lt;/td&gt;
-&lt;td&gt;1 GHz * 2&lt;/td&gt;
-&lt;td&gt;4 GB&lt;/td&gt;
-&lt;td&gt;64 GB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows 10&lt;/td&gt;
-&lt;td&gt;1 GHz&lt;/td&gt;
-&lt;td&gt;2 GB&lt;/td&gt;
-&lt;td&gt;20 GB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Windows 7&lt;/td&gt;
-&lt;td&gt;1 GHz&lt;/td&gt;
-&lt;td&gt;2 GB&lt;/td&gt;
-&lt;td&gt;20 GB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Fedora 35 (GNOME)&lt;/td&gt;
-&lt;td&gt;2 GHz&lt;/td&gt;
-&lt;td&gt;2 GB&lt;/td&gt;
-&lt;td&gt;15 GB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Debian 11 (GNOME)&lt;/td&gt;
-&lt;td&gt;1 GHz&lt;/td&gt;
-&lt;td&gt;1 GB&lt;/td&gt;
-&lt;td&gt;10 GB&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;数据均来自官网&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Windows 11: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&#34;&gt;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&lt;/a&gt;&lt;br&gt;
-Windows 10: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&#34;&gt;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&lt;/a&gt;&lt;br&gt;
-Windows 7: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&#34;&gt;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&lt;/a&gt;&lt;br&gt;
-Fedora 35: &lt;a href=&#34;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&#34;&gt;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&lt;/a&gt;&lt;br&gt;
-Debian 11: &lt;a href=&#34;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&#34;&gt;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Windows 10 的数据为早期版本（最新版的官方数据我没找到），最新版的最低硬件需求应和当前的 Windows 11 相当。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;GNOME 是公认的占用资源最多的 Linux 桌面环境，而 Fedora 也是最为臃肿的 Linux 发行版之一。&lt;br&gt;
-然而二者的组合除了最低 CPU 需求高于 Windows 7 外，其他都不逊色。&lt;br&gt;
-而较为轻量的 Debian 11 和 GNOME 组合的最低硬件需求低于 Windows 7。&lt;br&gt;
-如果换用轻量级桌面 Xfce 或 LXDE，想必这一需求会低得多。&lt;br&gt;
-然而 Windows 可换不了桌面&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;h1 id=&#34;2安全&#34;&gt;2.安全&lt;/h1&gt;
-&lt;h2 id=&#34;1文件系统&#34;&gt;1.文件系统&lt;/h2&gt;
-&lt;p&gt;所有 POSIX 操作系统的文件系统（Linux 的 ext 系列、Solaris 的 ZFS 等）都有严格的文件权限限制，只有被标记为“可执行”的文件才能运行。&lt;br&gt;
-而 Windows 不同，其对“可执行”文件的界定仅仅按扩展名来划分。
-这也是有历史原因的：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows 的前身 DOS 和早期 Windows 使用 FAT32 文件系统，这个文件系统很简陋，不但不支持日志，而且完全不支持文件权限。&lt;/li&gt;
-&lt;li&gt;随着 Windows NT 3.1 内核的推出，NTFS 取代 FAT32 成为了 Windows 的默认文件系统，这次总算支持文件权限了，然而其默认文件可执行。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;通过 Access Control List（ACL）倒是可以修改默认文件权限，但这个功能又有多少 Windows 用户会去用呢？甚至大多数人都不知道 Windows 还有这个功能吧&amp;hellip;&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;2操作系统&#34;&gt;2.操作系统&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Linux 开源，在大量开发者的参与下，系统漏洞能够迅速被发现和得到修复，也不必担心被官方植入后门（当然，某些发行版会这么做，例如 Ubuntu，所以各位选择发行版的时候要擦亮眼睛啊～）。&lt;/li&gt;
-&lt;li&gt;Windows 完全闭源，开发环境十分封闭，不仅不利于系统漏洞的发现和修复，而且微软本身就在通过官方植入的后门窃取用户的隐私（早就是公开的秘密了～）。&lt;/li&gt;
-&lt;li&gt;macOS 只有内核开源，完整的操作系统是闭源的，结论同 Windows。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3软件&#34;&gt;3.软件&lt;/h2&gt;
-&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;没有统一的软件源，需要自行寻找，但找到的软件源不一定可靠——例如很多下载站都会篡改安装包，注入病毒。&lt;/li&gt;
-&lt;li&gt;如果采取明文传输协议（HTTP、FTP等），很可能遭遇中间人攻击——软件在下载途中被篡改，注入病毒，然而不是所有软件源都会提供校验码的&amp;hellip;&amp;hellip;&lt;/li&gt;
-&lt;li&gt;不是所有软件都有“自动更新”功能，手动更新又要重复一遍之前下载的操作，重新面对一次相同的危险。&lt;/li&gt;
-&lt;li&gt;Windows 是专有软件的天下，因此很多软件本身就是植入了后门的～&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;在 Linux 发行版安装软件，多数时候都是从发行版官方仓库安装，少数时候自己下载源码编译或安装第三方软件包。&lt;/li&gt;
-&lt;li&gt;绝大多数发行版维护的软件仓库都能够保证软件来源可靠，且绝大多数包管理器都自带校验机制。&lt;/li&gt;
-&lt;li&gt;无论软件是否支持“自动更新”，包管理器都能“自动更新”。&lt;/li&gt;
-&lt;li&gt;Linux 下绝大多数软件都是开源的，如果你对安全性有较高的要求，在 Linux 下完全可以不使用任何闭源软件。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Linux 的前三条 和Windows 的最后一条。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;3可定制性高&#34;&gt;3.可定制性高&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Linux 的可定制性绝不是 Windows 和 macOS 能比拟的。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;图形界面&#34;&gt;图形界面&lt;/h2&gt;
-&lt;h3 id=&#34;windows-1&#34;&gt;Windows&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;图形界面是内核的一部分，无法修改。&lt;/li&gt;
-&lt;li&gt;微软对API开放程度不够，美化插件作用有限。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;macos-1&#34;&gt;macOS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;图形界面是其软件生态的一部分，换成其他的会导致大量软件无法运行。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;桌面环境（Desktop Environment）、窗口管理器（Window Manager）、显示服务器（Display Server）都是可以更换的。&lt;br&gt;
-例如：可以用 X Server 作为显示服务器，也可以用 Wayland；窗口管理器可以用 IceWM、JWM，也可以用 i3WM、Awesome；桌面环境可以用简洁的 GNOME、华丽的 KDE，也可以用轻量级的 Xfce、LXDE&amp;hellip;&amp;hellip;&lt;/li&gt;
-&lt;li&gt;更何况还有大量的主题插件、美化插件，可以把 Linux 装点的像 macOS ，也可以改成 Windows 的样子，当然，更多的是自成一派的风格～&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;系统修改&#34;&gt;系统修改&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;有时会有删去系统中某些用不上功能的需求。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;windows-2&#34;&gt;Windows&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;内核不开源，几乎无法修改。&lt;/li&gt;
-&lt;li&gt;是一个环环相扣的整体结构，难以精简，且精简一般难以保证安全性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;macos-2&#34;&gt;macOS&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;虽然内核开源，但上层架构不开源，因此修改难度极高。&lt;/li&gt;
-&lt;li&gt;精简难度同上。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;linux-2&#34;&gt;Linux&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;绝大多数 Linux 发行版对自行修改和编译内核都是友好的。&lt;/li&gt;
-&lt;li&gt;完全开源且充分模块化，因此精简起来十分容易，Tiny Core Linux 甚至完成了构建只有 12MB 的带有图形界面的操作系统的壮举。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;4生态完善&#34;&gt;4.生态完善&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;此条主要针对 macOS 以外的 BSD。&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;作为三大桌面操作系统之一，越来越多的软件适配了 Linux 版本，而且 Linux 平台下本身多年积累的软件生态也越发成熟（例如 GIMP 之于 PhotoShop，Linux 生态的很多开源软件能够完美替代同类的商业软件）。&lt;/li&gt;
-&lt;li&gt;macOS 以外的 BSD 因为极度缺乏软件，日常使用一般会有问题（有 Linux 兼容层的除外）。&lt;/li&gt;
-&lt;/ul&gt;
-- https://anyicomplex.github.io/posts/reasons-to-use-linux/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
