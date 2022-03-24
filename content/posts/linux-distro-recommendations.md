@@ -145,7 +145,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 老牌 Linux 发行版，以稳定和精简著称。
 ### [Rocky Linux](https://rockylinux.org/)
 **个人推荐指数：4/5**  
-是否稳定版：否  
+是否稳定版：是  
 官方包管理器：RPM/Yum/DNF  
 软件包格式：rpm  
 默认软件：全部开源  
@@ -155,7 +155,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 是 RHEL 的克隆，RHEL 是 Linux 服务器的事实标准；没有官方的技术支持服务。
 ### [Slackware](http://www.slackware.com/)
 **个人推荐指数：3/5**  
-是否稳定版：否  
+是否稳定版：是  
 软件包格式：tgz/txz  
 默认软件：部分开源  
 官方软件仓库：开源/闭源混合存放  
@@ -165,7 +165,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 ## 付费系统
 ### [Red Hat Enterprise Linux](https://redhat.com/rhel/)
 **个人推荐指数：3/5**  
-是否稳定版：否  
+是否稳定版：是  
 官方包管理器：RPM/Yum/DNF  
 软件包格式：rpm  
 默认软件：部分开源  
