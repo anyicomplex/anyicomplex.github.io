@@ -200,7 +200,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 老牌 Linux 发行版，以稳定和精简著称。&lt;/p&gt;
 &lt;h3 id=&#34;rocky-linuxhttpsrockylinuxorg&#34;&gt;&lt;a href=&#34;https://rockylinux.org/&#34;&gt;Rocky Linux&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
-是否稳定版：否&lt;br&gt;
+是否稳定版：是&lt;br&gt;
 官方包管理器：RPM/Yum/DNF&lt;br&gt;
 软件包格式：rpm&lt;br&gt;
 默认软件：全部开源&lt;br&gt;
@@ -210,7 +210,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 是 RHEL 的克隆，RHEL 是 Linux 服务器的事实标准；没有官方的技术支持服务。&lt;/p&gt;
 &lt;h3 id=&#34;slackwarehttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
-是否稳定版：否&lt;br&gt;
+是否稳定版：是&lt;br&gt;
 软件包格式：tgz/txz&lt;br&gt;
 默认软件：部分开源&lt;br&gt;
 官方软件仓库：开源/闭源混合存放&lt;br&gt;
@@ -220,7 +220,7 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 &lt;h2 id=&#34;付费系统&#34;&gt;付费系统&lt;/h2&gt;
 &lt;h3 id=&#34;red-hat-enterprise-linuxhttpsredhatcomrhel&#34;&gt;&lt;a href=&#34;https://redhat.com/rhel/&#34;&gt;Red Hat Enterprise Linux&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
-是否稳定版：否&lt;br&gt;
+是否稳定版：是&lt;br&gt;
 官方包管理器：RPM/Yum/DNF&lt;br&gt;
 软件包格式：rpm&lt;br&gt;
 默认软件：部分开源&lt;br&gt;
