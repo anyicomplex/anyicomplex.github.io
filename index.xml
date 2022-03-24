@@ -13,6 +13,184 @@
     
     
         <item>
+        <title>Linux 发行版推荐</title>
+        <link>https://anyicomplex.github.io/posts/linux-distro-recommendations/</link>
+        <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/linux-distro-recommendations/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/linux-distro-recommendations/ -&lt;h1 id=&#34;个人使用&#34;&gt;个人使用&lt;/h1&gt;
+&lt;h2 id=&#34;面向-linux-新手&#34;&gt;面向 Linux 新手&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;其实 Linux 桌面系统的易用和桌面环境也有很大的关系，我建议新手使用 GNOME/KDE。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;debian-testingunstablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Testing/Unstable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Debian 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；上手难度较低。&lt;br&gt;
+默认不带闭源固件，安装这些固件对新手而言有一定的门槛。&lt;br&gt;
+Stable 源软件包太旧，一般用于服务器，个人使用建议换 Testing/Unstable 源（滚动更新）。&lt;/p&gt;
+&lt;h3 id=&#34;fedora-workstationhttpsgetfedoraorg&#34;&gt;&lt;a href=&#34;https://getfedora.org/&#34;&gt;Fedora Workstation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Red Hat 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。&lt;br&gt;
+相比 Debian 稍显臃肿。&lt;br&gt;
+若要满足日常使用，需要配置第三方软件源，对新手而言有一定的门槛。&lt;/p&gt;
+&lt;h3 id=&#34;opensuse-tumbleweedhttpswwwopensuseorg&#34;&gt;&lt;a href=&#34;https://www.opensuse.org/&#34;&gt;openSUSE Tumbleweed&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Zypper&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：SUSE 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、配置方便（YaST 久负盛名）；上手难度低。&lt;br&gt;
+有稳定版（openSUSE Leap），但个人使用建议用滚动版（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;manjarohttpsmanjaroorg&#34;&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Pacman/Pamac&lt;br&gt;
+软件包格式：pkg.tar.xz/pkg.tar.zst&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Manjaro 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。&lt;br&gt;
+自带显卡驱动工具，对安装显卡驱动友好。&lt;br&gt;
+和 &lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt; 一脉相承，可能是软件包最多的 Linux 发行版，而且比 Arch Linux 稳定。&lt;/p&gt;
+&lt;h2 id=&#34;面向有一定经验的-linux-用户&#34;&gt;面向有一定经验的 Linux 用户&lt;/h2&gt;
+&lt;h3 id=&#34;parrot-os-securityhttpswwwparrotsecorg&#34;&gt;&lt;a href=&#34;https://www.parrotsec.org/&#34;&gt;Parrot OS Security&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Parrot OS 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、安全可靠；上手难度适中。&lt;br&gt;
+基于 Debian Testing，和 &lt;a href=&#34;https://www.kali.org/&#34;&gt;Kali Linux&lt;/a&gt; 正好相反，是一个注重防御的渗透测试发行版。&lt;br&gt;
+最注重安全性的 Linux 发行版之一。&lt;/p&gt;
+&lt;h3 id=&#34;slackware-currenthttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware Current&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Slackpkg&lt;br&gt;
+软件包格式：tgz/txz&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Patrick Volkerding&lt;br&gt;
+个人评价：质量高、软件包多、精简可靠；上手难度较高。&lt;br&gt;
+官方的包管理器不够现代化，无法处理依赖关系（可以安装第三方包管理器）。&lt;br&gt;
+现存最古老的 Linux 发行版，BSD 风格的 Linux 发行版，以稳定著称。&lt;br&gt;
+个人使用建议换 Current 源（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;arch-linuxhttpsarchlinuxorg&#34;&gt;&lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Pacman&lt;br&gt;
+软件包格式：pkg.tar.xz/pkg.tar.zst&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Arch Linux 社区&lt;br&gt;
+个人评价：质量高、软件包多、资料丰富、系统精简；上手难度较高。&lt;br&gt;
+没有系统安装程序，需要纯手动安装，并且系统稳定性差。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;ArchWiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;/p&gt;
+&lt;h2 id=&#34;面向-linux-老玩家&#34;&gt;面向 Linux 老玩家&lt;/h2&gt;
+&lt;h3 id=&#34;nixos-unstablehttpsnixosorg&#34;&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS Unstable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Nix&lt;br&gt;
+软件包格式：使用 Nix 语言进行管理，格式不定&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：NixOS 社区&lt;br&gt;
+个人评价：质量高、软件包多、新潮可靠；上手难度非常高。&lt;br&gt;
+没有系统安装程序，需要纯手动安装。&lt;br&gt;
+采用 Nix 包管理器和 Nix 表达式语言，以相当具有颠覆性的方式管理整个系统，因此原生支持无需手动配置的系统备份、恢复和回滚。&lt;br&gt;
+Nix 包管理器需要手动配置安装软件，同时支持二进制安装和源码安装，具有非常强的自定义性。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://nixos.org/manual/nixos/&#34;&gt;NixOS Manual&lt;/a&gt; 和 &lt;a href=&#34;https://nixos.wiki/&#34;&gt;NixOS Wiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;br&gt;
+个人使用建议换 Unstable 源（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;qubes-oshttpsqubes-osorg&#34;&gt;&lt;a href=&#34;https://qubes-os.org/&#34;&gt;Qubes OS&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：RPM/Yum&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：只提供开源软件&lt;br&gt;
+维护者：Invisible Things Lab&lt;br&gt;
+个人评价：质量高、开箱即用、安全可靠；上手难度较高。&lt;br&gt;
+用基于 Xen 的虚拟化技术来保障安全性，日常使用依赖于虚拟机系统（默认有 Debian、Fedora 和 Whonix）。&lt;br&gt;
+默认的虚拟机系统软件包会比较旧，建议自己添加一些滚动更新系统供日常使用。&lt;br&gt;
+最注重安全性的 Linux 发行版之一。&lt;/p&gt;
+&lt;h3 id=&#34;gentoo-linuxhttpswwwgentooorg&#34;&gt;&lt;a href=&#34;https://www.gentoo.org/&#34;&gt;Gentoo Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Portage&lt;br&gt;
+软件包格式：使用 git 进行管理，格式不定（源码包）；xpak/gpkg（二进制包）&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：只提供开源软件&lt;br&gt;
+维护者：Gentoo 基金会&lt;br&gt;
+个人评价：质量高、软件包多、资料丰富、系统精简；上手难度非常高。&lt;br&gt;
+没有系统安装程序，并且安装过程中所有程序都必须在本地编译。&lt;br&gt;
+Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载源码然后在本地编译，也支持二进制安装。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://wiki.gentoo.org/&#34;&gt;Gentoo Wiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;/p&gt;
+&lt;h1 id=&#34;用于服务器&#34;&gt;用于服务器&lt;/h1&gt;
+&lt;h2 id=&#34;免费系统&#34;&gt;免费系统&lt;/h2&gt;
+&lt;h3 id=&#34;debian-stablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Stable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Debian 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+老牌 Linux 发行版，以稳定和精简著称。&lt;/p&gt;
+&lt;h3 id=&#34;rocky-linuxhttpsrockylinuxorg&#34;&gt;&lt;a href=&#34;https://rockylinux.org/&#34;&gt;Rocky Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Rocky Enterprise 软件基金会&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+是 RHEL 的克隆，RHEL 是 Linux 服务器的事实标准；没有官方的技术支持服务。&lt;/p&gt;
+&lt;h3 id=&#34;slackwarehttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+软件包格式：tgz/txz&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Patrick Volkerding&lt;br&gt;
+个人评价：质量高、软件包多、精简可靠；但官方的包管理机制不够现代化，无法处理依赖关系（可以安装第三方包管理器）；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+现存最古老的 Linux 发行版，BSD 风格的 Linux 发行版，以稳定著称；没有官方的技术支持服务。&lt;/p&gt;
+&lt;h2 id=&#34;付费系统&#34;&gt;付费系统&lt;/h2&gt;
+&lt;h3 id=&#34;red-hat-enterprise-linuxhttpsredhatcomrhel&#34;&gt;&lt;a href=&#34;https://redhat.com/rhel/&#34;&gt;Red Hat Enterprise Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Red Hat 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；Linux 服务器的事实标准；适合资金足够的企业使用。&lt;br&gt;
+开源但不免费；有优秀的官方的付费技术支持服务。&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;我不会再推荐任何 Ubuntu 家族的系统了。事实证明，它们坑都很多。&lt;/p&gt;
+- https://anyicomplex.github.io/posts/linux-distro-recommendations/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>真正意义上的杂记 5</title>
         <link>https://anyicomplex.github.io/posts/miscellaneous-note-5/</link>
         <pubDate>Tue, 22 Mar 2022 10:53:38 -0400</pubDate>
@@ -315,32 +493,13 @@ macOS 也属于 BSD 家族，但只有内核开源。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;恕我直言，安全性高的系统所能起到的保护作用也十分有限，要想真正在赛博空间保护自己，请提升自己的信息安全技术水平。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;qubes-oshttpsqubes-osorg&#34;&gt;&lt;a href=&#34;https://qubes-os.org/&#34;&gt;Qubes OS&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;基于 Xen 虚拟化提高安全性，最注重安全性的 Linux 发行版之一。&lt;/p&gt;
-&lt;h2 id=&#34;parrot-oshttpsparrotsecorg&#34;&gt;&lt;a href=&#34;https://parrotsec.org/&#34;&gt;Parrot OS&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;parrot-os-securityhttpsparrotsecorg&#34;&gt;&lt;a href=&#34;https://parrotsec.org/&#34;&gt;Parrot OS Security&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;基于 Debian Testing，和 &lt;a href=&#34;https://www.kali.org/&#34;&gt;Kali Linux&lt;/a&gt; 正好相反，是一个注重防御的渗透测试发行版。最注重安全性的 Linux 发行版之一。&lt;/p&gt;
 &lt;h2 id=&#34;openbsdhttpswwwopenbsdorg&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;最注重安全性的 BSD 发行版。&lt;/p&gt;
 &lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
 &lt;p&gt;我之后应该会再写一篇博客推荐 Linux 发行版的。&lt;/p&gt;
 - https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/ - 2021 - 2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>真正意义上的杂记 2</title>
-        <link>https://anyicomplex.github.io/posts/miscellaneous-note-2/</link>
-        <pubDate>Wed, 02 Mar 2022 23:07:01 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/miscellaneous-note-2/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/miscellaneous-note-2/ -&lt;p&gt;新头像（？）&lt;br&gt;
-请原谅我的渣画技，连个帽子都画不好XD&lt;br&gt;
-&lt;img src=&#34;https://anyicomplex.github.io/images/avatar_new.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;
-说起来就加了个帽子&amp;hellip;&amp;hellip;&lt;br&gt;
-加这个帽子的原因：如果可以的话，我希望将来有一天能到 Red Hat 去上班:D&lt;/p&gt;
-&lt;p&gt;然而，现在的我，除了编程啥也不会，编程水平也不咋地XP&lt;br&gt;
-照这样下去，我估计再过个十年八年也达不到那些大公司招聘的标准&lt;br&gt;
-只能认命，接受我自己是个废物的现实QAQ&lt;/p&gt;
-- https://anyicomplex.github.io/posts/miscellaneous-note-2/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
