@@ -7,7 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>2021 - 2022 © anyicomplex</copyright>
-    <lastBuildDate>Mon, 07 Mar 2022 00:00:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Mar 2022 06:58:26 -0400</lastBuildDate><atom:link href="https://anyicomplex.github.io/categories/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 发行版推荐</title>
+      <link>https://anyicomplex.github.io/posts/linux-distro-recommendations/</link>
+      <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/linux-distro-recommendations/</guid>
+      <description>个人使用 面向 Linux 新手 其实 Linux 桌面系统的易用和桌面环境也有很大的关系，我建议新手使用 GNOME/KDE。
+Debian Testing/Unstable 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：DPKG/APT
+软件包格式：deb
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Debian 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；上手难度较低。
+默认不带闭源固件，安装这些固件对新手而言有一定的门槛。
+Stable 源软件包太旧，一般用于服务器，个人使用建议换 Testing/Unstable 源（滚动更新）。
+Fedora Workstation 个人推荐指数：3/5
+是否稳定版：否
+官方包管理器：RPM/Yum/DNF
+软件包格式：rpm
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Red Hat 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+相比 Debian 稍显臃肿。
+若要满足日常使用，需要配置第三方软件源，对新手而言有一定的门槛。
+openSUSE Tumbleweed 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：RPM/Zypper
+软件包格式：rpm
+默认软件：部分开源
+官方软件仓库：开源/闭源分开存放
+维护者：SUSE 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富、配置方便（YaST 久负盛名）；上手难度低。
+有稳定版（openSUSE Leap），但个人使用建议用滚动版（稳定版软件包会比较旧）。
+Manjaro 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：Pacman/Pamac
+软件包格式：pkg.tar.xz/pkg.tar.zst
+默认软件：部分开源
+官方软件仓库：开源/闭源混合存放
+维护者：Manjaro 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+自带显卡驱动工具，对安装显卡驱动友好。
+和 Arch Linux 一脉相承，可能是软件包最多的 Linux 发行版，而且比 Arch Linux 稳定。</description>
+    </item>
+    
     <item>
       <title>操作系统推荐（服务器篇）</title>
       <link>https://anyicomplex.github.io/posts/operating-system-recommendations-for-servers/</link>
