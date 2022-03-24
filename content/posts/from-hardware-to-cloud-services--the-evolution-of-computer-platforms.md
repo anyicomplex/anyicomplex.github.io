@@ -4,7 +4,7 @@ description: "本文仅代表个人观点，欢迎留言讨论"
 date: 2022-03-23T09:14:06-04:00
 lastmod: 2022-03-24T11:08:36-04:00
 draft: false
-tags: [硬件, 操作系统, 云服务]
+tags: [硬件, 操作系统, 浏览器, 云服务]
 categories: IT
 ---
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云服务 on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
+    <description>Recent content in 云服务 on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 09:14:06 -0400</lastBuildDate><atom:link href="https://anyicomplex.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从硬件到云服务——计算机平台的演化</title>
+      <link>https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</link>
+      <pubDate>Wed, 23 Mar 2022 09:14:06 -0400</pubDate>
+      
+      <guid>https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</guid>
+      <description>前言 我认为，程序员，就是在计算机平台上工作，利用计算机平台来处理需求的职业。
+计算机平台并非一成不变的，截至目前，主流的计算机平台至少已经发展了四代。我的分析如下：
+第一代：硬件 早期的 Unix 系统是连同源码一起发售的。那时候，一台计算机的成本和售价，硬件占了绝大多数，没人意识到 Unix 源码的价值。
+各个硬件平台的汇编语言不同，于是出现了 C 语言等高级编程语言，用于解决这个问题。
+然而，C 语言对于早期的计算机而言也是非常奢侈的存在，那时候只有大型机才有足够的性能运行 C 语言写成的 Unix。
+于是，那时候的程序员们，多数用着汇编语言，在不同的硬件平台（多数没有操作系统）上工作，他们的程序多数时候无法不经修改地跨越硬件平台。
+第二代：操作系统 “操作系统”这个概念随着 DOS 系统的大获成功席卷了整个 IT 行业。
+随着硬件性能的提高和成本的降低，C 语言、Basic 和 Pascal 等高级编程语言得以普及，BSD 和 Linux 也得益于 C 语言，与硬件解耦。
+各个操作系统的可执行文件格式不同，哪怕是针对同一种硬件平台，为不同操作系统编译的可执行文件也无法兼容，为了解决这个问题，出现了 Java 等跨操作系统的编程语言。
+然而，Java 对于当时的计算机而言也是非常奢侈的存在，大多数时候计算机没有足够的资源良好的运行 Java。
+于是，那时候的程序员们，多数用着高级编程语言，在不同的操作系统上工作，他们的程序多数时候无法不经修改地跨越操作系统平台。
+后来，硬件性能进一步提高、成本进一步降低，让高度封装的跨操作系统 C/C++ 库成为可能，Java 等编程语言重现辉煌。
+从此，编写跨操作系统程序成为程序员的必备技能。
+第三代：浏览器 随着硬件性能的进一步提高、成本进一步降低，互联网 3.0 时代到来了，Web 开发者对操作系统的利用能力也随着浏览器能力的增强进一步增强。
+于是，B/S 架构大行其道，基于浏览器的桌面应用开发框架（如 Electron.js）和移动应用开发框架（如 React.js）也随之兴起，从而极大的压榨了直接基于操作系统平台的本地 APP 的生存空间，浏览器也正式成为了一代计算机平台。
+从此，编写 Web 前端程序也成为程序员的必备技能。
+第四代：云服务 随着硬件性能的进一步提高、成本进一步降低，普通用户能享受到的网络带宽越来越大、延迟越来越低，于是很多公司把原本应该在用户设备上运行的程序搬到了自己的服务器上，以“云服务”的形式提供给用户。
+这样做既能降低适配多不同操作系统所带来的成本（后端程序要适配的操作系统只有公司服务器上的系统），又能提供更好的服务，不必受制于用户设备的配置。 这是目前最新一代的计算机平台，已经得到了非常广泛的应用，而且仍在高速发展中。
+分析 并不是说新的计算机平台出现，旧的计算机平台就会被取代，因为后来出现的平台是基于前面的平台的。
+ 嵌入式工程师所要面对的多数时候是硬件平台，少数时候是操作系统平台，和几十年前一样。 浏览器 APP 目前还无法摆脱“臃肿”的标签，而且很多用户更偏爱本地 APP，因此大多数本地 APP 开发者很长时间内还不至于失业。 云服务的基础是服务器上运行服务的操作系统，后端程序也属于本地 APP 的范畴。  计算机平台的演化，基础是硬件性能的提高和成本的降低，每次出现的新平台都是对旧平台部分问题的最优解。</description>
+    </item>
+    
+  </channel>
+</rss>

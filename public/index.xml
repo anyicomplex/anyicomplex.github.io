@@ -13,6 +13,51 @@
     
     
         <item>
+        <title>从硬件到云服务——计算机平台的演化</title>
+        <link>https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</link>
+        <pubDate>Wed, 23 Mar 2022 09:14:06 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/ -&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;我认为，程序员，就是在计算机平台上工作，利用计算机平台来处理需求的职业。&lt;br&gt;
+计算机平台并非一成不变的，截至目前，主流的计算机平台至少已经发展了四代。我的分析如下：&lt;/p&gt;
+&lt;h1 id=&#34;第一代硬件&#34;&gt;第一代：硬件&lt;/h1&gt;
+&lt;p&gt;早期的 Unix 系统是连同源码一起发售的。那时候，一台计算机的成本和售价，硬件占了绝大多数，没人意识到 Unix 源码的价值。&lt;br&gt;
+各个硬件平台的汇编语言不同，于是出现了 C 语言等高级编程语言，用于解决这个问题。&lt;br&gt;
+然而，C 语言对于早期的计算机而言也是非常奢侈的存在，那时候只有大型机才有足够的性能运行 C 语言写成的 Unix。&lt;br&gt;
+于是，那时候的程序员们，多数用着汇编语言，在不同的硬件平台（多数没有操作系统）上工作，他们的程序多数时候无法不经修改地跨越硬件平台。&lt;/p&gt;
+&lt;h1 id=&#34;第二代操作系统&#34;&gt;第二代：操作系统&lt;/h1&gt;
+&lt;p&gt;“操作系统”这个概念随着 DOS 系统的大获成功席卷了整个 IT 行业。&lt;br&gt;
+随着硬件性能的提高和成本的降低，C 语言、Basic 和 Pascal 等高级编程语言得以普及，BSD 和 Linux 也得益于 C 语言，与硬件解耦。&lt;br&gt;
+各个操作系统的可执行文件格式不同，哪怕是针对同一种硬件平台，为不同操作系统编译的可执行文件也无法兼容，为了解决这个问题，出现了 Java 等跨操作系统的编程语言。&lt;br&gt;
+然而，Java 对于当时的计算机而言也是非常奢侈的存在，大多数时候计算机没有足够的资源良好的运行 Java。&lt;br&gt;
+于是，那时候的程序员们，多数用着高级编程语言，在不同的操作系统上工作，他们的程序多数时候无法不经修改地跨越操作系统平台。&lt;br&gt;
+后来，硬件性能进一步提高、成本进一步降低，让高度封装的跨操作系统 C/C++ 库成为可能，Java 等编程语言重现辉煌。&lt;br&gt;
+从此，编写跨操作系统程序成为程序员的必备技能。&lt;/p&gt;
+&lt;h1 id=&#34;第三代浏览器&#34;&gt;第三代：浏览器&lt;/h1&gt;
+&lt;p&gt;随着硬件性能的进一步提高、成本进一步降低，互联网 3.0 时代到来了，Web 开发者对操作系统的利用能力也随着浏览器能力的增强进一步增强。&lt;br&gt;
+于是，B/S 架构大行其道，基于浏览器的桌面应用开发框架（如 Electron.js）和移动应用开发框架（如 React.js）也随之兴起，从而极大的压榨了直接基于操作系统平台的本地 APP 的生存空间，浏览器也正式成为了一代计算机平台。&lt;br&gt;
+从此，编写 Web 前端程序也成为程序员的必备技能。&lt;/p&gt;
+&lt;h1 id=&#34;第四代云服务&#34;&gt;第四代：云服务&lt;/h1&gt;
+&lt;p&gt;随着硬件性能的进一步提高、成本进一步降低，普通用户能享受到的网络带宽越来越大、延迟越来越低，于是很多公司把原本应该在用户设备上运行的程序搬到了自己的服务器上，以“云服务”的形式提供给用户。&lt;br&gt;
+这样做既能降低适配多不同操作系统所带来的成本（后端程序要适配的操作系统只有公司服务器上的系统），又能提供更好的服务，不必受制于用户设备的配置。
+这是目前最新一代的计算机平台，已经得到了非常广泛的应用，而且仍在高速发展中。&lt;/p&gt;
+&lt;h1 id=&#34;分析&#34;&gt;分析&lt;/h1&gt;
+&lt;p&gt;并不是说新的计算机平台出现，旧的计算机平台就会被取代，因为后来出现的平台是基于前面的平台的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;嵌入式工程师所要面对的多数时候是硬件平台，少数时候是操作系统平台，和几十年前一样。&lt;/li&gt;
+&lt;li&gt;浏览器 APP 目前还无法摆脱“臃肿”的标签，而且很多用户更偏爱本地 APP，因此大多数本地 APP 开发者很长时间内还不至于失业。&lt;/li&gt;
+&lt;li&gt;云服务的基础是服务器上运行服务的操作系统，后端程序也属于本地 APP 的范畴。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;计算机平台的演化，基础是硬件性能的提高和成本的降低，每次出现的新平台都是对旧平台部分问题的最优解。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;连续写两篇博客，真的很累&amp;hellip;&amp;hellip;&lt;/p&gt;
+- https://anyicomplex.github.io/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>Linux 发行版推荐</title>
         <link>https://anyicomplex.github.io/posts/linux-distro-recommendations/</link>
         <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
@@ -453,53 +498,6 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 我觉得 BSD 系的系统几乎都是同类系统的佼佼者，开源的桌面系统有 FreeBSD，服务器系统有 OpenBSD，硬件兼容性高的有 NetBSD，成功的商业化桌面系统有 macOS，甚至游戏主机方面， PlayStation 也是基于 FreeBSD 的。&lt;br&gt;
 &lt;strong&gt;至于我为什么不用 FreeBSD，因为自己现在用的破电脑用 FreeBSD 无法联网（我试了很多系统，没问题的只有 Fedora 和 Ubuntu，明明原装系统是 Windows 7，装上了也无法联网。我可以肯定不是驱动问题。）。&lt;/strong&gt;&lt;/p&gt;
 - https://anyicomplex.github.io/posts/operating-system-recommendations-for-servers/ - 2021 - 2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>操作系统推荐（个人使用篇）</title>
-        <link>https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/</link>
-        <pubDate>Sun, 06 Mar 2022 23:18:44 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/</guid>
-        <description>安怡的博客 https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/ -&lt;h1 id=&#34;游戏发烧友&#34;&gt;游戏发烧友&lt;/h1&gt;
-&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;
-&lt;p&gt;最适合用来玩游戏的 PC 操作系统是 Windows，没有之一。&lt;br&gt;
-先不提很多游戏、模拟器只支持 Windows，就连显卡驱动也往往是对 Windows 的支持最好（涉及到微软和各大显卡厂商的合作）。&lt;/p&gt;
-&lt;h1 id=&#34;设计师&#34;&gt;设计师&lt;/h1&gt;
-&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;
-&lt;p&gt;Apple 为了争取设计师群体在 macOS 下了工夫，和 Windows 相比，macOS 的用户体验更好，让设计师能专注工作而不用去管各种技术问题。&lt;/p&gt;
-&lt;h2 id=&#34;windows-1&#34;&gt;Windows&lt;/h2&gt;
-&lt;p&gt;Windows 适合有一定计算机基础的用户，强大的软件生态也使它能胜任设计工作站的工作。&lt;/p&gt;
-&lt;h1 id=&#34;net-程序员&#34;&gt;.NET 程序员&lt;/h1&gt;
-&lt;h2 id=&#34;windows-2&#34;&gt;Windows&lt;/h2&gt;
-&lt;p&gt;没有 Visual Studio 的 .NET 就是没牙的老虎，在 Rider 超越 Visual Studio 前。&lt;/p&gt;
-&lt;h1 id=&#34;classic-visual-basic-程序员&#34;&gt;Classic Visual Basic 程序员&lt;/h1&gt;
-&lt;h2 id=&#34;windows-3&#34;&gt;Windows&lt;/h2&gt;
-&lt;p&gt;Classic Visual Basic 只支持 Windows。&lt;/p&gt;
-&lt;h1 id=&#34;objective-cswift-程序员&#34;&gt;Objective-C/Swift 程序员&lt;/h1&gt;
-&lt;h2 id=&#34;macos-1&#34;&gt;macOS&lt;/h2&gt;
-&lt;p&gt;Apple 的东西几乎只在它自己的生态圈能用。&lt;/p&gt;
-&lt;h1 id=&#34;其他程序员&#34;&gt;其他程序员&lt;/h1&gt;
-&lt;h2 id=&#34;滚动更新版的-linuxfreebsd&#34;&gt;滚动更新版的 Linux/FreeBSD&lt;/h2&gt;
-&lt;p&gt;在对程序员的友好程度上，Linux 远超 Windows 和 macOS，正如 Windows 对游戏玩家友好，macOS 对设计师友好一样。&lt;br&gt;
-滚动更新是为了获取最新的程序库和开发工具，对开发者而言这是很重要的。&lt;/p&gt;
-&lt;h1 id=&#34;有开源洁癖注重隐私保护的人&#34;&gt;有开源洁癖/注重隐私保护的人&lt;/h1&gt;
-&lt;h2 id=&#34;完全开源的-linuxbsd&#34;&gt;完全开源的 Linux/BSD&lt;/h2&gt;
-&lt;p&gt;部分 Linux 并非完全开源，例如 Ubuntu，内置部分闭源软件。擦亮眼睛，选好发行版！&lt;br&gt;
-macOS 也属于 BSD 家族，但只有内核开源。&lt;/p&gt;
-&lt;h1 id=&#34;注重安全性的人&#34;&gt;注重安全性的人&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;恕我直言，安全性高的系统所能起到的保护作用也十分有限，要想真正在赛博空间保护自己，请提升自己的信息安全技术水平。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;qubes-oshttpsqubes-osorg&#34;&gt;&lt;a href=&#34;https://qubes-os.org/&#34;&gt;Qubes OS&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;基于 Xen 虚拟化提高安全性，最注重安全性的 Linux 发行版之一。&lt;/p&gt;
-&lt;h2 id=&#34;parrot-os-securityhttpsparrotsecorg&#34;&gt;&lt;a href=&#34;https://parrotsec.org/&#34;&gt;Parrot OS Security&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;基于 Debian Testing，和 &lt;a href=&#34;https://www.kali.org/&#34;&gt;Kali Linux&lt;/a&gt; 正好相反，是一个注重防御的渗透测试发行版。最注重安全性的 Linux 发行版之一。&lt;/p&gt;
-&lt;h2 id=&#34;openbsdhttpswwwopenbsdorg&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;最注重安全性的 BSD 发行版。&lt;/p&gt;
-&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
-&lt;p&gt;我之后应该会再写一篇博客推荐 Linux 发行版的。&lt;/p&gt;
-- https://anyicomplex.github.io/posts/operating-system-recommendations-for-personal-use/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
