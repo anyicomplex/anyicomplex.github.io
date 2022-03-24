@@ -37,7 +37,7 @@ macOS 也属于 BSD 家族，但只有内核开源。
 **恕我直言，安全性高的系统所能起到的保护作用也十分有限，要想真正在赛博空间保护自己，请提升自己的信息安全技术水平。**
 ## [Qubes OS](https://qubes-os.org/)
 基于 Xen 虚拟化提高安全性，最注重安全性的 Linux 发行版之一。
-## [Parrot OS](https://parrotsec.org/)
+## [Parrot OS Security](https://parrotsec.org/)
 基于 Debian Testing，和 [Kali Linux](https://www.kali.org/) 正好相反，是一个注重防御的渗透测试发行版。最注重安全性的 Linux 发行版之一。
 ## [OpenBSD](https://www.openbsd.org/)
 最注重安全性的 BSD 发行版。
