@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week Summary on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/tags/week-summary/</link>
+    <description>Recent content in Week Summary on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 17:24:10 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/en/tags/week-summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week Summary 20220227</title>
+      <link>https://anyicomplex.github.io/en/posts/week-summary-20220227/</link>
+      <pubDate>Mon, 28 Feb 2022 17:24:10 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/week-summary-20220227/</guid>
+      <description>Maintained projects  gdx-dwt xdg-utils-java v1.1.3  Contributed projects  NONE  Next-step planning  Complete the Windows backend of gdx-dwt by the end of next week. Finish at least 1/3 of the game [Space Trail] demo by the end of next week.  Extra comments I didn&amp;rsquo;t expect win32 development without MFC to be so difficult, which directly led to not finishing the planned tasks. (Being busy lately is one of the reasons, even both blog posts and week summaries were not made up until the second Tuesday).</description>
+    </item>
+    
+    <item>
+      <title>Week Summary 20220220</title>
+      <link>https://anyicomplex.github.io/en/posts/week-summary-20220220/</link>
+      <pubDate>Sun, 20 Feb 2022 10:56:05 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/week-summary-20220220/</guid>
+      <description>Maintained projects  gdx-dwt xdg-utils-java v1.1.3-rc1&amp;hellip;v1.1.3  Contributed projects  NONE  Next-step planning  Refine the Windows backend of gdx-dwt by the end of next week.  </description>
+    </item>
+    
+    <item>
+      <title>Week Summary 20220213</title>
+      <link>https://anyicomplex.github.io/en/posts/week-summary-20220213/</link>
+      <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/week-summary-20220213/</guid>
+      <description>Maintained projects  gdx-bmfont v1.0.0&amp;hellip;v1.0.5 gdx-svmhelper v1.10.0-beta4 gdx-dwt xdg-utils-java v1.1.3-beta1&amp;hellip;v1.1.3-beta2  Contributed projects  NONE  Next-step planning  Advancing xdg-utils-java to a stable release next week. Refine the Linux backend of gdx-dwt by the end of next week.  </description>
+    </item>
+    
+  </channel>
+</rss>

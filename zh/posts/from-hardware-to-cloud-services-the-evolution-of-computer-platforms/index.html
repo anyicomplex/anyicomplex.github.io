@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html><head>
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
+
+
+  <title>从硬件到云服务——计算机平台的演化</title>
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="本文仅代表个人观点，欢迎留言讨论">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="从硬件到云服务——计算机平台的演化" />
+<meta property="og:description" content="本文仅代表个人观点，欢迎留言讨论" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anyicomplex.github.io/zh/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/" />
+<meta property="article:published_time" content="2022-03-23T09:14:06-04:00" />
+<meta property="article:modified_time" content="2022-03-24T11:08:36-04:00" /><meta property="og:site_name" content="安怡的博客" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="从硬件到云服务——计算机平台的演化"/>
+<meta name="twitter:description" content="本文仅代表个人观点，欢迎留言讨论"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+<link rel="icon" href="https://github.com/fluidicon.png">
+
+
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/scss/journal.min.f4a8de07567a2d29619e0711662ef6251e3e59b642079f99490f654abf89a3c4.css" integrity="sha256-9KjeB1Z6LSlhngcRZi72JR4&#43;WbZCB5&#43;ZSQ9lSr&#43;Jo8Q=" media="screen">
+
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'ecaa9e60860d0402573e',
+  clientSecret: 'e2a72d4628c46b1d35bdeef27db30f692f731c01',
+  repo: 'anyicomplex.github.io',
+  owner: 'anyicomplex',
+  admin: ['anyicomplex'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://anyicomplex.github.io/zh/">
+    
+        <div class="nav-title">
+            安怡的博客
+        </div>
+        
+        <div class="nav-subtitle">
+            编程与生活 | 随笔杂记
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/zh/posts">
+                归档
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/categories">
+                分类
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/tags">
+                标签
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/index.xml">
+                RSS 订阅
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%89%8d%e8%a8%80" onclick="onNavClick(`#前言-nav`)" id="前言-nav">
+									前言
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%b8%80%e4%bb%a3%e7%a1%ac%e4%bb%b6" onclick="onNavClick(`#第一代硬件-nav`)" id="第一代硬件-nav">
+									第一代：硬件
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%ba%8c%e4%bb%a3%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f" onclick="onNavClick(`#第二代操作系统-nav`)" id="第二代操作系统-nav">
+									第二代：操作系统
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%b8%89%e4%bb%a3%e6%b5%8f%e8%a7%88%e5%99%a8" onclick="onNavClick(`#第三代浏览器-nav`)" id="第三代浏览器-nav">
+									第三代：浏览器
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e5%9b%9b%e4%bb%a3%e4%ba%91%e6%9c%8d%e5%8a%a1" onclick="onNavClick(`#第四代云服务-nav`)" id="第四代云服务-nav">
+									第四代：云服务
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%88%86%e6%9e%90" onclick="onNavClick(`#分析-nav`)" id="分析-nav">
+									分析
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/zh/posts">
+                    归档
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/categories">
+                    分类
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/tags">
+                    标签
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/index.xml">
+                    RSS 订阅
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%89%8d%e8%a8%80" onclick="onNavClick(`#前言-nav`)" id="前言-nav">
+									前言
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%b8%80%e4%bb%a3%e7%a1%ac%e4%bb%b6" onclick="onNavClick(`#第一代硬件-nav`)" id="第一代硬件-nav">
+									第一代：硬件
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%ba%8c%e4%bb%a3%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f" onclick="onNavClick(`#第二代操作系统-nav`)" id="第二代操作系统-nav">
+									第二代：操作系统
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%b8%89%e4%bb%a3%e6%b5%8f%e8%a7%88%e5%99%a8" onclick="onNavClick(`#第三代浏览器-nav`)" id="第三代浏览器-nav">
+									第三代：浏览器
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e5%9b%9b%e4%bb%a3%e4%ba%91%e6%9c%8d%e5%8a%a1" onclick="onNavClick(`#第四代云服务-nav`)" id="第四代云服务-nav">
+									第四代：云服务
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%88%86%e6%9e%90" onclick="onNavClick(`#分析-nav`)" id="分析-nav">
+									分析
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://anyicomplex.github.io/zh/">
+            安怡的博客
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://anyicomplex.github.io/zh/">
+        <div class="single-column-header-title">安怡的博客</div>
+        
+        <div class="single-column-header-subtitle">编程与生活 | 随笔杂记</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    从硬件到云服务——计算机平台的演化
+                    
+                    <div class="post-subtitle">
+                        本文仅代表个人观点，欢迎留言讨论
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-03-23 09:14
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/zh/categories/it">IT</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/zh/tags/%E7%A1%AC%E4%BB%B6">硬件</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/%E6%B5%8F%E8%A7%88%E5%99%A8">浏览器</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1">云服务</a>
+                                &nbsp;
+                            
+                        
+                        
+                            <i class="material-icons" style="">schedule</i>
+                            
+
+                            
+                            
+
+                            
+                            6 min
+                            
+                            3 s.
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h1 id="前言">前言</h1>
+<p>我认为，程序员，就是在计算机平台上工作，利用计算机平台来处理需求的职业。<br>
+计算机平台并非一成不变的，截至目前，主流的计算机平台至少已经发展了四代。我的分析如下：</p>
+<h1 id="第一代硬件">第一代：硬件</h1>
+<p>早期的 Unix 系统是连同源码一起发售的。那时候，一台计算机的成本和售价，硬件占了绝大多数，没人意识到 Unix 源码的价值。<br>
+各个硬件平台的汇编语言不同，于是出现了 C 语言等高级编程语言，用于解决这个问题。<br>
+然而，C 语言对于早期的计算机而言也是非常奢侈的存在，那时候只有大型机才有足够的性能运行 C 语言写成的 Unix。<br>
+于是，那时候的程序员们，多数用着汇编语言，在不同的硬件平台（多数没有操作系统）上工作，他们的程序多数时候无法不经修改地跨越硬件平台。</p>
+<h1 id="第二代操作系统">第二代：操作系统</h1>
+<p>“操作系统”这个概念随着 DOS 系统的大获成功席卷了整个 IT 行业。<br>
+随着硬件性能的提高和成本的降低，C 语言、Basic 和 Pascal 等高级编程语言得以普及，BSD 和 Linux 也得益于 C 语言，与硬件解耦。<br>
+各个操作系统的可执行文件格式不同，哪怕是针对同一种硬件平台，为不同操作系统编译的可执行文件也无法兼容，为了解决这个问题，出现了 Java 等跨操作系统的编程语言。<br>
+然而，Java 对于当时的计算机而言也是非常奢侈的存在，大多数时候计算机没有足够的资源良好的运行 Java。<br>
+于是，那时候的程序员们，多数用着高级编程语言，在不同的操作系统上工作，他们的程序多数时候无法不经修改地跨越操作系统平台。<br>
+后来，硬件性能进一步提高、成本进一步降低，让高度封装的跨操作系统 C/C++ 库成为可能，Java 等编程语言重现辉煌。<br>
+从此，编写跨操作系统程序成为程序员的必备技能。</p>
+<h1 id="第三代浏览器">第三代：浏览器</h1>
+<p>随着硬件性能的进一步提高、成本进一步降低，互联网 3.0 时代到来了，Web 开发者对操作系统的利用能力也随着浏览器能力的增强进一步增强。<br>
+于是，B/S 架构大行其道，基于浏览器的桌面应用开发框架（如 Electron.js）和移动应用开发框架（如 React.js）也随之兴起，从而极大的压榨了直接基于操作系统平台的本地 APP 的生存空间，浏览器也正式成为了一代计算机平台。<br>
+从此，编写 Web 前端程序也成为程序员的必备技能。</p>
+<h1 id="第四代云服务">第四代：云服务</h1>
+<p>随着硬件性能的进一步提高、成本进一步降低，普通用户能享受到的网络带宽越来越大、延迟越来越低，于是很多公司把原本应该在用户设备上运行的程序搬到了自己的服务器上，以“云服务”的形式提供给用户。<br>
+这样做既能降低适配多不同操作系统所带来的成本（后端程序要适配的操作系统只有公司服务器上的系统），又能提供更好的服务，不必受制于用户设备的配置。
+这是目前最新一代的计算机平台，已经得到了非常广泛的应用，而且仍在高速发展中。</p>
+<h1 id="分析">分析</h1>
+<p>并不是说新的计算机平台出现，旧的计算机平台就会被取代，因为后来出现的平台是基于前面的平台的。</p>
+<ul>
+<li>嵌入式工程师所要面对的多数时候是硬件平台，少数时候是操作系统平台，和几十年前一样。</li>
+<li>浏览器 APP 目前还无法摆脱“臃肿”的标签，而且很多用户更偏爱本地 APP，因此大多数本地 APP 开发者很长时间内还不至于失业。</li>
+<li>云服务的基础是服务器上运行服务的操作系统，后端程序也属于本地 APP 的范畴。</li>
+</ul>
+<p><strong>计算机平台的演化，基础是硬件性能的提高和成本的降低，每次出现的新平台都是对旧平台部分问题的最优解。</strong></p>
+<h1 id="感想">感想</h1>
+<p>连续写两篇博客，真的很累&hellip;&hellip;</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2022-03-24</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts">
+			下篇<br>已经到头啦
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://anyicomplex.github.io/zh/posts/linux-distro-recommendations/">
+			上篇<br>Linux 发行版推荐
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>

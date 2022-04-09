@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating System on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/tags/operating-system/</link>
+    <description>Recent content in Operating System on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 08:17:44 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/en/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reasons to Use Linux</title>
+      <link>https://anyicomplex.github.io/en/posts/reasons-to-use-linux/</link>
+      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/reasons-to-use-linux/</guid>
+      <description>1. Lightweight (x86_64 operating system for example, for daily use; so the distributions focused on lightweight that streamlining too many features are excluded)    Operating system Minimum CPU requirements Minimum memory requirements Minimum storage requirements     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    All referenced data come from the system&amp;rsquo;s official website</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,417 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>自我介紹 on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/zh-hant/</link>
+    <description>Recent content in 自我介紹 on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
+    
+        <atom:link href="https://anyicomplex.github.io/zh-hant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>一周总结 20220220</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/week-summary-20220220/</link>
+        <pubDate>Sun, 20 Feb 2022 10:56:05 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/week-summary-20220220/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/week-summary-20220220/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-rc1&amp;hellip;v1.1.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;下周结束前完善 gdx-dwt 的 Windows 后端部分。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/zh-hant/posts/week-summary-20220220/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>给 C&#43;&#43; 初学者的一些建议</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/some-advice-for-cpp-beginners/</link>
+        <pubDate>Sat, 19 Feb 2022 09:33:19 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/some-advice-for-cpp-beginners/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/some-advice-for-cpp-beginners/ -&lt;h1 id=&#34;基础&#34;&gt;基础&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;在学 C++ 之前先学 C 语言，掌握堆栈等基本概念，并能够熟练使用指针和宏。&lt;/li&gt;
+&lt;li&gt;新版本的特性先不要学，哪怕只是用于学习而非生产，也建议只使用长期支持的稳定版本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;应用&#34;&gt;应用&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;先别急着深入学习模板等 C++ 高级特性，对新手而言，把 C++ 当作“带类的 C”是最稳妥的使用方法。&lt;/li&gt;
+&lt;li&gt;STL 里有的东西就不要去找第三方库了（除非这个库真的比 STL 的那部分好并且长期有人维护）。&lt;/li&gt;
+&lt;li&gt;Boost 可以用，但也仅仅只是可以用，因为坑太多。对新手而言，很多时候难以分辨是自己写的程序的问题还是编译器或 Boost 的问题（STL 就好得多，毕竟 Boost 是 STL 的上游）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;编译器&#34;&gt;编译器&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 下不建议使用 MSVC 以外的编译器，否则坑很多。&lt;/li&gt;
+&lt;li&gt;Linux 下 Clang 和 GCC 均可，但我一般建议使用 GCC。&lt;/li&gt;
+&lt;li&gt;macOS 下建议 Clang。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ide&#34;&gt;IDE&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;VSCode 不是 IDE，是文本编辑器，所以不在这个推荐列表内（当然，我推荐它，因为我没钱买 IDEA Ultimate 却需要写 JNI，它帮了大忙:D）。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Qt 开发者可以直接用 Qt 的工具链。&lt;/li&gt;
+&lt;li&gt;Eclipse 和 Code::Blocks 老用户可以继续用，这两个 IDE 不是不好，是难以上手，当然对老用户而言没什么问题。&lt;/li&gt;
+&lt;li&gt;Windows 下建议 Visual Studio 和 MSVC 配合使用，如果用惯了 JetBrains 系的 IDE 也可以用 CLion，其他不推荐。&lt;/li&gt;
+&lt;li&gt;Linux 下，建议 CLion，KDE 桌面也可以使用 KDevelop，但其他桌面不建议（因为 KDevelop 的依赖会带一大堆 KDE 的软件包，这也是 KDE 应用的通病，耦合度太高），GNOME 桌面也可以使用 GNOME Builder（这个其他桌面用也没什么问题），其他不推荐。&lt;/li&gt;
+&lt;li&gt;macOS 下建议 XCode，如果觉得不好用，就换 AppCode/CLion，其他没有更好的了。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/zh-hant/posts/some-advice-for-cpp-beginners/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>一周总结 20220213</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/week-summary-20220213/</link>
+        <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/week-summary-20220213/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/week-summary-20220213/ -&lt;h1 id=&#34;维护的项目&#34;&gt;维护的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta1&amp;hellip;v1.1.3-beta2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;参与的项目&#34;&gt;参与的项目&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;下一步规划&#34;&gt;下一步规划&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;下周把 xdg-utils-java 推进到稳定版本。&lt;/li&gt;
+&lt;li&gt;下周结束前完善 gdx-dwt 的 Linux 后端部分。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/zh-hant/posts/week-summary-20220213/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>用 C 语言的风格写 Java 程序</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/writing-c-style-java-programs/</link>
+        <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/writing-c-style-java-programs/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/writing-c-style-java-programs/ -&lt;h1 id=&#34;可行性&#34;&gt;可行性&lt;/h1&gt;
+&lt;p&gt;都说 Java 是纯面向对象的编程语言，那么能不能在 Java 中写面向过程风格的代码呢？&lt;br&gt;
+&lt;strong&gt;Java 中虽然没有指针，但有引用，所以答案显然是可以的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;风格的区别&#34;&gt;风格的区别&lt;/h1&gt;
+&lt;p&gt;先来看两段伪代码：&lt;/p&gt;
+&lt;h2 id=&#34;c-语言风格&#34;&gt;C 语言风格&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;struct&lt;/span&gt; Foo foo;
+change_foo_value(&amp;amp;foo, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;java-风格&#34;&gt;Java 风格&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;Foo foo = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Foo();
+foo.&lt;span style=&#34;color:#658b00&#34;&gt;changeValue&lt;/span&gt;(0);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这同样也能体现面向对象和面向过程两种设计模式的区别。&lt;br&gt;
+两种风格都不错，是吧？&lt;/p&gt;
+&lt;h1 id=&#34;实际应用中的问题&#34;&gt;实际应用中的问题&lt;/h1&gt;
+&lt;p&gt;如果某个方法需要返回两种值，该怎么写程序？&lt;br&gt;
+&lt;strong&gt;设需求为：用程序启动 Shell 脚本，获取脚本的返回值和输出。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c-语言风格-1&#34;&gt;C 语言风格&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;exec_script&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; *script_path, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; **output) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exit_code;
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exit_code;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;java-风格-1&#34;&gt;Java 风格&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;Result&lt;/span&gt; {
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; String output;
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;Result&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode, String output) {
+		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;exitCode&lt;/span&gt; = exitCode;
+		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;output&lt;/span&gt; = output;
+	}
+}
+
+Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Result(exitCode, outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;());
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果不想在 Java 中为这个方法新定义一个类，这时候该怎么办呢？&lt;br&gt;
+也许我们可以借鉴一下 C 语言的风格：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, StringBuilder output) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exitCode;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;或者这样：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;String &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt;[] exitCode) {
+	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;这让我想到了 GNOME 社区出品的 &lt;a href=&#34;https://wiki.gnome.org/Projects/Vala&#34;&gt;Vala&lt;/a&gt; 语言:D&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/writing-c-style-java-programs/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>我回来了</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/i-am-back/</link>
+        <pubDate>Wed, 09 Feb 2022 06:18:18 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/i-am-back/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/i-am-back/ -&lt;p&gt;抱歉，很抱歉，非常抱歉，我食言了&amp;hellip;&amp;hellip;&lt;br&gt;
+上次说会有巨量更新，结果就写了一篇&amp;hellip;&amp;hellip;&lt;br&gt;
+就连过年，我都没发博&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;这段时间发生了很多事&amp;hellip;&amp;hellip;&lt;br&gt;
+首先，我玩 &lt;a href=&#34;https://www.miragerealms.co.uk&#34;&gt;Mirage Realms&lt;/a&gt; 玩上瘾了（因为真的很好玩:D）&lt;br&gt;
+然后，我决定用 Java 和 libGDX 开发游戏了（自己打自己的脸，&lt;a href=&#34;https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/&#34;&gt;详情&lt;/a&gt;）还做了一些相关工作（&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; 和 &lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt;）&lt;br&gt;
+然后，结交了外国友人 &lt;a href=&#34;https://github.com/Berstanio&#34;&gt;Berstanio&lt;/a&gt;（没猜错的话这位应该是德国人吧）&lt;br&gt;
+最后，在这段赛博时光中，我意识到，我需要有计划，需要有短期目标，需要做很多功课，需要学习很多很多。&lt;/p&gt;
+&lt;p&gt;新的一年，加油！&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/i-am-back/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>使用 Linux 的理由</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</link>
+        <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/ -&lt;h1 id=&#34;1轻量级&#34;&gt;1.轻量级&lt;/h1&gt;
+&lt;p&gt;（以 x86_64 操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内） &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;操作系统&lt;/th&gt;
+&lt;th&gt;最低 CPU 需求&lt;/th&gt;
+&lt;th&gt;最低内存需求&lt;/th&gt;
+&lt;th&gt;最低储存需求&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 11&lt;/td&gt;
+&lt;td&gt;1 GHz * 2&lt;/td&gt;
+&lt;td&gt;4 GB&lt;/td&gt;
+&lt;td&gt;64 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 10&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 7&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fedora 35 (GNOME)&lt;/td&gt;
+&lt;td&gt;2 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;15 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Debian 11 (GNOME)&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;1 GB&lt;/td&gt;
+&lt;td&gt;10 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;数据均来自官网&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 11: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&#34;&gt;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&lt;/a&gt;&lt;br&gt;
+Windows 10: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&#34;&gt;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&lt;/a&gt;&lt;br&gt;
+Windows 7: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&#34;&gt;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&lt;/a&gt;&lt;br&gt;
+Fedora 35: &lt;a href=&#34;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&#34;&gt;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&lt;/a&gt;&lt;br&gt;
+Debian 11: &lt;a href=&#34;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&#34;&gt;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Windows 10 的数据为早期版本（最新版的官方数据我没找到），最新版的最低硬件需求应和当前的 Windows 11 相当。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GNOME 是公认的占用资源最多的 Linux 桌面环境，而 Fedora 也是最为臃肿的 Linux 发行版之一。&lt;br&gt;
+然而二者的组合除了最低 CPU 需求高于 Windows 7 外，其他都不逊色。&lt;br&gt;
+而较为轻量的 Debian 11 和 GNOME 组合的最低硬件需求低于 Windows 7。&lt;br&gt;
+如果换用轻量级桌面 Xfce 或 LXDE，想必这一需求会低得多。&lt;br&gt;
+然而 Windows 可换不了桌面&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;2安全&#34;&gt;2.安全&lt;/h1&gt;
+&lt;h2 id=&#34;1文件系统&#34;&gt;1.文件系统&lt;/h2&gt;
+&lt;p&gt;所有 POSIX 操作系统的文件系统（Linux 的 ext 系列、Solaris 的 ZFS 等）都有严格的文件权限限制，只有被标记为“可执行”的文件才能运行。&lt;br&gt;
+而 Windows 不同，其对“可执行”文件的界定仅仅按扩展名来划分。
+这也是有历史原因的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 的前身 DOS 和早期 Windows 使用 FAT32 文件系统，这个文件系统很简陋，不但不支持日志，而且完全不支持文件权限。&lt;/li&gt;
+&lt;li&gt;随着 Windows NT 3.1 内核的推出，NTFS 取代 FAT32 成为了 Windows 的默认文件系统，这次总算支持文件权限了，然而其默认文件可执行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;通过 Access Control List（ACL）倒是可以修改默认文件权限，但这个功能又有多少 Windows 用户会去用呢？甚至大多数人都不知道 Windows 还有这个功能吧&amp;hellip;&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2操作系统&#34;&gt;2.操作系统&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux 开源，在大量开发者的参与下，系统漏洞能够迅速被发现和得到修复，也不必担心被官方植入后门（当然，某些发行版会这么做，例如 Ubuntu，所以各位选择发行版的时候要擦亮眼睛啊～）。&lt;/li&gt;
+&lt;li&gt;Windows 完全闭源，开发环境十分封闭，不仅不利于系统漏洞的发现和修复，而且微软本身就在通过官方植入的后门窃取用户的隐私（早就是公开的秘密了～）。&lt;/li&gt;
+&lt;li&gt;macOS 只有内核开源，完整的操作系统是闭源的，结论同 Windows。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3软件&#34;&gt;3.软件&lt;/h2&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;没有统一的软件源，需要自行寻找，但找到的软件源不一定可靠——例如很多下载站都会篡改安装包，注入病毒。&lt;/li&gt;
+&lt;li&gt;如果采取明文传输协议（HTTP、FTP等），很可能遭遇中间人攻击——软件在下载途中被篡改，注入病毒，然而不是所有软件源都会提供校验码的&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;不是所有软件都有“自动更新”功能，手动更新又要重复一遍之前下载的操作，重新面对一次相同的危险。&lt;/li&gt;
+&lt;li&gt;Windows 是专有软件的天下，因此很多软件本身就是植入了后门的～&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在 Linux 发行版安装软件，多数时候都是从发行版官方仓库安装，少数时候自己下载源码编译或安装第三方软件包。&lt;/li&gt;
+&lt;li&gt;绝大多数发行版维护的软件仓库都能够保证软件来源可靠，且绝大多数包管理器都自带校验机制。&lt;/li&gt;
+&lt;li&gt;无论软件是否支持“自动更新”，包管理器都能“自动更新”。&lt;/li&gt;
+&lt;li&gt;Linux 下绝大多数软件都是开源的，如果你对安全性有较高的要求，在 Linux 下完全可以不使用任何闭源软件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux 的前三条 和Windows 的最后一条。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3可定制性高&#34;&gt;3.可定制性高&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Linux 的可定制性绝不是 Windows 和 macOS 能比拟的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;图形界面&#34;&gt;图形界面&lt;/h2&gt;
+&lt;h3 id=&#34;windows-1&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图形界面是内核的一部分，无法修改。&lt;/li&gt;
+&lt;li&gt;微软对API开放程度不够，美化插件作用有限。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos-1&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图形界面是其软件生态的一部分，换成其他的会导致大量软件无法运行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;桌面环境（Desktop Environment）、窗口管理器（Window Manager）、显示服务器（Display Server）都是可以更换的。&lt;br&gt;
+例如：可以用 X Server 作为显示服务器，也可以用 Wayland；窗口管理器可以用 IceWM、JWM，也可以用 i3WM、Awesome；桌面环境可以用简洁的 GNOME、华丽的 KDE，也可以用轻量级的 Xfce、LXDE&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;更何况还有大量的主题插件、美化插件，可以把 Linux 装点的像 macOS ，也可以改成 Windows 的样子，当然，更多的是自成一派的风格～&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统修改&#34;&gt;系统修改&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;有时会有删去系统中某些用不上功能的需求。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;windows-2&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;内核不开源，几乎无法修改。&lt;/li&gt;
+&lt;li&gt;是一个环环相扣的整体结构，难以精简，且精简一般难以保证安全性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos-2&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;虽然内核开源，但上层架构不开源，因此修改难度极高。&lt;/li&gt;
+&lt;li&gt;精简难度同上。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-2&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;绝大多数 Linux 发行版对自行修改和编译内核都是友好的。&lt;/li&gt;
+&lt;li&gt;完全开源且充分模块化，因此精简起来十分容易，Tiny Core Linux 甚至完成了构建只有 12MB 的带有图形界面的操作系统的壮举。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4生态完善&#34;&gt;4.生态完善&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;此条主要针对 macOS 以外的 BSD。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作为三大桌面操作系统之一，越来越多的软件适配了 Linux 版本，而且 Linux 平台下本身多年积累的软件生态也越发成熟（例如 GIMP 之于 PhotoShop，Linux 生态的很多开源软件能够完美替代同类的商业软件）。&lt;/li&gt;
+&lt;li&gt;macOS 以外的 BSD 因为极度缺乏软件，日常使用一般会有问题（有 Linux 兼容层的除外）。&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>博客翻新 2</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-2/</link>
+        <pubDate>Wed, 08 Dec 2021 04:41:08 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-2/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-2/ -&lt;p&gt;最近终于被调到有电脑的岗位上了&lt;br&gt;
+先摸鱼为敬&lt;br&gt;
+闲着也是闲着，不如翻新博客:D&lt;br&gt;
+这次，这个主题我认为细节不尽如人意的地方几乎都做了修改，也修改了主页&lt;/p&gt;
+&lt;p&gt;话说今天好像是我生日来着，自己都差点忘了XD&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-2/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>博客翻新 1</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-1/</link>
+        <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-1/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-1/ -&lt;p&gt;两个月过去了，我又想起这个博客了XD&lt;br&gt;
+于是就&amp;hellip;&amp;hellip;修改了主题，翻新（并没有）了一下，评论系统也从 Utterances 换成了 Gitalk（当然，原来的评论也没有了XP）&lt;/p&gt;
+&lt;p&gt;新的主题：&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-diary/&#34;&gt;Diary&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;接下来一段时间会有巨量更（水）新（文）&amp;hellip;&amp;hellip;大概就这样吧！敬请期待！&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/blog-refurbishment-1/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>写给想用 Java 开发游戏的人的话</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/words-for-those-want-to-develop-game-in-java/</link>
+        <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/words-for-those-want-to-develop-game-in-java/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/words-for-those-want-to-develop-game-in-java/ -&lt;h1 id=&#34;java-适合开发游戏吗&#34;&gt;Java 适合开发游戏吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;我的答案是：不适合。&lt;/strong&gt;&lt;br&gt;
+如果你不追求开源，Unity 和 GameMaker 这类成熟的商业解决方案显然是最好的选择。&lt;br&gt;
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用 C/C++ 编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）&lt;br&gt;
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用 Java，准确地说，不推荐使用任何一门委托型语言，甚至带 GC 的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用 C# 做开发，但底层还是 C/C++，并且针对 C# 代码进行了 AOT 编译，以提升性能）&lt;br&gt;
+&lt;strong&gt;如果你没有非用 Java 不可的理由，就请打消用 Java 开发游戏的念头。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如果我非用-java-不可呢&#34;&gt;如果我非用 Java 不可呢？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Java 的生态很庞大，事实上，相对成熟的解决方案还是有的。&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt;：侧重于 2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jmonkeyengine.org/&#34;&gt;jMonkeyEngine&lt;/a&gt;：纯 3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;我认为相对完善的 Java 游戏引擎只有这两个，其他都不够成熟。&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;尝试使用 libGDX 开发 3D 游戏不是个明智的选择，而用 jMonkeyEngine 开发 2D 游戏是一件相当不理智的事。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;java-能开发像王者荣耀那样的大型游戏吗&#34;&gt;Java 能开发像王者荣耀那样的大型游戏吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;能。&lt;/strong&gt;&lt;br&gt;
+Java 的缺陷从来就不在大型化上，不然也不会有那么多服务器跑 SpringBoot 一类用 Java 编写的 Web 后端框架了。&lt;br&gt;
+&lt;strong&gt;大名鼎鼎的 &lt;a href=&#34;https://pokemmo.eu/&#34;&gt;PokeMMO&lt;/a&gt; 就是用 libGDX 开发的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;用-java-开发游戏需要注意些什么&#34;&gt;用 Java 开发游戏需要注意些什么？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;在桌面平台，几乎不可能让玩家们专门为你的游戏去安装 JRE。&lt;/strong&gt;&lt;br&gt;
+因此，必须在打包和精简 JRE 上下足功夫，提供不同桌面平台对应的安装包，保证开箱即用的用户体验。&lt;br&gt;
+JRE 的体积曾是个问题，但好在如今对游戏文件的体积要求也没有那么高了。&lt;br&gt;
+&lt;strong&gt;至于其他问题，那不属于 Java 的范畴，而是所有游戏开发者都需要面对的问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;graalvm-的-native-image-技术可以用于-java-游戏开发吗&#34;&gt;GraalVM 的 native-image 技术可以用于 Java 游戏开发吗？&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;理论上可行，但我不推荐。&lt;/strong&gt;&lt;br&gt;
+除非你对缩小游戏文件体积有较高的要求，否则这么做只会让你在损失很多 Java 特性和第三方库的同时面临很多不必要的麻烦。&lt;br&gt;
+把 Java 字节码完全 AOT 成本地可执行文件可以减少启动时间和系统资源占用，但这都不是游戏开发的重点。&lt;br&gt;
+&lt;strong&gt;如果你很看重游戏文件体积、系统资源占用和启动时间，那么还是趁早打消用 Java 开发游戏的念头。&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/words-for-those-want-to-develop-game-in-java/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Hello World</title>
+        <link>https://anyicomplex.github.io/zh-hant/posts/hello-world/</link>
+        <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/zh-hant/posts/hello-world/</guid>
+        <description>安怡的博客 https://anyicomplex.github.io/zh-hant/posts/hello-world/ -&lt;p&gt;主题：&lt;a href=&#34;https://themes.gohugo.io/themes/github-style/&#34;&gt;Github Style&lt;/a&gt; （注：这是博客开张时使用的主题，现已更改）&lt;/p&gt;
+&lt;p&gt;大概会是日记性质的博客:D&lt;/p&gt;
+- https://anyicomplex.github.io/zh-hant/posts/hello-world/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

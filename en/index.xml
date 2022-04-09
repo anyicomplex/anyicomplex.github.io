@@ -1,0 +1,505 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Introduction on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/</link>
+    <description>Recent content in Self Introduction on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
+    
+        <atom:link href="https://anyicomplex.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>从硬件到云服务——计算机平台的演化</title>
+        <link>https://anyicomplex.github.io/en/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</link>
+        <pubDate>Wed, 23 Mar 2022 09:14:06 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/ -&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;我认为，程序员，就是在计算机平台上工作，利用计算机平台来处理需求的职业。&lt;br&gt;
+计算机平台并非一成不变的，截至目前，主流的计算机平台至少已经发展了四代。我的分析如下：&lt;/p&gt;
+&lt;h1 id=&#34;第一代硬件&#34;&gt;第一代：硬件&lt;/h1&gt;
+&lt;p&gt;早期的 Unix 系统是连同源码一起发售的。那时候，一台计算机的成本和售价，硬件占了绝大多数，没人意识到 Unix 源码的价值。&lt;br&gt;
+各个硬件平台的汇编语言不同，于是出现了 C 语言等高级编程语言，用于解决这个问题。&lt;br&gt;
+然而，C 语言对于早期的计算机而言也是非常奢侈的存在，那时候只有大型机才有足够的性能运行 C 语言写成的 Unix。&lt;br&gt;
+于是，那时候的程序员们，多数用着汇编语言，在不同的硬件平台（多数没有操作系统）上工作，他们的程序多数时候无法不经修改地跨越硬件平台。&lt;/p&gt;
+&lt;h1 id=&#34;第二代操作系统&#34;&gt;第二代：操作系统&lt;/h1&gt;
+&lt;p&gt;“操作系统”这个概念随着 DOS 系统的大获成功席卷了整个 IT 行业。&lt;br&gt;
+随着硬件性能的提高和成本的降低，C 语言、Basic 和 Pascal 等高级编程语言得以普及，BSD 和 Linux 也得益于 C 语言，与硬件解耦。&lt;br&gt;
+各个操作系统的可执行文件格式不同，哪怕是针对同一种硬件平台，为不同操作系统编译的可执行文件也无法兼容，为了解决这个问题，出现了 Java 等跨操作系统的编程语言。&lt;br&gt;
+然而，Java 对于当时的计算机而言也是非常奢侈的存在，大多数时候计算机没有足够的资源良好的运行 Java。&lt;br&gt;
+于是，那时候的程序员们，多数用着高级编程语言，在不同的操作系统上工作，他们的程序多数时候无法不经修改地跨越操作系统平台。&lt;br&gt;
+后来，硬件性能进一步提高、成本进一步降低，让高度封装的跨操作系统 C/C++ 库成为可能，Java 等编程语言重现辉煌。&lt;br&gt;
+从此，编写跨操作系统程序成为程序员的必备技能。&lt;/p&gt;
+&lt;h1 id=&#34;第三代浏览器&#34;&gt;第三代：浏览器&lt;/h1&gt;
+&lt;p&gt;随着硬件性能的进一步提高、成本进一步降低，互联网 3.0 时代到来了，Web 开发者对操作系统的利用能力也随着浏览器能力的增强进一步增强。&lt;br&gt;
+于是，B/S 架构大行其道，基于浏览器的桌面应用开发框架（如 Electron.js）和移动应用开发框架（如 React.js）也随之兴起，从而极大的压榨了直接基于操作系统平台的本地 APP 的生存空间，浏览器也正式成为了一代计算机平台。&lt;br&gt;
+从此，编写 Web 前端程序也成为程序员的必备技能。&lt;/p&gt;
+&lt;h1 id=&#34;第四代云服务&#34;&gt;第四代：云服务&lt;/h1&gt;
+&lt;p&gt;随着硬件性能的进一步提高、成本进一步降低，普通用户能享受到的网络带宽越来越大、延迟越来越低，于是很多公司把原本应该在用户设备上运行的程序搬到了自己的服务器上，以“云服务”的形式提供给用户。&lt;br&gt;
+这样做既能降低适配多不同操作系统所带来的成本（后端程序要适配的操作系统只有公司服务器上的系统），又能提供更好的服务，不必受制于用户设备的配置。
+这是目前最新一代的计算机平台，已经得到了非常广泛的应用，而且仍在高速发展中。&lt;/p&gt;
+&lt;h1 id=&#34;分析&#34;&gt;分析&lt;/h1&gt;
+&lt;p&gt;并不是说新的计算机平台出现，旧的计算机平台就会被取代，因为后来出现的平台是基于前面的平台的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;嵌入式工程师所要面对的多数时候是硬件平台，少数时候是操作系统平台，和几十年前一样。&lt;/li&gt;
+&lt;li&gt;浏览器 APP 目前还无法摆脱“臃肿”的标签，而且很多用户更偏爱本地 APP，因此大多数本地 APP 开发者很长时间内还不至于失业。&lt;/li&gt;
+&lt;li&gt;云服务的基础是服务器上运行服务的操作系统，后端程序也属于本地 APP 的范畴。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;计算机平台的演化，基础是硬件性能的提高和成本的降低，每次出现的新平台都是对旧平台部分问题的最优解。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;连续写两篇博客，真的很累&amp;hellip;&amp;hellip;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Linux 发行版推荐</title>
+        <link>https://anyicomplex.github.io/en/posts/linux-distro-recommendations/</link>
+        <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/linux-distro-recommendations/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/linux-distro-recommendations/ -&lt;h1 id=&#34;个人使用&#34;&gt;个人使用&lt;/h1&gt;
+&lt;h2 id=&#34;面向-linux-新手&#34;&gt;面向 Linux 新手&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;其实 Linux 桌面系统的易用和桌面环境也有很大的关系，我建议新手使用 GNOME/KDE。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;debian-testingunstablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Testing/Unstable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Debian 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；上手难度较低。&lt;br&gt;
+默认不带闭源固件，安装这些固件对新手而言有一定的门槛。&lt;br&gt;
+Stable 源软件包太旧，一般用于服务器，个人使用建议换 Testing/Unstable 源（滚动更新）。&lt;/p&gt;
+&lt;h3 id=&#34;fedora-workstationhttpsgetfedoraorg&#34;&gt;&lt;a href=&#34;https://getfedora.org/&#34;&gt;Fedora Workstation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Red Hat 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。&lt;br&gt;
+相比 Debian 稍显臃肿。&lt;br&gt;
+若要满足日常使用，需要配置第三方软件源，对新手而言有一定的门槛。&lt;/p&gt;
+&lt;h3 id=&#34;opensuse-tumbleweedhttpswwwopensuseorg&#34;&gt;&lt;a href=&#34;https://www.opensuse.org/&#34;&gt;openSUSE Tumbleweed&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：RPM/Zypper&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：SUSE 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、配置方便（YaST 久负盛名）；上手难度低。&lt;br&gt;
+有稳定版（openSUSE Leap），但个人使用建议用滚动版（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;manjarohttpsmanjaroorg&#34;&gt;&lt;a href=&#34;https://manjaro.org/&#34;&gt;Manjaro&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Pacman/Pamac&lt;br&gt;
+软件包格式：pkg.tar.xz/pkg.tar.zst&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Manjaro 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。&lt;br&gt;
+自带显卡驱动工具，对安装显卡驱动友好。&lt;br&gt;
+和 &lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt; 一脉相承，可能是软件包最多的 Linux 发行版，而且比 Arch Linux 稳定。&lt;/p&gt;
+&lt;h2 id=&#34;面向有一定经验的-linux-用户&#34;&gt;面向有一定经验的 Linux 用户&lt;/h2&gt;
+&lt;h3 id=&#34;parrot-os-securityhttpswwwparrotsecorg&#34;&gt;&lt;a href=&#34;https://www.parrotsec.org/&#34;&gt;Parrot OS Security&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Parrot OS 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、安全可靠；上手难度适中。&lt;br&gt;
+基于 Debian Testing，和 &lt;a href=&#34;https://www.kali.org/&#34;&gt;Kali Linux&lt;/a&gt; 正好相反，是一个注重防御的渗透测试发行版。&lt;br&gt;
+最注重安全性的 Linux 发行版之一。&lt;/p&gt;
+&lt;h3 id=&#34;slackware-currenthttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware Current&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Slackpkg&lt;br&gt;
+软件包格式：tgz/txz&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Patrick Volkerding&lt;br&gt;
+个人评价：质量高、软件包多、精简可靠；上手难度较高。&lt;br&gt;
+官方的包管理器不够现代化，无法处理依赖关系（可以安装第三方包管理器）。&lt;br&gt;
+现存最古老的 Linux 发行版，BSD 风格的 Linux 发行版，以稳定著称。&lt;br&gt;
+个人使用建议换 Current 源（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;arch-linuxhttpsarchlinuxorg&#34;&gt;&lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Pacman&lt;br&gt;
+软件包格式：pkg.tar.xz/pkg.tar.zst&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Arch Linux 社区&lt;br&gt;
+个人评价：质量高、软件包多、资料丰富、系统精简；上手难度较高。&lt;br&gt;
+没有系统安装程序，需要纯手动安装，并且系统稳定性差。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://wiki.archlinux.org/&#34;&gt;ArchWiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;/p&gt;
+&lt;h2 id=&#34;面向-linux-老玩家&#34;&gt;面向 Linux 老玩家&lt;/h2&gt;
+&lt;h3 id=&#34;nixos-unstablehttpsnixosorg&#34;&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS Unstable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Nix&lt;br&gt;
+软件包格式：使用 Nix 语言进行管理，格式不定&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：NixOS 社区&lt;br&gt;
+个人评价：质量高、软件包多、新潮可靠；上手难度非常高。&lt;br&gt;
+没有系统安装程序，需要纯手动安装。&lt;br&gt;
+采用 Nix 包管理器和 Nix 表达式语言，以相当具有颠覆性的方式管理整个系统，因此原生支持无需手动配置的系统备份、恢复和回滚。&lt;br&gt;
+Nix 包管理器需要手动配置安装软件，同时支持二进制安装和源码安装，具有非常强的自定义性。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://nixos.org/manual/nixos/&#34;&gt;NixOS Manual&lt;/a&gt; 和 &lt;a href=&#34;https://nixos.wiki/&#34;&gt;NixOS Wiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;br&gt;
+个人使用建议换 Unstable 源（稳定版软件包会比较旧）。&lt;/p&gt;
+&lt;h3 id=&#34;qubes-oshttpsqubes-osorg&#34;&gt;&lt;a href=&#34;https://qubes-os.org/&#34;&gt;Qubes OS&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：RPM/Yum&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：只提供开源软件&lt;br&gt;
+维护者：Invisible Things Lab&lt;br&gt;
+个人评价：质量高、开箱即用、安全可靠；上手难度较高。&lt;br&gt;
+用基于 Xen 的虚拟化技术来保障安全性，日常使用依赖于虚拟机系统（默认有 Debian、Fedora 和 Whonix）。&lt;br&gt;
+默认的虚拟机系统软件包会比较旧，建议自己添加一些滚动更新系统供日常使用。&lt;br&gt;
+最注重安全性的 Linux 发行版之一。&lt;/p&gt;
+&lt;h3 id=&#34;gentoo-linuxhttpswwwgentooorg&#34;&gt;&lt;a href=&#34;https://www.gentoo.org/&#34;&gt;Gentoo Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：否&lt;br&gt;
+官方包管理器：Portage&lt;br&gt;
+软件包格式：使用 git 进行管理，格式不定（源码包）；xpak/gpkg（二进制包）&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：只提供开源软件&lt;br&gt;
+维护者：Gentoo 基金会&lt;br&gt;
+个人评价：质量高、软件包多、资料丰富、系统精简；上手难度非常高。&lt;br&gt;
+没有系统安装程序，并且安装过程中所有程序都必须在本地编译。&lt;br&gt;
+Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载源码然后在本地编译，也支持二进制安装。&lt;br&gt;
+软件包数量远超 Debian 家族。&lt;br&gt;
+&lt;a href=&#34;https://wiki.gentoo.org/&#34;&gt;Gentoo Wiki&lt;/a&gt; 提供了非常丰富的高质量文档。&lt;/p&gt;
+&lt;h1 id=&#34;用于服务器&#34;&gt;用于服务器&lt;/h1&gt;
+&lt;h2 id=&#34;免费系统&#34;&gt;免费系统&lt;/h2&gt;
+&lt;h3 id=&#34;debian-stablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Stable&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：DPKG/APT&lt;br&gt;
+软件包格式：deb&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Debian 社区&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+老牌 Linux 发行版，以稳定和精简著称。&lt;/p&gt;
+&lt;h3 id=&#34;rocky-linuxhttpsrockylinuxorg&#34;&gt;&lt;a href=&#34;https://rockylinux.org/&#34;&gt;Rocky Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：4/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：全部开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Rocky Enterprise 软件基金会&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+是 RHEL 的克隆，RHEL 是 Linux 服务器的事实标准；没有官方的技术支持服务。&lt;/p&gt;
+&lt;h3 id=&#34;slackwarehttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+软件包格式：tgz/txz&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源混合存放&lt;br&gt;
+维护者：Patrick Volkerding&lt;br&gt;
+个人评价：质量高、软件包多、精简可靠；但官方的包管理机制不够现代化，无法处理依赖关系（可以安装第三方包管理器）；适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;br&gt;
+现存最古老的 Linux 发行版，BSD 风格的 Linux 发行版，以稳定著称；没有官方的技术支持服务。&lt;/p&gt;
+&lt;h2 id=&#34;付费系统&#34;&gt;付费系统&lt;/h2&gt;
+&lt;h3 id=&#34;red-hat-enterprise-linuxhttpsredhatcomrhel&#34;&gt;&lt;a href=&#34;https://redhat.com/rhel/&#34;&gt;Red Hat Enterprise Linux&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;个人推荐指数：3/5&lt;/strong&gt;&lt;br&gt;
+是否稳定版：是&lt;br&gt;
+官方包管理器：RPM/Yum/DNF&lt;br&gt;
+软件包格式：rpm&lt;br&gt;
+默认软件：部分开源&lt;br&gt;
+官方软件仓库：开源/闭源分开存放&lt;br&gt;
+维护者：Red Hat 公司&lt;br&gt;
+个人评价：质量高、软件包多、开箱即用、资料丰富；Linux 服务器的事实标准；适合资金足够的企业使用。&lt;br&gt;
+开源但不免费；有优秀的官方的付费技术支持服务。&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;我不会再推荐任何 Ubuntu 家族的系统了。事实证明，它们坑都很多。&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/linux-distro-recommendations/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>真正意义上的杂记 5</title>
+        <link>https://anyicomplex.github.io/en/posts/miscellaneous-note-5/</link>
+        <pubDate>Tue, 22 Mar 2022 10:53:38 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/miscellaneous-note-5/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/miscellaneous-note-5/ -&lt;p&gt;为东航客机的死难者默哀。&lt;br&gt;
+希望死难者家属能得到应有的赔偿，造成此事的相关涉事人员得到应有的处罚。&lt;br&gt;
+希望这样的人间惨剧不再发生。&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/miscellaneous-note-5/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>针对本博客的翻译计划</title>
+        <link>https://anyicomplex.github.io/en/posts/translation-plan-for-this-blog/</link>
+        <pubDate>Tue, 22 Mar 2022 10:53:38 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/translation-plan-for-this-blog/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/translation-plan-for-this-blog/ -&lt;p&gt;若无特殊情况，将在 2022-04-04-12:00:00（GMT+8:00） 之前对本博客的所有简体中文文本内容提供繁体中文和英文的翻译。&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/translation-plan-for-this-blog/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>停更博客 11 天致歉</title>
+        <link>https://anyicomplex.github.io/en/posts/apologize-for-stop-blogging-last-11-days/</link>
+        <pubDate>Tue, 22 Mar 2022 10:11:40 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/apologize-for-stop-blogging-last-11-days/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/apologize-for-stop-blogging-last-11-days/ -&lt;p&gt;&lt;strong&gt;若无特殊说明，本文中日期、时间的时区皆为北京时间（GMT+08:00）。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;致歉正文&#34;&gt;致歉正文&lt;/h1&gt;
+&lt;p&gt;从 2022-03-11 到 2022-03-22，我停更了 11 天博客（之前缺更的博客也没补上）。&lt;br&gt;
+&lt;strong&gt;首先，无论有什么理由，我必须为此事道歉。&lt;/strong&gt;&lt;br&gt;
+理由：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.工作繁忙+身体不适，没有足够的精力写博客。&lt;/li&gt;
+&lt;li&gt;2.自己的懒惰。明明有精力编程，却没精力写博客？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;清点缺更的博文&#34;&gt;清点缺更的博文&lt;/h1&gt;
+&lt;p&gt;2022-02-09，我翻新了博客，制定了如下规划：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;至少每周更新两篇&lt;/li&gt;
+&lt;li&gt;每周、每月做个人/工作室项目总结和下一步规划
+现进一步明确如下：&lt;/li&gt;
+&lt;li&gt;至少每周更新两篇 IT 相关，预计阅读时间（页眉可看）超过 1 分钟的博客&lt;/li&gt;
+&lt;li&gt;每周、每月做个人/工作室项目总结和下一步规划&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;根据此规划，清点缺更博客如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2022-02-07&amp;hellip;2022-02-13&lt;br&gt;
+博客 * 1&lt;/li&gt;
+&lt;li&gt;2022-02-14&amp;hellip;2022-02-20&lt;br&gt;
+博客 * 1&lt;/li&gt;
+&lt;li&gt;2022-02-28&amp;hellip;2022-03-06&lt;br&gt;
+周总结 * 1&lt;br&gt;
+月总结 * 1&lt;/li&gt;
+&lt;li&gt;2022-03-07&amp;hellip;2022-03-13&lt;br&gt;
+博客 * 2&lt;br&gt;
+周总结 * 1&lt;/li&gt;
+&lt;li&gt;2022-03-14&amp;hellip;2022-03-20&lt;br&gt;
+博客 * 2&lt;br&gt;
+周总结 * 1&lt;/li&gt;
+&lt;li&gt;合计&lt;br&gt;
+博客 * 6&lt;br&gt;
+周总结 * 3&lt;br&gt;
+月总结 * 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;将在本周结束前全部补上。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;我可以为自己找理由开脱，但计划不遵守就等于没有计划。只此一次，下不为例。&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/apologize-for-stop-blogging-last-11-days/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>对“世界多极化”的展望</title>
+        <link>https://anyicomplex.github.io/en/posts/perspectives-on-world-multipolarity/</link>
+        <pubDate>Thu, 10 Mar 2022 21:42:48 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/perspectives-on-world-multipolarity/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/perspectives-on-world-multipolarity/ -&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;有人提出“世界正在走向多极化”的观点，这个观点我十分认同。&lt;br&gt;
+我认为，形成“世界多极化”的局面是必然趋势，但这种局面是会在几十年后还是上百年后形成，我就不清楚了。&lt;br&gt;
+本人不才，在此斗胆展望，大概率说的都是错的，还请各位见谅。&lt;/p&gt;
+&lt;h1 id=&#34;正文&#34;&gt;正文&lt;/h1&gt;
+&lt;h2 id=&#34;北美洲澳洲&#34;&gt;北美洲、澳洲&lt;/h2&gt;
+&lt;p&gt;当前的世界是由美国主导的“单极世界”。我认为，“世界多极化”后的美国仍然会是其中最强大的“一极”，引领北美洲、澳洲地区发展。&lt;/p&gt;
+&lt;h2 id=&#34;欧洲&#34;&gt;欧洲&lt;/h2&gt;
+&lt;p&gt;这次乌克兰和俄罗斯的战争已经充分暴露了俄罗斯在军事方面的外强中干，因此我认为俄罗斯不会是“多极世界”中的“一极”——无论从经济方面还是军事方面，都无法达到成为“一极”的标准。&lt;br&gt;
+我认为，未来大概率会出现的局面是：俄罗斯成功转型民主国家并加入欧盟，届时北约解散，欧盟正式成为“多极世界”的“一极”。&lt;/p&gt;
+&lt;h2 id=&#34;东亚&#34;&gt;东亚&lt;/h2&gt;
+&lt;p&gt;我认为，未来的东亚势必走向联合（不一定会形成类似欧盟的经济组织，但一定会有经济上的自由贸易区；不一定会形成类似北约的军事组织，但一定会有军事上的同盟关系）。在那之前，日本会成为“多极世界”的一极。&lt;br&gt;
+东亚的联合在经济、文化上都有基础，目前最大的阻力是极权/威权政治（北朝鲜/中国大陆）。&lt;br&gt;
+我认为，就国家体量而言，如果中国能从极权/威权政治的阴影里走出来，未来大概率能够重新走上巅峰，引领东亚发展。届时，中日韩三国所组成的“东亚联合”会是“多极世界”中的“一极”。&lt;/p&gt;
+&lt;h2 id=&#34;南亚&#34;&gt;南亚&lt;/h2&gt;
+&lt;p&gt;我认为印度会成为“一极”，在走出种性制度的阴影后。&lt;/p&gt;
+&lt;h2 id=&#34;东南亚&#34;&gt;东南亚&lt;/h2&gt;
+&lt;p&gt;无论是在经济还是政治方面，都很有潜力。我认为，虽然目前还没有国家明显的引领整个地区发展，但未来大概率会出现成为“一极”的力量。&lt;/p&gt;
+&lt;h2 id=&#34;中亚西亚北非&#34;&gt;中亚、西亚、北非&lt;/h2&gt;
+&lt;p&gt;政治、文化因素过于复杂，我认为这些地区难以出现成为“一极”的力量。&lt;/p&gt;
+&lt;h2 id=&#34;撒哈拉以南非洲&#34;&gt;撒哈拉以南非洲&lt;/h2&gt;
+&lt;p&gt;长期以来饱受战乱影响，没能出现强国，或形成强有力的联合。我认为，虽然当前局势并不明朗，但这段历史进程总有走完的一天。&lt;br&gt;
+也许未来某天会出现成为“一极”的力量。&lt;/p&gt;
+&lt;h2 id=&#34;拉丁美洲&#34;&gt;拉丁美洲&lt;/h2&gt;
+&lt;p&gt;政治、经济的情况介于东亚和撒哈拉以南非洲之间，我认为比较有潜力成为“一极”的国家有巴西、墨西哥和智利。&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;其实按当前的农业技术和“经济全球化”的影响，本不该出现饥荒，出现饥荒一定是政治因素。&lt;br&gt;
+&lt;strong&gt;瘟疫、战争、饥荒和死亡总是如影随形，希望近年的中国不要重演上世纪五十年代末到六十年代初发生的悲剧。&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/perspectives-on-world-multipolarity/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>真正意义上的杂记 4</title>
+        <link>https://anyicomplex.github.io/en/posts/miscellaneous-note-4/</link>
+        <pubDate>Tue, 08 Mar 2022 01:08:57 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/miscellaneous-note-4/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/miscellaneous-note-4/ -&lt;p&gt;有感而发，大哭一场，吟诗一首：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;《硕鼠》&lt;br&gt;
+先秦·佚名&lt;br&gt;
+硕鼠硕鼠，无食我黍！&lt;br&gt;
+三岁贯汝，莫我肯顾。&lt;br&gt;
+逝将去汝，适彼乐土。&lt;br&gt;
+乐土乐土，爰得我所。&lt;br&gt;
+硕鼠硕鼠，无食我麦！&lt;br&gt;
+三岁贯汝，莫我肯德。&lt;br&gt;
+逝将去汝，适彼乐国。&lt;br&gt;
+乐国乐国，爰得我直。&lt;br&gt;
+硕鼠硕鼠，无食我苗！&lt;br&gt;
+三岁贯汝，莫我肯劳。&lt;br&gt;
+逝将去汝，适彼乐郊。&lt;br&gt;
+乐郊乐郊，谁之永号？&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/miscellaneous-note-4/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>“铁链节”快乐</title>
+        <link>https://anyicomplex.github.io/en/posts/happy-chain-festival/</link>
+        <pubDate>Mon, 07 Mar 2022 22:06:18 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/happy-chain-festival/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/happy-chain-festival/ -&lt;p&gt;图源：
+&lt;a href=&#34;https://chinadigitaltimes.net/chinese/677893.html&#34;&gt;https://chinadigitaltimes.net/chinese/677893.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://chinadigitaltimes.net/chinese/files/2022/03/image-1646652356648.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/happy-chain-festival/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>真正意义上的杂记 3</title>
+        <link>https://anyicomplex.github.io/en/posts/miscellaneous-note-3/</link>
+        <pubDate>Mon, 07 Mar 2022 02:17:23 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/miscellaneous-note-3/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/miscellaneous-note-3/ -&lt;p&gt;我宣布，从现在起，我，安怡，正式回坑 Object Pascal！&lt;br&gt;
+而且现在有&lt;a href=&#34;https://www.freepascal.org/&#34;&gt;开源的编译器&lt;/a&gt;可以用了！&lt;br&gt;
+虽然这个编译器应该不如 Embarcadero 出的官方编译器功能完备，但对一个 Delphi 7 时代的遗民（我）而言，这支持的&lt;a href=&#34;https://en.wikipedia.org/wiki/Free_Pascal#Targets&#34;&gt;几十个平台&lt;/a&gt;就足够诱人了&amp;hellip;&amp;hellip;（那会只支持 DOS 和 Windows）&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/miscellaneous-note-3/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>操作系统推荐（服务器篇）</title>
+        <link>https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/</link>
+        <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/ -&lt;h1 id=&#34;虚拟机集群主机&#34;&gt;虚拟机集群主机&lt;/h1&gt;
+&lt;h2 id=&#34;proxmox-virtual-environmenthttpswwwproxmoxcom&#34;&gt;&lt;a href=&#34;https://www.proxmox.com&#34;&gt;Proxmox Virtual Environment&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）基于 Debian 的 Linux 发行版，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（-1）没有良好的技术支持服务。&lt;br&gt;
+（-1）难以支撑大规模集群。&lt;br&gt;
+总分：3&lt;br&gt;
+评价：适合有一定技术但资金不足的初创团队使用。&lt;/p&gt;
+&lt;h2 id=&#34;vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml&#34;&gt;&lt;a href=&#34;https://www.vmware.com/products/esxi-and-esx.html&#34;&gt;VMware EXSi&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）VMware 出品，质量高。&lt;br&gt;
+（-5）不开源不免费。&lt;br&gt;
+（+3）有优秀的付费技术支持服务。&lt;br&gt;
+（+2）支撑大规模集群毫无问题。&lt;br&gt;
+总分：3&lt;br&gt;
+评价：适合资金足够的团队使用。&lt;/p&gt;
+&lt;h2 id=&#34;openbsdhttpswwwopenbsdorg&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）最注重安全性的 BSD 发行版，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+1）许可证宽松。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+（-3）并非被设计用于虚拟机集群主机，虽然可以通过第三方软件实现。&lt;br&gt;
+总分：1&lt;br&gt;
+评价：适合技术水平高的团队或个人使用。&lt;/p&gt;
+&lt;h1 id=&#34;虚拟机集群客户机物理机&#34;&gt;虚拟机集群客户机/物理机&lt;/h1&gt;
+&lt;h2 id=&#34;debian-stablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Stable&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）老牌 Linux 发行版，以稳定著称，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+1）保证了基本功能完备的情况下，系统资源占用较低。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+总分：4&lt;br&gt;
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;slackwarehttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）老牌 Linux 发行版，以稳定著称，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+1）保证了基本功能完备的情况下，系统资源占用较低。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+（-1）官方的包管理器不够现代化，无法处理依赖关系。&lt;br&gt;
+总分：3
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;red-hat-enterprise-linuxhttpsredhatcomrhel&#34;&gt;&lt;a href=&#34;https://redhat.com/rhel/&#34;&gt;Red Hat Enterprise Linux&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）Red Hat 出品，质量高。&lt;br&gt;
+（-4）开源但不免费。&lt;br&gt;
+（+3）有优秀的付费技术支持服务。&lt;br&gt;
+（+1）Linux 服务器的事实标准。&lt;br&gt;
+总分：3&lt;br&gt;
+评价：适合资金足够的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;rocky-linuxhttpsrockylinuxorg&#34;&gt;&lt;a href=&#34;https://rockylinux.org/&#34;&gt;Rocky Linux&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）RHEL 的一个克隆，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+（+1）Linux 服务器的事实标准。&lt;br&gt;
+总分：4&lt;br&gt;
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;ubuntu-serverhttpsubuntucom&#34;&gt;&lt;a href=&#34;https://ubuntu.com/&#34;&gt;Ubuntu Server&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（-1）质量一般。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+3）有优秀的付费技术支持服务。&lt;br&gt;
+总分：4&lt;br&gt;
+评价：适合有一定技术的个人或企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;freebsdhttpswwwfreebsdorg&#34;&gt;&lt;a href=&#34;https://www.freebsd.org/&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）有 Linux 兼容层的 BSD 发行版，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+1）许可证宽松。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+总分：4&lt;br&gt;
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;openbsdhttpswwwopenbsdorg-1&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（+3）最注重安全性的 BSD 发行版，质量高。&lt;br&gt;
+（+2）开源免费。&lt;br&gt;
+（+1）许可证宽松。&lt;br&gt;
+（-2）没有技术支持服务。&lt;br&gt;
+总分：4&lt;br&gt;
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
+&lt;h2 id=&#34;windows-serverhttpmicrosoftcomen-uswindows-server&#34;&gt;&lt;a href=&#34;http://microsoft.com/en-us/windows-server/&#34;&gt;Windows Server&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;（-3）BUG 多，质量差，安全性低。&lt;br&gt;
+（-2）系统资源占用高。&lt;br&gt;
+（-5）不开源不免费。&lt;br&gt;
+（+5）有非常优秀的付费技术支持服务。&lt;br&gt;
+（+2）对用户操作非常友好。&lt;br&gt;
+总分：-3&lt;br&gt;
+评价：除非有特殊需求（付费使用 Microsoft 的全套服务器相关软件、服务等）不要用。君不见 Microsoft Azure 上主要跑的都不是 Windows Server（Microsoft 自己都觉得烂XD）。&lt;/p&gt;
+&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
+&lt;p&gt;有一个系统上榜了两次，OpenBSD。&lt;br&gt;
+我觉得 BSD 系的系统几乎都是同类系统的佼佼者，开源的桌面系统有 FreeBSD，服务器系统有 OpenBSD，硬件兼容性高的有 NetBSD，成功的商业化桌面系统有 macOS，甚至游戏主机方面， PlayStation 也是基于 FreeBSD 的。&lt;br&gt;
+&lt;strong&gt;至于我为什么不用 FreeBSD，因为自己现在用的破电脑用 FreeBSD 无法联网（我试了很多系统，没问题的只有 Fedora 和 Ubuntu，明明原装系统是 Windows 7，装上了也无法联网。我可以肯定不是驱动问题。）。&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

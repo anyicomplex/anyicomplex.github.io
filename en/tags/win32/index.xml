@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>win32 on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/tags/win32/</link>
+    <description>Recent content in win32 on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Mon, 28 Feb 2022 14:24:36 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/en/tags/win32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing and Compiling win32 Programs under Linux</title>
+      <link>https://anyicomplex.github.io/en/posts/writing-and-compiling-win32-programs-under-linux/</link>
+      <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/writing-and-compiling-win32-programs-under-linux/</guid>
+      <description>The term &amp;ldquo;win32&amp;rdquo; in this article is the common name for winapi in mainland China programmers&#39; circles, not specifically for 32-bit winapi (not to mention 64-bit, we also calling the earlier 16-bit winapi &amp;ldquo;win32&amp;rdquo; since the appearance of 32-bit winapi).
+Feasibility Thanks to the MinGW (Minimalist GNU for Windows) project, it is perfectly feasible to compile win32 applications as long as not involve higher-level packaging (MFC, WPF, etc.). (There are actually various tricks to use MFC and WPF, but I don&amp;rsquo;t recommend it, and if you want to do that, it might be better to use MSVC under Wine)</description>
+    </item>
+    
+  </channel>
+</rss>

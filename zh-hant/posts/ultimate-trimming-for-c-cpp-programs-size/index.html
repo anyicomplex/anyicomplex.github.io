@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html><head>
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
+
+
+  <title>对 C/C&#43;&#43; 程序体积的极致裁剪</title>
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="本文仅代表个人观点，欢迎留言讨论">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="对 C/C&#43;&#43; 程序体积的极致裁剪" />
+<meta property="og:description" content="本文仅代表个人观点，欢迎留言讨论" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anyicomplex.github.io/zh-hant/posts/ultimate-trimming-for-c-cpp-programs-size/" />
+<meta property="article:published_time" content="2022-02-28T15:45:19-05:00" />
+<meta property="article:modified_time" content="2022-03-06T23:09:04-05:00" /><meta property="og:site_name" content="安怡的博客" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="对 C/C&#43;&#43; 程序体积的极致裁剪"/>
+<meta name="twitter:description" content="本文仅代表个人观点，欢迎留言讨论"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+<link rel="icon" href="https://github.com/fluidicon.png">
+
+
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/scss/journal.min.f4a8de07567a2d29619e0711662ef6251e3e59b642079f99490f654abf89a3c4.css" integrity="sha256-9KjeB1Z6LSlhngcRZi72JR4&#43;WbZCB5&#43;ZSQ9lSr&#43;Jo8Q=" media="screen">
+
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'ecaa9e60860d0402573e',
+  clientSecret: 'e2a72d4628c46b1d35bdeef27db30f692f731c01',
+  repo: 'anyicomplex.github.io',
+  owner: 'anyicomplex',
+  admin: ['anyicomplex'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://anyicomplex.github.io/zh-hant/">
+    
+        <div class="nav-title">
+            安怡的博客
+        </div>
+        
+        <div class="nav-subtitle">
+            編程與生活 | 隨筆雜記
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/zh-hant/posts">
+                歸檔
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/categories">
+                分類
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/tags">
+                標籤
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/index.xml">
+                RSS 訂閱
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原創博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目錄 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%b5%b7%e5%9b%a0" onclick="onNavClick(`#起因-nav`)" id="起因-nav">
+									起因
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%96%b9%e6%b3%95" onclick="onNavClick(`#方法-nav`)" id="方法-nav">
+									方法
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1%e5%8a%a8%e6%80%81%e8%b0%83%e7%94%a8%e8%bf%90%e8%a1%8c%e6%97%b6" onclick="onNavClick(`#1动态调用运行时-nav`)" id="1动态调用运行时-nav">
+									1.动态调用运行时
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#nix" onclick="onNavClick(`#nix-nav`)" id="nix-nav">
+									*nix
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#windows" onclick="onNavClick(`#windows-nav`)" id="windows-nav">
+									Windows
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1%e4%bd%bf%e7%94%a8-visual-c-60" onclick="onNavClick(`#1使用-visual-c-60-nav`)" id="1使用-visual-c-60-nav">
+									1.使用 Visual C&#43;&#43; 6.0
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e4%bd%bf%e7%94%a8-msvcrt-%e7%89%88%e6%9c%ac%e7%9a%84-mingw-%e5%b9%b6%e4%b8%94%e4%b8%8d%e4%bd%bf%e7%94%a8%e5%92%8c-msvcrt-%e4%b8%8d%e6%94%af%e6%8c%81%e7%9a%84-c-%e5%8a%9f%e8%83%bd" onclick="onNavClick(`#2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能-nav`)" id="2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能-nav">
+									2.使用 msvcrt 版本的 MinGW 并且不使用和 msvcrt 不支持的 C&#43;&#43; 功能
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#2%e8%b0%83%e6%95%b4%e7%bc%96%e8%af%91%e5%99%a8%e5%8f%82%e6%95%b0" onclick="onNavClick(`#2调整编译器参数-nav`)" id="2调整编译器参数-nav">
+									2.调整编译器参数
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e4%bd%bf%e7%94%a8%e5%8e%8b%e7%bc%a9%e5%a3%b3" onclick="onNavClick(`#3使用压缩壳-nav`)" id="3使用压缩壳-nav">
+									3.使用压缩壳
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/zh-hant/posts">
+                    歸檔
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/categories">
+                    分類
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/tags">
+                    標籤
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/index.xml">
+                    RSS 訂閱
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目錄 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%b5%b7%e5%9b%a0" onclick="onNavClick(`#起因-nav`)" id="起因-nav">
+									起因
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%96%b9%e6%b3%95" onclick="onNavClick(`#方法-nav`)" id="方法-nav">
+									方法
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1%e5%8a%a8%e6%80%81%e8%b0%83%e7%94%a8%e8%bf%90%e8%a1%8c%e6%97%b6" onclick="onNavClick(`#1动态调用运行时-nav`)" id="1动态调用运行时-nav">
+									1.动态调用运行时
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#nix" onclick="onNavClick(`#nix-nav`)" id="nix-nav">
+									*nix
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#windows" onclick="onNavClick(`#windows-nav`)" id="windows-nav">
+									Windows
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1%e4%bd%bf%e7%94%a8-visual-c-60" onclick="onNavClick(`#1使用-visual-c-60-nav`)" id="1使用-visual-c-60-nav">
+									1.使用 Visual C&#43;&#43; 6.0
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2%e4%bd%bf%e7%94%a8-msvcrt-%e7%89%88%e6%9c%ac%e7%9a%84-mingw-%e5%b9%b6%e4%b8%94%e4%b8%8d%e4%bd%bf%e7%94%a8%e5%92%8c-msvcrt-%e4%b8%8d%e6%94%af%e6%8c%81%e7%9a%84-c-%e5%8a%9f%e8%83%bd" onclick="onNavClick(`#2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能-nav`)" id="2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能-nav">
+									2.使用 msvcrt 版本的 MinGW 并且不使用和 msvcrt 不支持的 C&#43;&#43; 功能
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#2%e8%b0%83%e6%95%b4%e7%bc%96%e8%af%91%e5%99%a8%e5%8f%82%e6%95%b0" onclick="onNavClick(`#2调整编译器参数-nav`)" id="2调整编译器参数-nav">
+									2.调整编译器参数
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3%e4%bd%bf%e7%94%a8%e5%8e%8b%e7%bc%a9%e5%a3%b3" onclick="onNavClick(`#3使用压缩壳-nav`)" id="3使用压缩壳-nav">
+									3.使用压缩壳
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://anyicomplex.github.io/zh-hant/">
+            安怡的博客
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://anyicomplex.github.io/zh-hant/">
+        <div class="single-column-header-title">安怡的博客</div>
+        
+        <div class="single-column-header-subtitle">編程與生活 | 隨筆雜記</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    对 C/C&#43;&#43; 程序体积的极致裁剪
+                    
+                    <div class="post-subtitle">
+                        本文仅代表个人观点，欢迎留言讨论
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-02-28 15:45
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/zh-hant/categories/it">IT</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/zh-hant/tags/c/c&#43;&#43;">C/C&#43;&#43;</a>
+                                &nbsp;
+                            
+                        
+                        
+                            <i class="material-icons" style="">schedule</i>
+                            
+
+                            
+                            
+
+                            
+                            3 min
+                            
+                            50 s.
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h1 id="起因">起因</h1>
+<p>程序的分发一直是困扰各大程序员的老大难问题，尤其是在小程序的分发上。<br>
+如果你只是写了个功能很有限的小程序，却要拖家带口 几十M 的运行时，我相信，用户一定会觉得不值得的。</p>
+<p><strong>如果你以“现在硬盘白菜价了”或者“都 5G 时代了，网络带宽早不值钱了”这种理由来反驳我，那么请立即关闭我的这篇博文，因为这不是写给你看的。</strong></p>
+<h1 id="方法">方法</h1>
+<h2 id="1动态调用运行时">1.动态调用运行时</h2>
+<p>只要目标设备包含了程序所需的运行时和依赖库，就可以通过动态调用的方式缩小体积。</p>
+<h3 id="nix">*nix</h3>
+<p>这在 *nix 平台下不是问题，因为必定包含可用的 C/C++ 运行时，又在程序库方面做到了模块化，在使用包管理器的情况下只需要指定对应的依赖，否则就只能让用户手动去安装了。<br>
+如果不想麻烦用户，又不使用包管理器，那么就只有减少依赖，只使用目标平台必定包含的库了。</p>
+<h3 id="windows">Windows</h3>
+<p>Windows 并没有做到程序库方面的模块化，除了一些基本的 C/C++ 运行时库，所以只有减少依赖一种方法。<br>
+但如果要兼容老版本系统的话，必定包含的库就极其有限，甚至连部分基本的 C/C++ 运行时库也不是必定包含，这时候要么麻烦用户，要么就只能用老版本的运行时库了。</p>
+<h4 id="1使用-visual-c-60">1.使用 Visual C++ 6.0</h4>
+<p>用 VC6.0 编译出的 C/C++ 程序，运行时就只有 msvcrt.dll 这一个库，而这个库从 Windows 2000 起就必定包含在系统中了。</p>
+<h4 id="2使用-msvcrt-版本的-mingw-并且不使用和-msvcrt-不支持的-c-功能">2.使用 msvcrt 版本的 MinGW 并且不使用和 msvcrt 不支持的 C++ 功能</h4>
+<p>如果不想用 VC6.0 这种停止维护多年的编译器，又想保证兼容性和裁剪体积，那么使用 msvcrt 版本的 MinGW 并且不使用 msvcrt 不支持的 C++ 功能也是一种不错的方案。<br>
+这种方案下，msvcrt 版本的 MinGW 编译出的 C/C++ 程序和 VC6.0 一样，运行时只有 msvcrt.dll 一个库。</p>
+<h2 id="2调整编译器参数">2.调整编译器参数</h2>
+<p>我想这个不用我多说，指定编译器优化代码和不插入调试信息等属于基本功。</p>
+<h2 id="3使用压缩壳">3.使用压缩壳</h2>
+<p>UPX、ASPack 等压缩壳可以压缩程序体积，但会让程序占用额外的内存（因为要把压缩后的程序解压到内存里）和拖慢启动时间（虽然也不至于拖慢太多）。<br>
+对于这种方法，我的建议是：按自己的需求来。</p>
+<h1 id="感想">感想</h1>
+<p>写完之后再想想，实际上现在真没必要这么抠&hellip;&hellip;这年头 5M 以下的小工具基本都在用户的可接受范围内吧，而未经压缩的 20M&hellip;30M 的可执行文件压缩一下也基本能到 5M 以下吧。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">上次修改於 2022-03-06</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://anyicomplex.github.io/zh-hant/posts/week-summary-20220227/">
+			下回<br>一周总结 20220227
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://anyicomplex.github.io/zh-hant/posts/writing-and-compiling-win32-programs-under-linux/">
+			上回<br>在 Linux 下编写和编译 win32 程序
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原創博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>
