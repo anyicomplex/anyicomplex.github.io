@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>X11 on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/tags/x11/</link>
+    <description>Recent content in X11 on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Sun, 20 Feb 2022 11:02:21 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/en/tags/x11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xlib Programming Notes 1</title>
+      <link>https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/</link>
+      <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/</guid>
+      <description> Be careful with the XGrabPointer and been prepared to force the program exit before using it (I was pitted today, and more than once QAQ)  </description>
+    </item>
+    
+  </channel>
+</rss>

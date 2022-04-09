@@ -1,0 +1,427 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Introduction on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/</link>
+    <description>Recent content in Self Introduction on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
+    
+        <atom:link href="https://anyicomplex.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Week Summary 20220220</title>
+        <link>https://anyicomplex.github.io/en/posts/week-summary-20220220/</link>
+        <pubDate>Sun, 20 Feb 2022 10:56:05 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/week-summary-20220220/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/week-summary-20220220/ -&lt;h1 id=&#34;maintained-projects&#34;&gt;Maintained projects&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-rc1&amp;hellip;v1.1.3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;contributed-projects&#34;&gt;Contributed projects&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;next-step-planning&#34;&gt;Next-step planning&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Refine the Windows backend of gdx-dwt by the end of next week.&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/en/posts/week-summary-20220220/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Some advice for C&#43;&#43; beginners</title>
+        <link>https://anyicomplex.github.io/en/posts/some-advice-for-cpp-beginners/</link>
+        <pubDate>Sat, 19 Feb 2022 09:33:19 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/some-advice-for-cpp-beginners/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/some-advice-for-cpp-beginners/ -&lt;h1 id=&#34;fundamentals&#34;&gt;Fundamentals&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Learn C first before learning C++, master basic concepts such as stacks and piles, be comfortable with pointers and macros.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Latest C++ features should not be learned yet, even if only for learning and not production, it is also recommended to use only long-term supported stable versions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Applications&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t rush into advanced C++ features such as templates yet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t look for a third-party library if it&amp;rsquo;s the same feature available in the STL (unless it&amp;rsquo;s really better than that part of the STL and has been maintained for a long time).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Boost can be used, but only just, because there are too many pitfalls. For newbies, it&amp;rsquo;s often hard to know if it&amp;rsquo;s a bug with your own program or with the compiler or Boost (STL is much better, after all, Boost is upstream of STL).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;compilers&#34;&gt;Compilers&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Under Windows, compilers other than MSVC are not recommended, otherwise there are many pitfalls.&lt;/li&gt;
+&lt;li&gt;Clang/LLVM and GCC are both fine for Linux, but I generally recommend GCC.&lt;/li&gt;
+&lt;li&gt;Clang/LLVM is recommended for macOS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;ide&#34;&gt;IDE&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;VSCode is not an IDE, it&amp;rsquo;s a text editor, so it&amp;rsquo;s not in this recommendation list (of course, I recommend it because I can&amp;rsquo;t afford to buy IDEA Ultimate but need to write JNI, and it helps a lot :D).&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Qt developers can use Qt&amp;rsquo;s toolchain directly.&lt;/li&gt;
+&lt;li&gt;Old users of Eclipse and Code::Blocks can continue to use, these two IDEs are not bad, both of them just difficult to get started, but of course there is nothing problem for old users.&lt;/li&gt;
+&lt;li&gt;Visual Studio and MSVC are recommended for Windows users, or CLion if you are used to the JetBrains IDE; not recommended for other IDEs.&lt;/li&gt;
+&lt;li&gt;Under Linux, CLion is recommended, KDE desktop can also use KDevelop, but other desktops are not recommended (because KDevelop&amp;rsquo;s dependencies will bring a large number of KDE packages, which is also the common problem of KDE applications, too much coupling), GNOME desktop can also use GNOME Builder (this is no problem for other desktops), other IDEs are not recommended.&lt;/li&gt;
+&lt;li&gt;XCode is recommended for macOS users, if you don&amp;rsquo;t think it&amp;rsquo;s good for use, you can switch to AppCode or CLion, nothing else is better.&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/en/posts/some-advice-for-cpp-beginners/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Week Summary 20220213</title>
+        <link>https://anyicomplex.github.io/en/posts/week-summary-20220213/</link>
+        <pubDate>Sun, 13 Feb 2022 11:07:57 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/week-summary-20220213/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/week-summary-20220213/ -&lt;h1 id=&#34;maintained-projects&#34;&gt;Maintained projects&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt; v1.0.0&amp;hellip;v1.0.5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; v1.10.0-beta4&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/gdx-dwt&#34;&gt;gdx-dwt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anyicomplex/xdg-utils-java&#34;&gt;xdg-utils-java&lt;/a&gt; v1.1.3-beta1&amp;hellip;v1.1.3-beta2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;contributed-projects&#34;&gt;Contributed projects&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;NONE&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;next-step-planning&#34;&gt;Next-step planning&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Advancing xdg-utils-java to a stable release next week.&lt;/li&gt;
+&lt;li&gt;Refine the Linux backend of gdx-dwt by the end of next week.&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/en/posts/week-summary-20220213/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Writing C-style Java Programs</title>
+        <link>https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/</link>
+        <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/ -&lt;h1 id=&#34;feasibility&#34;&gt;Feasibility&lt;/h1&gt;
+&lt;p&gt;Java is said to be a pure object-oriented programming language, so can you write procedural-oriented C-style code in Java?&lt;br&gt;
+&lt;strong&gt;There are no pointers in Java, but there are references, so the answer is obviously yes.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;the-difference-in-style&#34;&gt;The difference in style&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s start with two pieces of pseudo-code.&lt;/p&gt;
+&lt;h2 id=&#34;c-style&#34;&gt;C style&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;struct&lt;/span&gt; Foo foo;
+change_foo_value(&amp;amp;foo, &lt;span style=&#34;color:#b452cd&#34;&gt;0&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;java-style&#34;&gt;Java style&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;Foo foo = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Foo();
+foo.&lt;span style=&#34;color:#658b00&#34;&gt;changeValue&lt;/span&gt;(0);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This also shows the difference between the two design patterns, object-oriented and procedure-oriented.&lt;br&gt;
+Both styles are good, right?&lt;/p&gt;
+&lt;h1 id=&#34;problems-during-develop&#34;&gt;Problems during develop&lt;/h1&gt;
+&lt;p&gt;If a method needs to return two values, how should I write the program?&lt;br&gt;
+&lt;strong&gt;Let the requirement be: execute a shell script in the program and get both the return code and the output.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;c-style-1&#34;&gt;C style&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;exec_script&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; *script_path, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;char&lt;/span&gt; **output) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exit_code;
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exit_code;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;java-style-1&#34;&gt;Java style&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#008b45;font-weight:bold&#34;&gt;Result&lt;/span&gt; {
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;final&lt;/span&gt; String output;
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;Result&lt;/span&gt;(&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode, String output) {
+		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;exitCode&lt;/span&gt; = exitCode;
+		&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;this&lt;/span&gt;.&lt;span style=&#34;color:#658b00&#34;&gt;output&lt;/span&gt; = output;
+	}
+}
+
+&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;static&lt;/span&gt; Result &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; Result(exitCode, outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;());
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What if we don&amp;rsquo;t want to define a new class for this method in Java?&lt;br&gt;
+Maybe we can take a page from C:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, StringBuilder output) {
+	&lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt; exitCode;
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; exitCode;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;static&lt;/span&gt; String &lt;span style=&#34;color:#008b45&#34;&gt;execScript&lt;/span&gt;(String scriptPath, &lt;span style=&#34;color:#00688b;font-weight:bold&#34;&gt;int&lt;/span&gt;[] exitCode) {
+	StringBuilder outputBuffer = &lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;new&lt;/span&gt; StringBuilder();
+	&lt;span style=&#34;color:#228b22&#34;&gt;// Business logic
+&lt;/span&gt;&lt;span style=&#34;color:#228b22&#34;&gt;&lt;/span&gt;	...
+	&lt;span style=&#34;color:#8b008b;font-weight:bold&#34;&gt;return&lt;/span&gt; outputBuffer.&lt;span style=&#34;color:#658b00&#34;&gt;toString&lt;/span&gt;();
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h1&gt;
+&lt;p&gt;This reminds me of the &lt;a href=&#34;https://wiki.gnome.org/Projects/Vala&#34;&gt;Vala&lt;/a&gt; programming language from the GNOME community :D&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>I am Back</title>
+        <link>https://anyicomplex.github.io/en/posts/i-am-back/</link>
+        <pubDate>Wed, 09 Feb 2022 06:18:18 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/i-am-back/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/i-am-back/ -&lt;p&gt;Sorry, I&amp;rsquo;m sorry, I&amp;rsquo;m so sorry, I broke my promise&amp;hellip;&lt;br&gt;
+Last time I said I would have a huge update, but I ended up writing one blog post&amp;hellip;&lt;br&gt;
+Even for Lunar New Year, I didn&amp;rsquo;t post a blog&amp;hellip;&lt;/p&gt;
+&lt;p&gt;A lot of things happened during this time&amp;hellip;&lt;br&gt;
+First, I got addicted to playing &lt;a href=&#34;https://www.miragerealms.co.uk&#34;&gt;Mirage Realms&lt;/a&gt; (because it&amp;rsquo;s really fun :D)&lt;br&gt;
+Then, I decided to develop the game in Java and libGDX (contradicted myself, &lt;a href=&#34;https://anyicomplex.github.io/posts/words-for-those-want-to-develop-game-in-java/&#34;&gt;details&lt;/a&gt;) and did some related work (&lt;a href=&#34;https://github.com/anyicomplex/gdx-svmhelper&#34;&gt;gdx-svmhelper&lt;/a&gt; and &lt;a href=&#34;https://github.com/anyicomplex/gdx-bmfont&#34;&gt;gdx-bmfont&lt;/a&gt;)&lt;br&gt;
+Then, I made a foreign friend &lt;a href=&#34;https://github.com/Berstanio/&#34;&gt;Berstanio&lt;/a&gt; (I think he&amp;rsquo;s German, if I&amp;rsquo;m not mistaken)&lt;br&gt;
+Finally, during this cyber time, I realized that: I need to have a planning list, I need to have short-term goals, I need to do a lot of work, and I need to learn a lot.&lt;/p&gt;
+&lt;p&gt;For new year, cheers!&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/i-am-back/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Reasons to Use Linux</title>
+        <link>https://anyicomplex.github.io/en/posts/reasons-to-use-linux/</link>
+        <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/reasons-to-use-linux/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/reasons-to-use-linux/ -&lt;h1 id=&#34;1-lightweight&#34;&gt;1. Lightweight&lt;/h1&gt;
+&lt;p&gt;(x86_64 operating system for example, for daily use; so the distributions focused on lightweight that streamlining too many features are excluded) &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Operating system&lt;/th&gt;
+&lt;th&gt;Minimum CPU requirements&lt;/th&gt;
+&lt;th&gt;Minimum memory requirements&lt;/th&gt;
+&lt;th&gt;Minimum storage requirements&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 11&lt;/td&gt;
+&lt;td&gt;1 GHz * 2&lt;/td&gt;
+&lt;td&gt;4 GB&lt;/td&gt;
+&lt;td&gt;64 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 10&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows 7&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;20 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fedora 35 (GNOME)&lt;/td&gt;
+&lt;td&gt;2 GHz&lt;/td&gt;
+&lt;td&gt;2 GB&lt;/td&gt;
+&lt;td&gt;15 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Debian 11 (GNOME)&lt;/td&gt;
+&lt;td&gt;1 GHz&lt;/td&gt;
+&lt;td&gt;1 GB&lt;/td&gt;
+&lt;td&gt;10 GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;All referenced data come from the system&amp;rsquo;s official website&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Windows 11: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&#34;&gt;https://support.microsoft.com/en-us/windows/windows-11-system-requirements-86c11283-ea52-4782-9efd-7674389a7ba3&lt;/a&gt;&lt;br&gt;
+Windows 10: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&#34;&gt;https://support.microsoft.com/en-us/windows/windows-10-system-requirements-6d4e9a79-66bf-7950-467c-795cf0386715&lt;/a&gt;&lt;br&gt;
+Windows 7: &lt;a href=&#34;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&#34;&gt;https://support.microsoft.com/en-us/windows/windows-7-system-requirements-df0900f2-3513-a851-13e7-0d50bc24e15f&lt;/a&gt;&lt;br&gt;
+Fedora 35: &lt;a href=&#34;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&#34;&gt;https://docs.fedoraproject.org/en-US/fedora/f35/release-notes/welcome/Hardware_Overview/&lt;/a&gt;&lt;br&gt;
+Debian 11: &lt;a href=&#34;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&#34;&gt;https://www.debian.org/releases/stable/amd64/ch03s04.en.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The data for Windows 10 is for an earlier version (I couldn&amp;rsquo;t find official data for the latest version), and the minimum hardware requirements for the latest version should be comparable to the current Windows 11.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GNOME is recognized as the most resource-intensive Linux desktop environment, and Fedora is one of the most bloated Linux distributions.&lt;br&gt;
+However, the combination of the two is no worse than Windows 7, except for the fact that the minimum CPU requirements are higher.&lt;br&gt;
+The lighter Debian 11 and GNOME combinations have lower minimum hardware requirements than Windows 7.&lt;br&gt;
+If you switch to a lightweight desktop environment, XFCE or LXDE, this requirement will be much lower.&lt;br&gt;
+However, Windows can&amp;rsquo;t switch desktop environments&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;2-security&#34;&gt;2. Security&lt;/h2&gt;
+&lt;h2 id=&#34;1-file-system&#34;&gt;1. File system&lt;/h2&gt;
+&lt;p&gt;All POSIX operating systems&#39; file systems (ext series for Linux, ZFS for Solaris, etc.) have strict file permission restrictions, and only files marked as &amp;ldquo;executable&amp;rdquo; can be run.&lt;br&gt;
+Unlike Windows, which defines &amp;ldquo;executable&amp;rdquo; files only by their extensions.
+There are also historical reasons for this.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows&#39; predecessor DOS and early Windows used the FAT32 file system, which was very rudimentary, neither support logging, nor support file permissions at all.&lt;/li&gt;
+&lt;li&gt;With the introduction of the Windows NT 3.1 kernel, NTFS replaced FAT32 as the default file system for Windows, this time, it finally supporting file permissions, however its default file permission includes &amp;ldquo;executable&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**The default file permission can be changed through the Access Control List (ACL), but how many Windows users will use this feature? Most people don&amp;rsquo;t even know that Windows has this feature&amp;hellip; **&lt;/p&gt;
+&lt;h2 id=&#34;2-operating-system&#34;&gt;2. Operating system&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux is open source, with a large number of developers involved, system vulnerabilities can be quickly found and fixed, and do not have to worry about the official implantation of backdoors (of course, some distributions will do this, such as Ubuntu, so you have to be careful when choosing a distribution ~ ).&lt;/li&gt;
+&lt;li&gt;Windows is completely closed source, and the development environment is very closed, which is not only not conducive to the discovery and repair of system vulnerabilities, but also Microsoft itself is stealing users&#39; privacy informations through official backdoors (it has been an open secret for a long time ~ ).&lt;/li&gt;
+&lt;li&gt;macOS only kernel open source, the complete operating system is closed source, the conclusion is the same as Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-software&#34;&gt;3. Software&lt;/h2&gt;
+&lt;h3 id=&#34;windows&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;There are no unified software sources, you need to find them yourself, but the ones you find are not always reliable - for example, many download sites tamper with the installation package and inject viruses.&lt;/li&gt;
+&lt;li&gt;If you take explicit transfer protocols (HTTP, FTP, etc.), you are likely to encounter man-in-the-middle attacks - software is tampered with on the way to download, injecting viruses, however not all software sources provide checksums&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Not all software has an &amp;ldquo;auto-update&amp;rdquo; function, so you have to repeat the same operation of downloading manually and face the same danger again.&lt;/li&gt;
+&lt;li&gt;Windows is a world of proprietary software, so many of them have backdoors embedded by the developer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;When installing software on Linux distributions, most of the time you install it from the official repository of the distribution, but in a few cases you download the source code and compile it yourself or install third-party packages.&lt;/li&gt;
+&lt;li&gt;Most distributions maintain repositories that guarantee reliable sources, and most package managers have their own validation mechanisms.&lt;/li&gt;
+&lt;li&gt;Package managers can &amp;ldquo;auto-update&amp;rdquo; regardless of whether the software supports &amp;ldquo;auto-update&amp;rdquo; or not.&lt;/li&gt;
+&lt;li&gt;Most of the software under Linux is open source, so if you have high security requirements, you can use Linux without any closed-source softwares.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The first three for Linux and the last one for Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-highly-customizable&#34;&gt;3. Highly customizable&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Windows and macOS are in no way comparable to Linux in terms of customizability.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;graphical-interface&#34;&gt;Graphical interface&lt;/h2&gt;
+&lt;h3 id=&#34;windows-1&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The graphical interface is part of the kernel and cannot be modified.&lt;/li&gt;
+&lt;li&gt;Microsoft don&amp;rsquo;t open enough APIs of Windows and beautification plugins are very limited in effects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos-1&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The graphical interface is part of its software ecosystem, and switching to something else would result in a lot of software not working.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Desktop Environment, Window Manager, and Display Server are all replaceable.&lt;br&gt;
+For example, you can use X Server as display server, or Wayland; you can use IceWM, JWM, i3WM, Awesome&amp;hellip; as window manager; you can use GNOME, KDE, XFCE or LXDE&amp;hellip; as desktop environment.&lt;/li&gt;
+&lt;li&gt;Not to mention the large amount of theme plugins, beautification plugins, you can decorate Linux like macOS, or change it to look like Windows, of course, more of them provides a self-contained distinctive style ~&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system-modification&#34;&gt;System modification&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Sometimes there is a requirement to delete certain features of the system that you won&amp;rsquo;t use.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;windows-2&#34;&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The kernel is not open source and is almost impossible to modify.&lt;/li&gt;
+&lt;li&gt;It is an interlocking whole structure that is difficult to streamline, and streamlining is generally difficult to ensure security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;macos-2&#34;&gt;macOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Although the kernel is open source, the upper-layer architecture is not, making it extremely difficult to modify.&lt;/li&gt;
+&lt;li&gt;Same difficulty in streamlining as above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux-2&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The vast majority of Linux distributions are friendly to modifying and compiling the kernel yourself.&lt;/li&gt;
+&lt;li&gt;Fully open source and fully modular, so it is easy to streamline, and Tiny Core Linux has even accomplished the feat of building an operating system with a graphical interface that is only 12MB.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-software-ecosystem&#34;&gt;4. Software ecosystem&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;This paragraph is mainly for BSDs other than macOS.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As one of the three desktop operating systems, more and more software ported to Linux, and the Linux platform itself also has accumulated years of software. The Linux software ecosystem is becoming more and more mature (for example, GIMP vs. PhotoShop, Many open source software can perfectly replace similar commercial software).&lt;/li&gt;
+&lt;li&gt;BSDs (except macOS), because of the extreme lack of software, daily use will generally have problems (except for those with Linux compatibility layer).&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/en/posts/reasons-to-use-linux/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Blog Refurbishment 2</title>
+        <link>https://anyicomplex.github.io/en/posts/blog-refurbishment-2/</link>
+        <pubDate>Wed, 08 Dec 2021 04:41:08 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/blog-refurbishment-2/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/blog-refurbishment-2/ -&lt;p&gt;Recently finally was transferred to a position with a computer&lt;br&gt;
+First do something of my own at spare time between tasks&lt;br&gt;
+Idle is also idle, why not refurbish the blog :D&lt;br&gt;
+This time, almost all the places I think the details are not satisfactory in this theme have been modified, I also modified the home page&lt;/p&gt;
+&lt;p&gt;I think today is my birthday, I almost forgot it XD&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/blog-refurbishment-2/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Blog Refurbishment 1</title>
+        <link>https://anyicomplex.github.io/en/posts/blog-refurbishment-1/</link>
+        <pubDate>Mon, 06 Dec 2021 06:56:16 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/blog-refurbishment-1/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/blog-refurbishment-1/ -&lt;p&gt;Two months have passed and I finally remembered this blog again XD&lt;br&gt;
+So I&amp;hellip;modified the theme, refurbished a bit, and replaced the comment system from Utterances to Gitalk (of course, because of this, the original comments all no longer exists XP)&lt;/p&gt;
+&lt;p&gt;New theme: &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-diary/&#34;&gt;Diary&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There will be a huge amount of new (quality-free) blog posts in the next while&amp;hellip;That&amp;rsquo;s probably it! Stay tuned!&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/blog-refurbishment-1/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Words for those Want to Develop Game in Java</title>
+        <link>https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/</link>
+        <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/ -&lt;h1 id=&#34;is-java-suitable-for-developing-games&#34;&gt;Is Java suitable for developing games?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;My answer is: NO.&lt;/strong&gt;&lt;br&gt;
+If you&amp;rsquo;re not focused on open source, established commercial solutions like Unity and GameMaker are obviously the best choices for you.&lt;br&gt;
+If you&amp;rsquo;re focused on open source, there are plenty of open source game engines out there (most of them written in C/C++) that are right up your alley. (Not listed here, please search in the major open source platforms by yourself)&lt;br&gt;
+If none of the existing game engines satisfy you, you can try to write your own - but I don&amp;rsquo;t recommend Java, or to be precise, any managed language, not even a compiled language with GC. Low-latency, real-time interaction is essential for video games, and managed languages are inherently inadequate in this regard. (Unity is developed in C#, but the underlying layer is still C/C++, and the C# code is AOT-compiled to improve performance)&lt;br&gt;
+&lt;strong&gt;If you don&amp;rsquo;t have a reason to use Java, then please don&amp;rsquo;t think about developing games in Java.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;what-if-i-have-to-use-java&#34;&gt;What if I have to use Java?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The Java ecosystem is huge, and in fact, there&amp;rsquo;s a few relatively mature solutions available.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://libgdx.com/&#34;&gt;libGDX&lt;/a&gt;: focused on 2D, supported platforms: Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jmonkeyengine.org/&#34;&gt;jMonkeyEngine&lt;/a&gt;: pure 3D, support platform: Windows/Linux/Mac/Android/iOS/HTML5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;I think the relatively mature Java game engine is only these two, the others are not mature enough.&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;It is not a wise choice to try to develop 3D games with libGDX, and it is a rather irrational thing to develop 2D games with jMonkeyEngine.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;can-java-develop-large-scale-games-like-kings-quest&#34;&gt;Can Java develop large-scale games like King&amp;rsquo;s Quest?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Yes.&lt;/strong&gt;&lt;br&gt;
+The downside of Java was never about &amp;ldquo;large-scale&amp;rdquo;, or there wouldn&amp;rsquo;t be so many servers running SpringBoot, a web backend framework written in Java.&lt;br&gt;
+&lt;strong&gt;The famous &lt;a href=&#34;https://pokemmo.eu/&#34;&gt;PokeMMO&lt;/a&gt; is developed with libGDX.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;what-do-i-need-to-learn-about-developing-games-in-java&#34;&gt;What do I need to learn about developing games in Java?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;On a desktop platform, it is almost impossible to get players to install the JRE specifically for your game.&lt;/strong&gt;&lt;br&gt;
+Therefore, a lot of effort had to be put into packaging and streamlining the JRE, providing installation packages corresponding to different desktop platforms to ensure an out-of-box user experience.&lt;br&gt;
+The size of the JRE used to be a problem, but the good news is that the size requirements for game files are not that high these days.&lt;br&gt;
+&lt;strong&gt;As for the other issues, they are not Java-specific, but are issues that all game developers have to deal with.&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;can-graalvms-native-image-technology-be-used-for-java-game-development&#34;&gt;Can GraalVM&amp;rsquo;s native-image technology be used for Java game development?&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Theoretically possible, but I don&amp;rsquo;t recommend it.&lt;/strong&gt;&lt;br&gt;
+Unless you have high requirements for reducing the size of your game files, doing so will only expose you to a lot of unnecessary hassles while losing a lot of Java features and third-party libraries.&lt;br&gt;
+Making the Java bytecode completely AOT-compiled to native executable can reduce startup time and system resource usage, but none of this is the point of game development.&lt;br&gt;
+&lt;strong&gt;If you care about game file size, system resource usage, and startup time, then it&amp;rsquo;s better to stop developing games in Java before it&amp;rsquo;s too late.&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Hello World</title>
+        <link>https://anyicomplex.github.io/en/posts/hello-world/</link>
+        <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/hello-world/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/hello-world/ -&lt;p&gt;Theme: &lt;a href=&#34;https://themes.gohugo.io/themes/github-style/&#34;&gt;Github Style&lt;/a&gt; (Note: This is the theme used at the beginning of the blog, which has already replaced)&lt;/p&gt;
+&lt;p&gt;It will probably be a blog of diary nature :D&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/hello-world/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

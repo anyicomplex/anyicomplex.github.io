@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html><head>
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
+
+
+  <title>在 Linux 下编写和编译 win32 程序</title>
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="我的一次踩坑记录">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="在 Linux 下编写和编译 win32 程序" />
+<meta property="og:description" content="我的一次踩坑记录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anyicomplex.github.io/zh-hant/posts/writing-and-compiling-win32-programs-under-linux/" />
+<meta property="article:published_time" content="2022-02-28T14:24:36-05:00" />
+<meta property="article:modified_time" content="2022-02-28T14:24:36-05:00" /><meta property="og:site_name" content="安怡的博客" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="在 Linux 下编写和编译 win32 程序"/>
+<meta name="twitter:description" content="我的一次踩坑记录"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+<link rel="icon" href="https://github.com/fluidicon.png">
+
+
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/scss/journal.min.f4a8de07567a2d29619e0711662ef6251e3e59b642079f99490f654abf89a3c4.css" integrity="sha256-9KjeB1Z6LSlhngcRZi72JR4&#43;WbZCB5&#43;ZSQ9lSr&#43;Jo8Q=" media="screen">
+
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'ecaa9e60860d0402573e',
+  clientSecret: 'e2a72d4628c46b1d35bdeef27db30f692f731c01',
+  repo: 'anyicomplex.github.io',
+  owner: 'anyicomplex',
+  admin: ['anyicomplex'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://anyicomplex.github.io/zh-hant/">
+    
+        <div class="nav-title">
+            安怡的博客
+        </div>
+        
+        <div class="nav-subtitle">
+            編程與生活 | 隨筆雜記
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/zh-hant/posts">
+                歸檔
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/categories">
+                分類
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/tags">
+                標籤
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh-hant/index.xml">
+                RSS 訂閱
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原創博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目錄 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%8f%af%e8%a1%8c%e6%80%a7" onclick="onNavClick(`#可行性-nav`)" id="可行性-nav">
+									可行性
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85" onclick="onNavClick(`#安装-nav`)" id="安装-nav">
+									安装
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8" onclick="onNavClick(`#使用-nav`)" id="使用-nav">
+									使用
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/zh-hant/posts">
+                    歸檔
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/categories">
+                    分類
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/tags">
+                    標籤
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh-hant/index.xml">
+                    RSS 訂閱
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目錄 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%8f%af%e8%a1%8c%e6%80%a7" onclick="onNavClick(`#可行性-nav`)" id="可行性-nav">
+									可行性
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%ae%89%e8%a3%85" onclick="onNavClick(`#安装-nav`)" id="安装-nav">
+									安装
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%bd%bf%e7%94%a8" onclick="onNavClick(`#使用-nav`)" id="使用-nav">
+									使用
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://anyicomplex.github.io/zh-hant/">
+            安怡的博客
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://anyicomplex.github.io/zh-hant/">
+        <div class="single-column-header-title">安怡的博客</div>
+        
+        <div class="single-column-header-subtitle">編程與生活 | 隨筆雜記</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    在 Linux 下编写和编译 win32 程序
+                    
+                    <div class="post-subtitle">
+                        我的一次踩坑记录
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-02-28 14:24
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/zh-hant/categories/it">IT</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/zh-hant/tags/c/c&#43;&#43;">C/C&#43;&#43;</a>
+                                &nbsp;
+                            
+                                <a href="/zh-hant/tags/windows">Windows</a>
+                                &nbsp;
+                            
+                                <a href="/zh-hant/tags/win32">win32</a>
+                                &nbsp;
+                            
+                                <a href="/zh-hant/tags/linux">Linux</a>
+                                &nbsp;
+                            
+                        
+                        
+                            <i class="material-icons" style="">schedule</i>
+                            
+
+                            
+                            
+
+                            
+                            2 min
+                            
+                            50 s.
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><strong>本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指 32 位 winapi（别说 64 位了，自从 32 位 winapi 出现，对早期 16 位的 winapi 我们也这么叫）。</strong></p>
+<h1 id="可行性">可行性</h1>
+<p>得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）</p>
+<p><strong>当然，因为原 MinGW 项目不支持 64 位，我这里说的 MinGW 都是指 <a href="https://www.mingw-w64.org">MinGW-w64</a>（和原 MinGW 不是同一个项目）。</strong></p>
+<h1 id="安装">安装</h1>
+<p>一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～<strong>详情请参阅  <a href="https://www.mingw-w64.org/downloads/">https://www.mingw-w64.org/downloads/</a></strong></p>
+<p>我现在使用的操作系统是 Fedora 35，是参考这篇<a href="https://docs.fedoraproject.org/en-US/packaging-guidelines/MinGW/">官方文档</a>装的。<br>
+<strong>除非官方文档太烂，否则还是建议跟着官方文档来。</strong></p>
+<h1 id="使用">使用</h1>
+<p><strong>“MinGW 不生产工具链，只是 GNU 工具链的搬运工。”</strong></p>
+<p>除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译 64 位 C 语言程序，把 <code>gcc</code> 换成 <code>x86_64-w64-mingw32-gcc</code> 即可。<br>
+除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。<strong>配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！</strong><br>
+至于具体有哪些工具，我这里就不一一列举了，<strong>安装好后可以在 <code>/usr/bin</code> 目录下搜索 <code>mingw</code></strong>。</p>
+<p><strong>头文件和库文件等可以在 <code>/usr/x86_64-w64-mingw32</code> 和 <code>/usr/i686-w64-mingw32</code> 目录下找到。</strong></p>
+<h1 id="感想">感想</h1>
+<p>不使用 MFC 的 win32 开发太痛苦了&hellip;&hellip;</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">上次修改於 2022-02-28</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://anyicomplex.github.io/zh-hant/posts/ultimate-trimming-for-c-cpp-programs-size/">
+			下回<br>对 C/C&#43;&#43; 程序体积的极致裁剪
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://anyicomplex.github.io/zh-hant/posts/untitled-1/">
+			上回<br>无题
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原創博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>

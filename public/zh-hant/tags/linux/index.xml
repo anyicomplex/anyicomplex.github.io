@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/zh-hant/tags/linux/</link>
+    <description>Recent content in Linux on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 06:58:26 -0400</lastBuildDate><atom:link href="https://anyicomplex.github.io/zh-hant/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 发行版推荐</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/linux-distro-recommendations/</link>
+      <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/linux-distro-recommendations/</guid>
+      <description>个人使用 面向 Linux 新手 其实 Linux 桌面系统的易用和桌面环境也有很大的关系，我建议新手使用 GNOME/KDE。
+Debian Testing/Unstable 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：DPKG/APT
+软件包格式：deb
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Debian 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；上手难度较低。
+默认不带闭源固件，安装这些固件对新手而言有一定的门槛。
+Stable 源软件包太旧，一般用于服务器，个人使用建议换 Testing/Unstable 源（滚动更新）。
+Fedora Workstation 个人推荐指数：3/5
+是否稳定版：否
+官方包管理器：RPM/Yum/DNF
+软件包格式：rpm
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Red Hat 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+相比 Debian 稍显臃肿。
+若要满足日常使用，需要配置第三方软件源，对新手而言有一定的门槛。
+openSUSE Tumbleweed 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：RPM/Zypper
+软件包格式：rpm
+默认软件：部分开源
+官方软件仓库：开源/闭源分开存放
+维护者：SUSE 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富、配置方便（YaST 久负盛名）；上手难度低。
+有稳定版（openSUSE Leap），但个人使用建议用滚动版（稳定版软件包会比较旧）。
+Manjaro 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：Pacman/Pamac
+软件包格式：pkg.tar.xz/pkg.tar.zst
+默认软件：部分开源
+官方软件仓库：开源/闭源混合存放
+维护者：Manjaro 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+自带显卡驱动工具，对安装显卡驱动友好。
+和 Arch Linux 一脉相承，可能是软件包最多的 Linux 发行版，而且比 Arch Linux 稳定。</description>
+    </item>
+    
+    <item>
+      <title>操作系统推荐（服务器篇）</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-servers/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-servers/</guid>
+      <description>虚拟机集群主机 Proxmox Virtual Environment （+3）基于 Debian 的 Linux 发行版，质量高。
+（+2）开源免费。
+（-1）没有良好的技术支持服务。
+（-1）难以支撑大规模集群。
+总分：3
+评价：适合有一定技术但资金不足的初创团队使用。
+VMware EXSi （+3）VMware 出品，质量高。
+（-5）不开源不免费。
+（+3）有优秀的付费技术支持服务。
+（+2）支撑大规模集群毫无问题。
+总分：3
+评价：适合资金足够的团队使用。
+OpenBSD （+3）最注重安全性的 BSD 发行版，质量高。
+（+2）开源免费。
+（+1）许可证宽松。
+（-2）没有技术支持服务。
+（-3）并非被设计用于虚拟机集群主机，虽然可以通过第三方软件实现。
+总分：1
+评价：适合技术水平高的团队或个人使用。
+虚拟机集群客户机/物理机 Debian Stable （+3）老牌 Linux 发行版，以稳定著称，质量高。
+（+2）开源免费。
+（+1）保证了基本功能完备的情况下，系统资源占用较低。
+（-2）没有技术支持服务。
+总分：4
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。
+Slackware （+3）老牌 Linux 发行版，以稳定著称，质量高。
+（+2）开源免费。
+（+1）保证了基本功能完备的情况下，系统资源占用较低。
+（-2）没有技术支持服务。
+（-1）官方的包管理器不够现代化，无法处理依赖关系。
+总分：3 评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。
+Red Hat Enterprise Linux （+3）Red Hat 出品，质量高。
+（-4）开源但不免费。
+（+3）有优秀的付费技术支持服务。
+（+1）Linux 服务器的事实标准。
+总分：3
+评价：适合资金足够的企业使用。
+Rocky Linux （+3）RHEL 的一个克隆，质量高。</description>
+    </item>
+    
+    <item>
+      <title>操作系统推荐（个人使用篇）</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-personal-use/</link>
+      <pubDate>Sun, 06 Mar 2022 23:18:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-personal-use/</guid>
+      <description>游戏发烧友 Windows 最适合用来玩游戏的 PC 操作系统是 Windows，没有之一。
+先不提很多游戏、模拟器只支持 Windows，就连显卡驱动也往往是对 Windows 的支持最好（涉及到微软和各大显卡厂商的合作）。
+设计师 macOS Apple 为了争取设计师群体在 macOS 下了工夫，和 Windows 相比，macOS 的用户体验更好，让设计师能专注工作而不用去管各种技术问题。
+Windows Windows 适合有一定计算机基础的用户，强大的软件生态也使它能胜任设计工作站的工作。
+.NET 程序员 Windows 没有 Visual Studio 的 .NET 就是没牙的老虎，在 Rider 超越 Visual Studio 前。
+Classic Visual Basic 程序员 Windows Classic Visual Basic 只支持 Windows。
+Objective-C/Swift 程序员 macOS Apple 的东西几乎只在它自己的生态圈能用。
+其他程序员 滚动更新版的 Linux/FreeBSD 在对程序员的友好程度上，Linux 远超 Windows 和 macOS，正如 Windows 对游戏玩家友好，macOS 对设计师友好一样。
+滚动更新是为了获取最新的程序库和开发工具，对开发者而言这是很重要的。
+有开源洁癖/注重隐私保护的人 完全开源的 Linux/BSD 部分 Linux 并非完全开源，例如 Ubuntu，内置部分闭源软件。擦亮眼睛，选好发行版！</description>
+    </item>
+    
+    <item>
+      <title>在 Linux 下编写和编译 win32 程序</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/writing-and-compiling-win32-programs-under-linux/</link>
+      <pubDate>Mon, 28 Feb 2022 14:24:36 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/writing-and-compiling-win32-programs-under-linux/</guid>
+      <description>本文所说的 win32 是中国大陆程序员圈子对 winapi 的俗称，不是特指 32 位 winapi（别说 64 位了，自从 32 位 winapi 出现，对早期 16 位的 winapi 我们也这么叫）。
+可行性 得益于 MinGW（Minimalist GNU for Windows）这个项目，只要不涉及到比较高层次的封装（MFC、WPF等），是完全可行的。（实际上也有各种奇技淫巧使用 MFC 和 WPF，但我不建议那么做，如果真要那么做，在 Wine 下使用 MSVC 也许会更好一点）
+当然，因为原 MinGW 项目不支持 64 位，我这里说的 MinGW 都是指 MinGW-w64（和原 MinGW 不是同一个项目）。
+安装 一般而言，主流 Linux 发行版的软件源都会包含 MinGW 相关的软件包，当然，如果没有，或者需要官方源已有软件包以外的功能，也可以自己去官网下载源码和编译好的可执行文件什么的～详情请参阅 https://www.mingw-w64.org/downloads/
+我现在使用的操作系统是 Fedora 35，是参考这篇官方文档装的。
+除非官方文档太烂，否则还是建议跟着官方文档来。
+使用 “MinGW 不生产工具链，只是 GNU 工具链的搬运工。”
+除了命令的名称不同以外，其他都和 GNU 工具链一样，举个例子，编译 64 位 C 语言程序，把 gcc 换成 x86_64-w64-mingw32-gcc 即可。
+除编译器以外，MinGW 里还有不少其他的工具，用于和编译器配套使用（Linux 原装的 GNU 构建工具无法和 MinGW 编译器配套使用，或者需要额外配置）。配置 IDE 或文本编辑器的时候，一定要把全套工具都换成 MinGW 的！</description>
+    </item>
+    
+    <item>
+      <title>Xlib 编程注意事项 1</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/xlib-programming-notes-1/</link>
+      <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/xlib-programming-notes-1/</guid>
+      <description> 谨慎使用 XGrabPointer，使用前一定要做好强制退出程序的准备（今天我被坑到了，还不止一次QAQ）  </description>
+    </item>
+    
+    <item>
+      <title>使用 Linux 的理由</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</link>
+      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</guid>
+      <description>1.轻量级 （以 x86_64 操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内）    操作系统 最低 CPU 需求 最低内存需求 最低储存需求     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    数据均来自官网</description>
+    </item>
+    
+  </channel>
+</rss>

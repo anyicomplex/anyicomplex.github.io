@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>操作系统 on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/zh-hant/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+    <description>Recent content in 操作系统 on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 23 Mar 2022 09:14:06 -0400</lastBuildDate><atom:link href="https://anyicomplex.github.io/zh-hant/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从硬件到云服务——计算机平台的演化</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</link>
+      <pubDate>Wed, 23 Mar 2022 09:14:06 -0400</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</guid>
+      <description>前言 我认为，程序员，就是在计算机平台上工作，利用计算机平台来处理需求的职业。
+计算机平台并非一成不变的，截至目前，主流的计算机平台至少已经发展了四代。我的分析如下：
+第一代：硬件 早期的 Unix 系统是连同源码一起发售的。那时候，一台计算机的成本和售价，硬件占了绝大多数，没人意识到 Unix 源码的价值。
+各个硬件平台的汇编语言不同，于是出现了 C 语言等高级编程语言，用于解决这个问题。
+然而，C 语言对于早期的计算机而言也是非常奢侈的存在，那时候只有大型机才有足够的性能运行 C 语言写成的 Unix。
+于是，那时候的程序员们，多数用着汇编语言，在不同的硬件平台（多数没有操作系统）上工作，他们的程序多数时候无法不经修改地跨越硬件平台。
+第二代：操作系统 “操作系统”这个概念随着 DOS 系统的大获成功席卷了整个 IT 行业。
+随着硬件性能的提高和成本的降低，C 语言、Basic 和 Pascal 等高级编程语言得以普及，BSD 和 Linux 也得益于 C 语言，与硬件解耦。
+各个操作系统的可执行文件格式不同，哪怕是针对同一种硬件平台，为不同操作系统编译的可执行文件也无法兼容，为了解决这个问题，出现了 Java 等跨操作系统的编程语言。
+然而，Java 对于当时的计算机而言也是非常奢侈的存在，大多数时候计算机没有足够的资源良好的运行 Java。
+于是，那时候的程序员们，多数用着高级编程语言，在不同的操作系统上工作，他们的程序多数时候无法不经修改地跨越操作系统平台。
+后来，硬件性能进一步提高、成本进一步降低，让高度封装的跨操作系统 C/C++ 库成为可能，Java 等编程语言重现辉煌。
+从此，编写跨操作系统程序成为程序员的必备技能。
+第三代：浏览器 随着硬件性能的进一步提高、成本进一步降低，互联网 3.0 时代到来了，Web 开发者对操作系统的利用能力也随着浏览器能力的增强进一步增强。
+于是，B/S 架构大行其道，基于浏览器的桌面应用开发框架（如 Electron.js）和移动应用开发框架（如 React.js）也随之兴起，从而极大的压榨了直接基于操作系统平台的本地 APP 的生存空间，浏览器也正式成为了一代计算机平台。
+从此，编写 Web 前端程序也成为程序员的必备技能。
+第四代：云服务 随着硬件性能的进一步提高、成本进一步降低，普通用户能享受到的网络带宽越来越大、延迟越来越低，于是很多公司把原本应该在用户设备上运行的程序搬到了自己的服务器上，以“云服务”的形式提供给用户。
+这样做既能降低适配多不同操作系统所带来的成本（后端程序要适配的操作系统只有公司服务器上的系统），又能提供更好的服务，不必受制于用户设备的配置。 这是目前最新一代的计算机平台，已经得到了非常广泛的应用，而且仍在高速发展中。
+分析 并不是说新的计算机平台出现，旧的计算机平台就会被取代，因为后来出现的平台是基于前面的平台的。
+ 嵌入式工程师所要面对的多数时候是硬件平台，少数时候是操作系统平台，和几十年前一样。 浏览器 APP 目前还无法摆脱“臃肿”的标签，而且很多用户更偏爱本地 APP，因此大多数本地 APP 开发者很长时间内还不至于失业。 云服务的基础是服务器上运行服务的操作系统，后端程序也属于本地 APP 的范畴。  计算机平台的演化，基础是硬件性能的提高和成本的降低，每次出现的新平台都是对旧平台部分问题的最优解。</description>
+    </item>
+    
+    <item>
+      <title>Linux 发行版推荐</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/linux-distro-recommendations/</link>
+      <pubDate>Wed, 23 Mar 2022 06:58:26 -0400</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/linux-distro-recommendations/</guid>
+      <description>个人使用 面向 Linux 新手 其实 Linux 桌面系统的易用和桌面环境也有很大的关系，我建议新手使用 GNOME/KDE。
+Debian Testing/Unstable 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：DPKG/APT
+软件包格式：deb
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Debian 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富、精简可靠；上手难度较低。
+默认不带闭源固件，安装这些固件对新手而言有一定的门槛。
+Stable 源软件包太旧，一般用于服务器，个人使用建议换 Testing/Unstable 源（滚动更新）。
+Fedora Workstation 个人推荐指数：3/5
+是否稳定版：否
+官方包管理器：RPM/Yum/DNF
+软件包格式：rpm
+默认软件：全部开源
+官方软件仓库：开源/闭源分开存放
+维护者：Red Hat 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+相比 Debian 稍显臃肿。
+若要满足日常使用，需要配置第三方软件源，对新手而言有一定的门槛。
+openSUSE Tumbleweed 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：RPM/Zypper
+软件包格式：rpm
+默认软件：部分开源
+官方软件仓库：开源/闭源分开存放
+维护者：SUSE 公司
+个人评价：质量高、软件包多、开箱即用、资料丰富、配置方便（YaST 久负盛名）；上手难度低。
+有稳定版（openSUSE Leap），但个人使用建议用滚动版（稳定版软件包会比较旧）。
+Manjaro 个人推荐指数：4/5
+是否稳定版：否
+官方包管理器：Pacman/Pamac
+软件包格式：pkg.tar.xz/pkg.tar.zst
+默认软件：部分开源
+官方软件仓库：开源/闭源混合存放
+维护者：Manjaro 社区
+个人评价：质量高、软件包多、开箱即用、资料丰富；上手难度低。
+自带显卡驱动工具，对安装显卡驱动友好。
+和 Arch Linux 一脉相承，可能是软件包最多的 Linux 发行版，而且比 Arch Linux 稳定。</description>
+    </item>
+    
+    <item>
+      <title>操作系统推荐（服务器篇）</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-servers/</link>
+      <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-servers/</guid>
+      <description>虚拟机集群主机 Proxmox Virtual Environment （+3）基于 Debian 的 Linux 发行版，质量高。
+（+2）开源免费。
+（-1）没有良好的技术支持服务。
+（-1）难以支撑大规模集群。
+总分：3
+评价：适合有一定技术但资金不足的初创团队使用。
+VMware EXSi （+3）VMware 出品，质量高。
+（-5）不开源不免费。
+（+3）有优秀的付费技术支持服务。
+（+2）支撑大规模集群毫无问题。
+总分：3
+评价：适合资金足够的团队使用。
+OpenBSD （+3）最注重安全性的 BSD 发行版，质量高。
+（+2）开源免费。
+（+1）许可证宽松。
+（-2）没有技术支持服务。
+（-3）并非被设计用于虚拟机集群主机，虽然可以通过第三方软件实现。
+总分：1
+评价：适合技术水平高的团队或个人使用。
+虚拟机集群客户机/物理机 Debian Stable （+3）老牌 Linux 发行版，以稳定著称，质量高。
+（+2）开源免费。
+（+1）保证了基本功能完备的情况下，系统资源占用较低。
+（-2）没有技术支持服务。
+总分：4
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。
+Slackware （+3）老牌 Linux 发行版，以稳定著称，质量高。
+（+2）开源免费。
+（+1）保证了基本功能完备的情况下，系统资源占用较低。
+（-2）没有技术支持服务。
+（-1）官方的包管理器不够现代化，无法处理依赖关系。
+总分：3 评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。
+Red Hat Enterprise Linux （+3）Red Hat 出品，质量高。
+（-4）开源但不免费。
+（+3）有优秀的付费技术支持服务。
+（+1）Linux 服务器的事实标准。
+总分：3
+评价：适合资金足够的企业使用。
+Rocky Linux （+3）RHEL 的一个克隆，质量高。</description>
+    </item>
+    
+    <item>
+      <title>操作系统推荐（个人使用篇）</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-personal-use/</link>
+      <pubDate>Sun, 06 Mar 2022 23:18:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/operating-system-recommendations-for-personal-use/</guid>
+      <description>游戏发烧友 Windows 最适合用来玩游戏的 PC 操作系统是 Windows，没有之一。
+先不提很多游戏、模拟器只支持 Windows，就连显卡驱动也往往是对 Windows 的支持最好（涉及到微软和各大显卡厂商的合作）。
+设计师 macOS Apple 为了争取设计师群体在 macOS 下了工夫，和 Windows 相比，macOS 的用户体验更好，让设计师能专注工作而不用去管各种技术问题。
+Windows Windows 适合有一定计算机基础的用户，强大的软件生态也使它能胜任设计工作站的工作。
+.NET 程序员 Windows 没有 Visual Studio 的 .NET 就是没牙的老虎，在 Rider 超越 Visual Studio 前。
+Classic Visual Basic 程序员 Windows Classic Visual Basic 只支持 Windows。
+Objective-C/Swift 程序员 macOS Apple 的东西几乎只在它自己的生态圈能用。
+其他程序员 滚动更新版的 Linux/FreeBSD 在对程序员的友好程度上，Linux 远超 Windows 和 macOS，正如 Windows 对游戏玩家友好，macOS 对设计师友好一样。
+滚动更新是为了获取最新的程序库和开发工具，对开发者而言这是很重要的。
+有开源洁癖/注重隐私保护的人 完全开源的 Linux/BSD 部分 Linux 并非完全开源，例如 Ubuntu，内置部分闭源软件。擦亮眼睛，选好发行版！</description>
+    </item>
+    
+    <item>
+      <title>使用 Linux 的理由</title>
+      <link>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</link>
+      <pubDate>Wed, 08 Dec 2021 08:17:44 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh-hant/posts/reasons-to-use-linux/</guid>
+      <description>1.轻量级 （以 x86_64 操作系统为例，针对日常使用，因此注重轻量级精简太多功能的发行版不算在内）    操作系统 最低 CPU 需求 最低内存需求 最低储存需求     Windows 11 1 GHz * 2 4 GB 64 GB   Windows 10 1 GHz 2 GB 20 GB   Windows 7 1 GHz 2 GB 20 GB   Fedora 35 (GNOME) 2 GHz 2 GB 15 GB   Debian 11 (GNOME) 1 GHz 1 GB 10 GB    数据均来自官网</description>
+    </item>
+    
+  </channel>
+</rss>

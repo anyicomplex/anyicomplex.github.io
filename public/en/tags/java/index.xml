@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/tags/java/</link>
+    <description>Recent content in Java on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 08:52:46 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/en/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing C-style Java Programs</title>
+      <link>https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/</link>
+      <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/writing-c-style-java-programs/</guid>
+      <description>Feasibility Java is said to be a pure object-oriented programming language, so can you write procedural-oriented C-style code in Java?
+There are no pointers in Java, but there are references, so the answer is obviously yes.
+The difference in style Let&amp;rsquo;s start with two pieces of pseudo-code.
+C style struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java style Foo foo = new Foo(); foo.changeValue(0); This also shows the difference between the two design patterns, object-oriented and procedure-oriented.</description>
+    </item>
+    
+    <item>
+      <title>Words for those Want to Develop Game in Java</title>
+      <link>https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/</guid>
+      <description>Is Java suitable for developing games? My answer is: NO.
+If you&amp;rsquo;re not focused on open source, established commercial solutions like Unity and GameMaker are obviously the best choices for you.
+If you&amp;rsquo;re focused on open source, there are plenty of open source game engines out there (most of them written in C/C++) that are right up your alley. (Not listed here, please search in the major open source platforms by yourself)</description>
+    </item>
+    
+  </channel>
+</rss>

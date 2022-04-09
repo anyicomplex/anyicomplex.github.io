@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html><head>
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/css/code-highlight.css">
+
+
+  <title>操作系统推荐（服务器篇）</title>
+
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="本文仅代表个人观点，欢迎留言讨论">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:title" content="操作系统推荐（服务器篇）" />
+<meta property="og:description" content="本文仅代表个人观点，欢迎留言讨论" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anyicomplex.github.io/zh/posts/operating-system-recommendations-for-servers/" />
+<meta property="article:published_time" content="2022-03-07T00:00:21-05:00" />
+<meta property="article:modified_time" content="2022-03-07T00:00:21-05:00" /><meta property="og:site_name" content="安怡的博客" />
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="操作系统推荐（服务器篇）"/>
+<meta name="twitter:description" content="本文仅代表个人观点，欢迎留言讨论"/>
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+
+  
+
+
+
+
+<link rel="icon" href="https://github.com/fluidicon.png">
+
+
+
+<link rel="stylesheet" href="https://anyicomplex.github.io/scss/journal.min.f4a8de07567a2d29619e0711662ef6251e3e59b642079f99490f654abf89a3c4.css" integrity="sha256-9KjeB1Z6LSlhngcRZi72JR4&#43;WbZCB5&#43;ZSQ9lSr&#43;Jo8Q=" media="screen">
+
+
+
+<script src="/vendor/js/loadCSS.js"></script>
+<script>
+  loadCSS("https://fonts.googleapis.com/css?family=Fira+Mono|Material+Icons");
+</script>
+
+
+
+
+
+
+  <script src="/js/toc.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="/vendor/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+  clientID: 'ecaa9e60860d0402573e',
+  clientSecret: 'e2a72d4628c46b1d35bdeef27db30f692f731c01',
+  repo: 'anyicomplex.github.io',
+  owner: 'anyicomplex',
+  admin: ['anyicomplex'],
+  id: md5(location.pathname),
+  distractionFreeMode: 'false'
+  });
+  window.onload = function () {
+        gitalk.render('gitalk-container')
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="https://anyicomplex.github.io/zh/">
+    
+        <div class="nav-title">
+            安怡的博客
+        </div>
+        
+        <div class="nav-subtitle">
+            编程与生活 | 随笔杂记
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/zh/posts">
+                归档
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/categories">
+                分类
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/tags">
+                标签
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/zh/index.xml">
+                RSS 订阅
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    
+    
+    
+    <div class="toc animated-visibility" :class="{ invisible: scrollY <= 140 }">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%99%9a%e6%8b%9f%e6%9c%ba%e9%9b%86%e7%be%a4%e4%b8%bb%e6%9c%ba" onclick="onNavClick(`#虚拟机集群主机-nav`)" id="虚拟机集群主机-nav">
+									虚拟机集群主机
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#proxmox-virtual-environmenthttpswwwproxmoxcom" onclick="onNavClick(`#proxmox-virtual-environmenthttpswwwproxmoxcom-nav`)" id="proxmox-virtual-environmenthttpswwwproxmoxcom-nav">
+									Proxmox Virtual Environment
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml" onclick="onNavClick(`#vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml-nav`)" id="vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml-nav">
+									VMware EXSi
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#openbsdhttpswwwopenbsdorg" onclick="onNavClick(`#openbsdhttpswwwopenbsdorg-nav`)" id="openbsdhttpswwwopenbsdorg-nav">
+									OpenBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e8%99%9a%e6%8b%9f%e6%9c%ba%e9%9b%86%e7%be%a4%e5%ae%a2%e6%88%b7%e6%9c%ba%e7%89%a9%e7%90%86%e6%9c%ba" onclick="onNavClick(`#虚拟机集群客户机物理机-nav`)" id="虚拟机集群客户机物理机-nav">
+									虚拟机集群客户机/物理机
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#debian-stablehttpswwwdebianorg" onclick="onNavClick(`#debian-stablehttpswwwdebianorg-nav`)" id="debian-stablehttpswwwdebianorg-nav">
+									Debian Stable
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#slackwarehttpwwwslackwarecom" onclick="onNavClick(`#slackwarehttpwwwslackwarecom-nav`)" id="slackwarehttpwwwslackwarecom-nav">
+									Slackware
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#red-hat-enterprise-linuxhttpsredhatcomrhel" onclick="onNavClick(`#red-hat-enterprise-linuxhttpsredhatcomrhel-nav`)" id="red-hat-enterprise-linuxhttpsredhatcomrhel-nav">
+									Red Hat Enterprise Linux
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#rocky-linuxhttpsrockylinuxorg" onclick="onNavClick(`#rocky-linuxhttpsrockylinuxorg-nav`)" id="rocky-linuxhttpsrockylinuxorg-nav">
+									Rocky Linux
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#ubuntu-serverhttpsubuntucom" onclick="onNavClick(`#ubuntu-serverhttpsubuntucom-nav`)" id="ubuntu-serverhttpsubuntucom-nav">
+									Ubuntu Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#freebsdhttpswwwfreebsdorg" onclick="onNavClick(`#freebsdhttpswwwfreebsdorg-nav`)" id="freebsdhttpswwwfreebsdorg-nav">
+									FreeBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#openbsdhttpswwwopenbsdorg-1" onclick="onNavClick(`#openbsdhttpswwwopenbsdorg-1-nav`)" id="openbsdhttpswwwopenbsdorg-1-nav">
+									OpenBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#windows-serverhttpmicrosoftcomen-uswindows-server" onclick="onNavClick(`#windows-serverhttpmicrosoftcomen-uswindows-server-nav`)" id="windows-serverhttpmicrosoftcomen-uswindows-server-nav">
+									Windows Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+    
+    
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+<div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/zh/posts">
+                    归档
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/categories">
+                    分类
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/tags">
+                    标签
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/zh/index.xml">
+                    RSS 订阅
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- 目录 -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e8%99%9a%e6%8b%9f%e6%9c%ba%e9%9b%86%e7%be%a4%e4%b8%bb%e6%9c%ba" onclick="onNavClick(`#虚拟机集群主机-nav`)" id="虚拟机集群主机-nav">
+									虚拟机集群主机
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#proxmox-virtual-environmenthttpswwwproxmoxcom" onclick="onNavClick(`#proxmox-virtual-environmenthttpswwwproxmoxcom-nav`)" id="proxmox-virtual-environmenthttpswwwproxmoxcom-nav">
+									Proxmox Virtual Environment
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml" onclick="onNavClick(`#vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml-nav`)" id="vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml-nav">
+									VMware EXSi
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#openbsdhttpswwwopenbsdorg" onclick="onNavClick(`#openbsdhttpswwwopenbsdorg-nav`)" id="openbsdhttpswwwopenbsdorg-nav">
+									OpenBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e8%99%9a%e6%8b%9f%e6%9c%ba%e9%9b%86%e7%be%a4%e5%ae%a2%e6%88%b7%e6%9c%ba%e7%89%a9%e7%90%86%e6%9c%ba" onclick="onNavClick(`#虚拟机集群客户机物理机-nav`)" id="虚拟机集群客户机物理机-nav">
+									虚拟机集群客户机/物理机
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#debian-stablehttpswwwdebianorg" onclick="onNavClick(`#debian-stablehttpswwwdebianorg-nav`)" id="debian-stablehttpswwwdebianorg-nav">
+									Debian Stable
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#slackwarehttpwwwslackwarecom" onclick="onNavClick(`#slackwarehttpwwwslackwarecom-nav`)" id="slackwarehttpwwwslackwarecom-nav">
+									Slackware
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#red-hat-enterprise-linuxhttpsredhatcomrhel" onclick="onNavClick(`#red-hat-enterprise-linuxhttpsredhatcomrhel-nav`)" id="red-hat-enterprise-linuxhttpsredhatcomrhel-nav">
+									Red Hat Enterprise Linux
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#rocky-linuxhttpsrockylinuxorg" onclick="onNavClick(`#rocky-linuxhttpsrockylinuxorg-nav`)" id="rocky-linuxhttpsrockylinuxorg-nav">
+									Rocky Linux
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#ubuntu-serverhttpsubuntucom" onclick="onNavClick(`#ubuntu-serverhttpsubuntucom-nav`)" id="ubuntu-serverhttpsubuntucom-nav">
+									Ubuntu Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#freebsdhttpswwwfreebsdorg" onclick="onNavClick(`#freebsdhttpswwwfreebsdorg-nav`)" id="freebsdhttpswwwfreebsdorg-nav">
+									FreeBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#openbsdhttpswwwopenbsdorg-1" onclick="onNavClick(`#openbsdhttpswwwopenbsdorg-1-nav`)" id="openbsdhttpswwwopenbsdorg-1-nav">
+									OpenBSD
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#windows-serverhttpmicrosoftcomen-uswindows-server" onclick="onNavClick(`#windows-serverhttpmicrosoftcomen-uswindows-server-nav`)" id="windows-serverhttpmicrosoftcomen-uswindows-server-nav">
+									Windows Server
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e6%84%9f%e6%83%b3" onclick="onNavClick(`#感想-nav`)" id="感想-nav">
+									感想
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="https://anyicomplex.github.io/zh/">
+            安怡的博客
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="https://anyicomplex.github.io/zh/">
+        <div class="single-column-header-title">安怡的博客</div>
+        
+        <div class="single-column-header-subtitle">编程与生活 | 随笔杂记</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    操作系统推荐（服务器篇）
+                    
+                    <div class="post-subtitle">
+                        本文仅代表个人观点，欢迎留言讨论
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2022-03-07 00:00
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/zh/categories/it">IT</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/zh/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/windows">Windows</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/linux">Linux</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/macos">macOS</a>
+                                &nbsp;
+                            
+                                <a href="/zh/tags/bsd">BSD</a>
+                                &nbsp;
+                            
+                        
+                        
+                            <i class="material-icons" style="">schedule</i>
+                            
+
+                            
+                            
+
+                            
+                            6 min
+                            
+                            4 s.
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h1 id="虚拟机集群主机">虚拟机集群主机</h1>
+<h2 id="proxmox-virtual-environmenthttpswwwproxmoxcom"><a href="https://www.proxmox.com">Proxmox Virtual Environment</a></h2>
+<p>（+3）基于 Debian 的 Linux 发行版，质量高。<br>
+（+2）开源免费。<br>
+（-1）没有良好的技术支持服务。<br>
+（-1）难以支撑大规模集群。<br>
+总分：3<br>
+评价：适合有一定技术但资金不足的初创团队使用。</p>
+<h2 id="vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml"><a href="https://www.vmware.com/products/esxi-and-esx.html">VMware EXSi</a></h2>
+<p>（+3）VMware 出品，质量高。<br>
+（-5）不开源不免费。<br>
+（+3）有优秀的付费技术支持服务。<br>
+（+2）支撑大规模集群毫无问题。<br>
+总分：3<br>
+评价：适合资金足够的团队使用。</p>
+<h2 id="openbsdhttpswwwopenbsdorg"><a href="https://www.openbsd.org/">OpenBSD</a></h2>
+<p>（+3）最注重安全性的 BSD 发行版，质量高。<br>
+（+2）开源免费。<br>
+（+1）许可证宽松。<br>
+（-2）没有技术支持服务。<br>
+（-3）并非被设计用于虚拟机集群主机，虽然可以通过第三方软件实现。<br>
+总分：1<br>
+评价：适合技术水平高的团队或个人使用。</p>
+<h1 id="虚拟机集群客户机物理机">虚拟机集群客户机/物理机</h1>
+<h2 id="debian-stablehttpswwwdebianorg"><a href="https://www.debian.org/">Debian Stable</a></h2>
+<p>（+3）老牌 Linux 发行版，以稳定著称，质量高。<br>
+（+2）开源免费。<br>
+（+1）保证了基本功能完备的情况下，系统资源占用较低。<br>
+（-2）没有技术支持服务。<br>
+总分：4<br>
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。</p>
+<h2 id="slackwarehttpwwwslackwarecom"><a href="http://www.slackware.com/">Slackware</a></h2>
+<p>（+3）老牌 Linux 发行版，以稳定著称，质量高。<br>
+（+2）开源免费。<br>
+（+1）保证了基本功能完备的情况下，系统资源占用较低。<br>
+（-2）没有技术支持服务。<br>
+（-1）官方的包管理器不够现代化，无法处理依赖关系。<br>
+总分：3
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。</p>
+<h2 id="red-hat-enterprise-linuxhttpsredhatcomrhel"><a href="https://redhat.com/rhel/">Red Hat Enterprise Linux</a></h2>
+<p>（+3）Red Hat 出品，质量高。<br>
+（-4）开源但不免费。<br>
+（+3）有优秀的付费技术支持服务。<br>
+（+1）Linux 服务器的事实标准。<br>
+总分：3<br>
+评价：适合资金足够的企业使用。</p>
+<h2 id="rocky-linuxhttpsrockylinuxorg"><a href="https://rockylinux.org/">Rocky Linux</a></h2>
+<p>（+3）RHEL 的一个克隆，质量高。<br>
+（+2）开源免费。<br>
+（-2）没有技术支持服务。<br>
+（+1）Linux 服务器的事实标准。<br>
+总分：4<br>
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。</p>
+<h2 id="ubuntu-serverhttpsubuntucom"><a href="https://ubuntu.com/">Ubuntu Server</a></h2>
+<p>（-1）质量一般。<br>
+（+2）开源免费。<br>
+（+3）有优秀的付费技术支持服务。<br>
+总分：4<br>
+评价：适合有一定技术的个人或企业使用。</p>
+<h2 id="freebsdhttpswwwfreebsdorg"><a href="https://www.freebsd.org/">FreeBSD</a></h2>
+<p>（+3）有 Linux 兼容层的 BSD 发行版，质量高。<br>
+（+2）开源免费。<br>
+（+1）许可证宽松。<br>
+（-2）没有技术支持服务。<br>
+总分：4<br>
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。</p>
+<h2 id="openbsdhttpswwwopenbsdorg-1"><a href="https://www.openbsd.org/">OpenBSD</a></h2>
+<p>（+3）最注重安全性的 BSD 发行版，质量高。<br>
+（+2）开源免费。<br>
+（+1）许可证宽松。<br>
+（-2）没有技术支持服务。<br>
+总分：4<br>
+评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。</p>
+<h2 id="windows-serverhttpmicrosoftcomen-uswindows-server"><a href="http://microsoft.com/en-us/windows-server/">Windows Server</a></h2>
+<p>（-3）BUG 多，质量差，安全性低。<br>
+（-2）系统资源占用高。<br>
+（-5）不开源不免费。<br>
+（+5）有非常优秀的付费技术支持服务。<br>
+（+2）对用户操作非常友好。<br>
+总分：-3<br>
+评价：除非有特殊需求（付费使用 Microsoft 的全套服务器相关软件、服务等）不要用。君不见 Microsoft Azure 上主要跑的都不是 Windows Server（Microsoft 自己都觉得烂XD）。</p>
+<h1 id="感想">感想</h1>
+<p>有一个系统上榜了两次，OpenBSD。<br>
+我觉得 BSD 系的系统几乎都是同类系统的佼佼者，开源的桌面系统有 FreeBSD，服务器系统有 OpenBSD，硬件兼容性高的有 NetBSD，成功的商业化桌面系统有 macOS，甚至游戏主机方面， PlayStation 也是基于 FreeBSD 的。<br>
+<strong>至于我为什么不用 FreeBSD，因为自己现在用的破电脑用 FreeBSD 无法联网（我试了很多系统，没问题的只有 Fedora 和 Ubuntu，明明原装系统是 Windows 7，装上了也无法联网。我可以肯定不是驱动问题。）。</strong></p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2022-03-07</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="https://anyicomplex.github.io/zh/posts/miscellaneous-note-3/">
+			下篇<br>真正意义上的杂记 3
+                </a>
+                
+                
+                
+                <a class="older-posts" href="https://anyicomplex.github.io/zh/posts/operating-system-recommendations-for-personal-use/">
+			上篇<br>操作系统推荐（个人使用篇）
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+<div id="gitalk-container"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="single-column-footer">
+Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://amazingrise.net">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>' s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal</a> <br>
+<br>
+
+
+	
+	2021 - 2022 © anyicomplex
+	
+        <br>
+        
+        
+        本站所有原创博文皆遵循 <a href='https://creativecommons.org/licenses/by-nc/4.0/'>CC-BY-NC 4.0</a> 许可证
+	
+	</div>
+            </div>
+    
+    <script src="/js/journal.js"></script>
+    </body>
+</html>

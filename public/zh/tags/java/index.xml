@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 安怡的博客</title>
+    <link>https://anyicomplex.github.io/zh/tags/java/</link>
+    <description>Recent content in Java on 安怡的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 08:52:46 -0500</lastBuildDate><atom:link href="https://anyicomplex.github.io/zh/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 C 语言的风格写 Java 程序</title>
+      <link>https://anyicomplex.github.io/zh/posts/writing-c-style-java-programs/</link>
+      <pubDate>Sun, 13 Feb 2022 08:52:46 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh/posts/writing-c-style-java-programs/</guid>
+      <description>可行性 都说 Java 是纯面向对象的编程语言，那么能不能在 Java 中写面向过程的 C 语言风格的代码呢？
+Java 中虽然没有指针，但有引用，所以答案显然是可以的。
+风格的区别 先来看两段伪代码：
+C 语言风格 struct Foo foo; change_foo_value(&amp;amp;foo, 0); Java 风格 Foo foo = new Foo(); foo.changeValue(0); 这同样也能体现面向对象和面向过程两种设计模式的区别。
+两种风格都不错，是吧？
+实际应用中的问题 如果某个方法需要返回两种值，该怎么写程序？
+设需求为：用程序启动 Shell 脚本，获取脚本的返回值和输出。
+C 语言风格 int exec_script(char *script_path, char **output) { int exit_code; // Business logic 	... return exit_code; } Java 风格 static class Result { public final int exitCode; public final String output; public Result(int exitCode, String output) { this.</description>
+    </item>
+    
+    <item>
+      <title>写给想用 Java 开发游戏的人的话</title>
+      <link>https://anyicomplex.github.io/zh/posts/words-for-those-want-to-develop-game-in-java/</link>
+      <pubDate>Thu, 07 Oct 2021 02:23:11 -0500</pubDate>
+      
+      <guid>https://anyicomplex.github.io/zh/posts/words-for-those-want-to-develop-game-in-java/</guid>
+      <description>Java 适合开发游戏吗？ 我的答案是：不适合。
+如果你不追求开源，Unity 和 GameMaker 这类成熟的商业解决方案显然是最好的选择。
+如果你追求开源，多如牛毛的开源游戏引擎（绝大多数是用 C/C++ 编写的）总有一款是你的菜。（这里不列举，请自行到各大开源平台搜索）
+如果现有游戏引擎都不能使你满意，你可以尝试自己编写——但是，我不推荐使用 Java，准确地说，不推荐使用任何一门委托型语言，甚至带 GC 的非委托型语言我都不推荐。低延迟的即时交互对于电子游戏而言是至关重要的，在这方面，委托型语言先天不足。（Unity虽然用 C# 做开发，但底层还是 C/C++，并且针对 C# 代码进行了 AOT 编译，以提升性能）
+如果你没有非用 Java 不可的理由，就请打消用 Java 开发游戏的念头。
+如果我非用 Java 不可呢？ Java 的生态很庞大，事实上，相对成熟的解决方案还是有的。
+ libGDX：侧重于 2D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5 jMonkeyEngine：纯 3D，支持平台：Windows/Linux/Mac/Android/iOS/HTML5  我认为相对完善的 Java 游戏引擎只有这两个，其他都不够成熟。
+尝试使用 libGDX 开发 3D 游戏不是个明智的选择，而用 jMonkeyEngine 开发 2D 游戏是一件相当不理智的事。
+Java 能开发像王者荣耀那样的大型游戏吗？ 能。
+Java 的缺陷从来就不在大型化上，不然也不会有那么多服务器跑 SpringBoot 一类用 Java 编写的 Web 后端框架了。
+大名鼎鼎的 PokeMMO 就是用 libGDX 开发的。
+用 Java 开发游戏需要注意些什么？ 在桌面平台，几乎不可能让玩家们专门为你的游戏去安装 JRE。</description>
+    </item>
+    
+  </channel>
+</rss>
