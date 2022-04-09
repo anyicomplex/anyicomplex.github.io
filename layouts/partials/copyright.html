@@ -13,8 +13,8 @@ Powered by <a href='https://gohugo.io/'>Hugo</a> with theme <a href="https://git
         <br>
         {{ if .Site.Params.GlobalLicense }}
         {{ if .Site.Params.GlobalLicenseLink }}
-                        本站所有原创博文皆遵循 <a href='{{ .Site.Params.GlobalLicenseLink }}'>{{ .Site.Params.GlobalLicense }}</a> 协议
+        {{ i18n "under_license" }} <a href='{{ .Site.Params.GlobalLicenseLink }}'>{{ .Site.Params.GlobalLicense }}</a> {{ i18n "license" }}
 	{{ else }}
-                        本站所有原创博文皆遵循 {{ .Site.Params.GlobalLicense }} 协议
+        {{ i18n "under_license" }} {{ .Site.Params.GlobalLicense }} {{ i18n "license" }}
 	{{ end }}
 	{{ end }}
