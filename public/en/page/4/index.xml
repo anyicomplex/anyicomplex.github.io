@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Introduction on anyicomplex&#39;s Blog</title>
+    <link>https://anyicomplex.github.io/en/</link>
+    <description>Recent content in Self Introduction on anyicomplex&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021 - 2022 © anyicomplex</copyright>
+    <lastBuildDate>Wed, 08 Dec 2021 04:03:38 -0500</lastBuildDate>
+    
+        <atom:link href="https://anyicomplex.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Hello World</title>
+        <link>https://anyicomplex.github.io/en/posts/hello-world/</link>
+        <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/hello-world/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/hello-world/ -&lt;p&gt;Theme: &lt;a href=&#34;https://themes.gohugo.io/themes/github-style/&#34;&gt;Github Style&lt;/a&gt; (Note: This is the theme used at the beginning of the blog, which has already replaced)&lt;/p&gt;
+&lt;p&gt;It will probably be a blog of diary nature :D&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/hello-world/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+  </channel>
+</rss> 

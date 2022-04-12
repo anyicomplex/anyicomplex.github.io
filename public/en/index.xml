@@ -13,6 +13,20 @@
     
     
         <item>
+        <title>Farewell Forever</title>
+        <link>https://anyicomplex.github.io/en/posts/farewell-forever/</link>
+        <pubDate>Tue, 12 Apr 2022 05:51:11 -0400</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/farewell-forever/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/farewell-forever/ -&lt;p&gt;Because of some force majeure, I will withdraw from the internet for a period of time, may come back someday, or may not foreover.&lt;br&gt;
+I&amp;rsquo;m very sorry for not fulfilling my commitment to the blog.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GOODBYE.&lt;/strong&gt;&lt;/p&gt;
+- https://anyicomplex.github.io/en/posts/farewell-forever/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>从硬件到云服务——计算机平台的演化</title>
         <link>https://anyicomplex.github.io/en/posts/from-hardware-to-cloud-services-the-evolution-of-computer-platforms/</link>
         <pubDate>Wed, 23 Mar 2022 09:14:06 -0400</pubDate>
@@ -402,102 +416,6 @@ Portage 包管理器类似 BSD 的 Ports，主要的软件安装方式是下载�
 而且现在有&lt;a href=&#34;https://www.freepascal.org/&#34;&gt;开源的编译器&lt;/a&gt;可以用了！&lt;br&gt;
 虽然这个编译器应该不如 Embarcadero 出的官方编译器功能完备，但对一个 Delphi 7 时代的遗民（我）而言，这支持的&lt;a href=&#34;https://en.wikipedia.org/wiki/Free_Pascal#Targets&#34;&gt;几十个平台&lt;/a&gt;就足够诱人了&amp;hellip;&amp;hellip;（那会只支持 DOS 和 Windows）&lt;/p&gt;
 - https://anyicomplex.github.io/en/posts/miscellaneous-note-3/ - 2021 - 2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>操作系统推荐（服务器篇）</title>
-        <link>https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/</link>
-        <pubDate>Mon, 07 Mar 2022 00:00:21 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/</guid>
-        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/ -&lt;h1 id=&#34;虚拟机集群主机&#34;&gt;虚拟机集群主机&lt;/h1&gt;
-&lt;h2 id=&#34;proxmox-virtual-environmenthttpswwwproxmoxcom&#34;&gt;&lt;a href=&#34;https://www.proxmox.com&#34;&gt;Proxmox Virtual Environment&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）基于 Debian 的 Linux 发行版，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（-1）没有良好的技术支持服务。&lt;br&gt;
-（-1）难以支撑大规模集群。&lt;br&gt;
-总分：3&lt;br&gt;
-评价：适合有一定技术但资金不足的初创团队使用。&lt;/p&gt;
-&lt;h2 id=&#34;vmware-exsihttpswwwvmwarecomproductsesxi-and-esxhtml&#34;&gt;&lt;a href=&#34;https://www.vmware.com/products/esxi-and-esx.html&#34;&gt;VMware EXSi&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）VMware 出品，质量高。&lt;br&gt;
-（-5）不开源不免费。&lt;br&gt;
-（+3）有优秀的付费技术支持服务。&lt;br&gt;
-（+2）支撑大规模集群毫无问题。&lt;br&gt;
-总分：3&lt;br&gt;
-评价：适合资金足够的团队使用。&lt;/p&gt;
-&lt;h2 id=&#34;openbsdhttpswwwopenbsdorg&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）最注重安全性的 BSD 发行版，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+1）许可证宽松。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-（-3）并非被设计用于虚拟机集群主机，虽然可以通过第三方软件实现。&lt;br&gt;
-总分：1&lt;br&gt;
-评价：适合技术水平高的团队或个人使用。&lt;/p&gt;
-&lt;h1 id=&#34;虚拟机集群客户机物理机&#34;&gt;虚拟机集群客户机/物理机&lt;/h1&gt;
-&lt;h2 id=&#34;debian-stablehttpswwwdebianorg&#34;&gt;&lt;a href=&#34;https://www.debian.org/&#34;&gt;Debian Stable&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）老牌 Linux 发行版，以稳定著称，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+1）保证了基本功能完备的情况下，系统资源占用较低。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-总分：4&lt;br&gt;
-评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;slackwarehttpwwwslackwarecom&#34;&gt;&lt;a href=&#34;http://www.slackware.com/&#34;&gt;Slackware&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）老牌 Linux 发行版，以稳定著称，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+1）保证了基本功能完备的情况下，系统资源占用较低。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-（-1）官方的包管理器不够现代化，无法处理依赖关系。&lt;br&gt;
-总分：3
-评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;red-hat-enterprise-linuxhttpsredhatcomrhel&#34;&gt;&lt;a href=&#34;https://redhat.com/rhel/&#34;&gt;Red Hat Enterprise Linux&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）Red Hat 出品，质量高。&lt;br&gt;
-（-4）开源但不免费。&lt;br&gt;
-（+3）有优秀的付费技术支持服务。&lt;br&gt;
-（+1）Linux 服务器的事实标准。&lt;br&gt;
-总分：3&lt;br&gt;
-评价：适合资金足够的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;rocky-linuxhttpsrockylinuxorg&#34;&gt;&lt;a href=&#34;https://rockylinux.org/&#34;&gt;Rocky Linux&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）RHEL 的一个克隆，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-（+1）Linux 服务器的事实标准。&lt;br&gt;
-总分：4&lt;br&gt;
-评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;ubuntu-serverhttpsubuntucom&#34;&gt;&lt;a href=&#34;https://ubuntu.com/&#34;&gt;Ubuntu Server&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（-1）质量一般。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+3）有优秀的付费技术支持服务。&lt;br&gt;
-总分：4&lt;br&gt;
-评价：适合有一定技术的个人或企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;freebsdhttpswwwfreebsdorg&#34;&gt;&lt;a href=&#34;https://www.freebsd.org/&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）有 Linux 兼容层的 BSD 发行版，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+1）许可证宽松。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-总分：4&lt;br&gt;
-评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;openbsdhttpswwwopenbsdorg-1&#34;&gt;&lt;a href=&#34;https://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（+3）最注重安全性的 BSD 发行版，质量高。&lt;br&gt;
-（+2）开源免费。&lt;br&gt;
-（+1）许可证宽松。&lt;br&gt;
-（-2）没有技术支持服务。&lt;br&gt;
-总分：4&lt;br&gt;
-评价：适合有一定技术的个人、资金不足或不愿耗资在服务器系统的企业使用。&lt;/p&gt;
-&lt;h2 id=&#34;windows-serverhttpmicrosoftcomen-uswindows-server&#34;&gt;&lt;a href=&#34;http://microsoft.com/en-us/windows-server/&#34;&gt;Windows Server&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;（-3）BUG 多，质量差，安全性低。&lt;br&gt;
-（-2）系统资源占用高。&lt;br&gt;
-（-5）不开源不免费。&lt;br&gt;
-（+5）有非常优秀的付费技术支持服务。&lt;br&gt;
-（+2）对用户操作非常友好。&lt;br&gt;
-总分：-3&lt;br&gt;
-评价：除非有特殊需求（付费使用 Microsoft 的全套服务器相关软件、服务等）不要用。君不见 Microsoft Azure 上主要跑的都不是 Windows Server（Microsoft 自己都觉得烂XD）。&lt;/p&gt;
-&lt;h1 id=&#34;感想&#34;&gt;感想&lt;/h1&gt;
-&lt;p&gt;有一个系统上榜了两次，OpenBSD。&lt;br&gt;
-我觉得 BSD 系的系统几乎都是同类系统的佼佼者，开源的桌面系统有 FreeBSD，服务器系统有 OpenBSD，硬件兼容性高的有 NetBSD，成功的商业化桌面系统有 macOS，甚至游戏主机方面， PlayStation 也是基于 FreeBSD 的。&lt;br&gt;
-&lt;strong&gt;至于我为什么不用 FreeBSD，因为自己现在用的破电脑用 FreeBSD 无法联网（我试了很多系统，没问题的只有 Fedora 和 Ubuntu，明明原装系统是 Windows 7，装上了也无法联网。我可以肯定不是驱动问题。）。&lt;/strong&gt;&lt;/p&gt;
-- https://anyicomplex.github.io/en/posts/operating-system-recommendations-for-servers/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     
