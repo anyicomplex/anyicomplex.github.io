@@ -13,6 +13,20 @@
     
     
         <item>
+        <title>Xlib Programming Notes 1</title>
+        <link>https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/</link>
+        <pubDate>Sun, 20 Feb 2022 11:02:21 -0500</pubDate>
+        
+        <guid>https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/</guid>
+        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/ -&lt;ul&gt;
+&lt;li&gt;Be careful with the &lt;code&gt;XGrabPointer&lt;/code&gt; and been prepared to force the program exit before using it (I was pitted today, and more than once QAQ)&lt;/li&gt;
+&lt;/ul&gt;
+- https://anyicomplex.github.io/en/posts/xlib-programming-notes-1/ - 2021 - 2022 © anyicomplex</description>
+        </item>
+    
+    
+    
+        <item>
         <title>Week Summary 20220220</title>
         <link>https://anyicomplex.github.io/en/posts/week-summary-20220220/</link>
         <pubDate>Sun, 20 Feb 2022 10:56:05 -0500</pubDate>
@@ -407,19 +421,6 @@ Unless you have high requirements for reducing the size of your game files, doin
 Making the Java bytecode completely AOT-compiled to native executable can reduce startup time and system resource usage, but none of this is the point of game development.&lt;br&gt;
 &lt;strong&gt;If you care about game file size, system resource usage, and startup time, then it&amp;rsquo;s better to stop developing games in Java before it&amp;rsquo;s too late.&lt;/strong&gt;&lt;/p&gt;
 - https://anyicomplex.github.io/en/posts/words-for-those-want-to-develop-game-in-java/ - 2021 - 2022 © anyicomplex</description>
-        </item>
-    
-    
-    
-        <item>
-        <title>Hello World</title>
-        <link>https://anyicomplex.github.io/en/posts/hello-world/</link>
-        <pubDate>Tue, 05 Oct 2021 04:33:30 -0500</pubDate>
-        
-        <guid>https://anyicomplex.github.io/en/posts/hello-world/</guid>
-        <description>anyicomplex&#39;s Blog https://anyicomplex.github.io/en/posts/hello-world/ -&lt;p&gt;Theme: &lt;a href=&#34;https://themes.gohugo.io/themes/github-style/&#34;&gt;Github Style&lt;/a&gt; (Note: This is the theme used at the beginning of the blog, which has already replaced)&lt;/p&gt;
-&lt;p&gt;It will probably be a blog of diary nature :D&lt;/p&gt;
-- https://anyicomplex.github.io/en/posts/hello-world/ - 2021 - 2022 © anyicomplex</description>
         </item>
     
     

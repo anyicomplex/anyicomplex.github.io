@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://anyicomplex.github.io/en/posts/farewell-forever/</loc>
+    <lastmod>2022-04-12T05:51:11-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://anyicomplex.github.io/zh-hant/posts/farewell-forever/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://anyicomplex.github.io/zh/posts/farewell-forever/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anyicomplex.github.io/en/posts/farewell-forever/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anyicomplex.github.io/en/posts/</loc>
+    <lastmod>2022-04-12T05:51:11-04:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://anyicomplex.github.io/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://anyicomplex.github.io/zh-hant/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anyicomplex.github.io/en/posts/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anyicomplex.github.io/en/categories/</loc>
     <lastmod>2022-03-26T10:23:15-04:00</lastmod>
     <xhtml:link
@@ -39,26 +79,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anyicomplex.github.io/en/categories/it/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anyicomplex.github.io/en/posts/</loc>
-    <lastmod>2022-03-26T10:23:15-04:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://anyicomplex.github.io/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://anyicomplex.github.io/zh-hant/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anyicomplex.github.io/en/posts/"
                 />
   </url>
   
