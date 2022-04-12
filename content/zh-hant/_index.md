@@ -6,6 +6,8 @@ draft: false
 featured_image: "images/avatar.png"
 ---
 
+**本博客已不再更新，詳情請見[此處](https://anyicomplex.github.io/zh-hant/posts/farewell-forever/)。**
+
 # 基本信息
 * 姓名：安怡
 * 性別：女

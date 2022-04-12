@@ -6,6 +6,8 @@ draft: false
 featured_image: "images/avatar.png"
 ---
 
+**The blog is no longer updated, please see [here](https://anyicomplex.github.io/en/posts/farewell-forever/) for more information.**
+
 # Basic informations
 
 * Full Name：Yi An
